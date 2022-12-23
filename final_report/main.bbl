@@ -1,0 +1,72 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{RTOS:1}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=f1b26796744ff7f5b3245fe8a6a7bfdd}{%
+           family={Hambarde},
+           familyi={H\bibinitperiod},
+           given={Prasanna},
+           giveni={P\bibinitperiod}}}%
+        {{hash=79181984d6e3e97429c2b72257b1d342}{%
+           family={Varma},
+           familyi={V\bibinitperiod},
+           given={Rachit},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2d32374e313857d46892598cc2e9c9ff}{%
+           family={Jha},
+           familyi={J\bibinitperiod},
+           given={Shivani},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d8da4c83d6747706bfc269270a3f2d7}
+      \strng{fullhash}{3d8da4c83d6747706bfc269270a3f2d7}
+      \strng{bibnamehash}{3d8da4c83d6747706bfc269270a3f2d7}
+      \strng{authorbibnamehash}{3d8da4c83d6747706bfc269270a3f2d7}
+      \strng{authornamehash}{3d8da4c83d6747706bfc269270a3f2d7}
+      \strng{authorfullhash}{3d8da4c83d6747706bfc269270a3f2d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The paper discusses the literature survey of RTOS (Real Time Operating Systems) and its contributions to the embedded world. RTOS is defined as a system in which the correctness of the system does not depend only on the logical results of computation but also on the time at which the results are produced. It has to perform critical tasks on priority basis keeping the context switching time minimum. It is often associated with few misconceptions & we have tried to throw some light on it. Since last 20 years, RTOS is undergoing continuous evolution and has resulted into development of many commercial RTOS products. We have selected few commercial RTOS of different categories of real-time applications and have discussed its real-time features. A comparison of the commercial RTOSs' is presented. We conclude by discussing the results of the survey and comparing the RTOS based on performance parameters.}
+      \field{booktitle}{2014 International Conference on Electronic Systems, Signal Processing and Computing Technologies}
+      \field{month}{1}
+      \field{title}{The Survey of Real Time Operating System: RTOS}
+      \field{year}{2014}
+      \field{pages}{34\bibrangedash 39}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICESC.2014.15
+      \endverb
+    \endentry
+    \entry{RTOS:2}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{{https://www.freertos.org/about-RTOS.html}}
+      \field{note}{[Accessed 02-Dec-2022]}
+      \field{title}{{W}hy {R}{T}{O}{S} and {W}hat is {R}{T}{O}{S}? --- freertos.org}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

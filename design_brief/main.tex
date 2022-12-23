@@ -1,0 +1,78 @@
+\PassOptionsToPackage{table}{xcolor}
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,width=185mm,top=18mm,bottom=18mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{pgfgantt}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{xltabular}
+
+\graphicspath{ {./images/} }
+\pagestyle{fancy}
+
+\fancyhead[L]{Design Brief}
+\fancyhead[R]{25th of October 2022}
+
+\cfoot{} % get rid of the page number 
+\fancyfoot[L]{Group I}
+\fancyhead[C]{}
+\fancyfoot[R]{\thepage}
+
+
+\begin{document}
+
+\input{{sections/Title.tex}}
+
+\section{Overview}
+\input{sections/Overview.tex}
+
+\section{Technical Outline}
+\input{sections/Technical.tex}
+
+\section{Sustainability}
+\input{sections/Sustainability.tex}
+
+\section{Management}
+\input{sections/Management.tex}
+
+\subsection{References}
+\begin{footnotesize}
+\begin{verbatim} 
+    [1] Di Renzo, Laura et al. “Diet, Nutrition and Chronic Degenerative Diseases.” 
+    Nutrients vol. 13,4 1372. 20 Apr. 2021, doi:10.3390/nu13041372
+\end{verbatim} 
+\begin{verbatim} 
+    [2] DigitalHealth. (2022, Apr 7). Digital solutions for the prevention of chronic diseases [Online]. Available: 
+    https://www.digitalhealth.net/2022/04/digital-solutions-for-the-prevention-of-chronic-diseases/ [Accessed 27 October 2022] 
+\end{verbatim} 
+\begin{verbatim} 
+    [3] United Nations, “Food Wastage Footprints,” 2013. [Online]. Available: 
+    https://www.fao.org/fileadmin/templates/nr/sustainability_pathways/docs/Factsheet_FOOD-WASTAGE.pdf. [Accessed 27 October 2022]. 
+\end{verbatim} 
+\begin{verbatim} 
+    [4] Edamam-Food Database https://www.edamam.com/ [Accessed 31 October 2022] 
+\end{verbatim} 
+\begin{verbatim} 
+    [5]https://thepihut.com/products/esp32-camera-module-development-board-ov2640 [Accessed 21 October 2022] 
+\end{verbatim} 
+\begin{verbatim} 
+    [6]https://thepihut.com/products/raspberry-pi-3-model-a-plus [Accessed 21 October 2022] 
+\end{verbatim} 
+\begin{verbatim} 
+    [7]https://www.amazon.co.uk/Weight-Sensor-Weighing-Arduino-Raspberry-Black/dp/B07G29TKRH/ [Accessed 21 October 2022] 
+\end{verbatim} 
+\end{footnotesize}
+
+\clearpage
+\appendix
+\includepdf[pages=-]{Appendix/SAGE.pdf}
+\includepdf[pages=-]{Appendix/EIA.pdf}
+\includepdf[pages=-]{Appendix/DMP.pdf}
+\section{Meeting Notes}
+\input{sections/Appendix.tex}
+
+
+\end{document}

@@ -1,0 +1,103 @@
+To ensure that the fridge is designed and constructed in a logical and efficient way, 
+a Gantt chart has been produced showing the expected outcomes on a weekly basis (seen in Figure \ref{tab:gantt}). 
+Furthermore, Table \ref{tab:risk} shows a list of foreseeable risks compared to the values of a risk matrix. 
+By following these two guides, a solid proof of concept will be produced by the final presentation and report deadlines.
+
+\begin{table}[H]
+    \centering
+    \small
+    \caption{Risk Matrix}
+    \label{tab:risk}
+    \begin{tabular}{|l|l|l|l|l|l|}
+    \hline
+    \rowcolor[HTML]{C0C0C0} 
+    Risk                    & Probablity & Impact & Risk                                              & Proposed Solution            & New Risk                   \\
+    \rowcolor[HTML]{C0C0C0} 
+                            &            &        & Score                                             &                              & Score                      \\ \hline
+    Barcode not             & Probable   & Large  & \cellcolor[HTML]{FD6864}16                        & Allow user to add            & \cellcolor[HTML]{FCFF2F}12 \\
+    in Image                &            &        & \cellcolor[HTML]{FD6864}                          & item manually (app)          & \cellcolor[HTML]{FCFF2F}   \\ \hline
+    Barcode not             & Possible   & Medium & \cellcolor[HTML]{FCFF2F}{\color[HTML]{000000} 9}  & Allow user to add            & \cellcolor[HTML]{67FD9A}4  \\
+    in DB                   &            &        & \cellcolor[HTML]{FCFF2F}{\color[HTML]{000000} }   & barcode manually             & \cellcolor[HTML]{67FD9A}   \\ \hline
+    OpenCV can't            & Probable   & Medium & \cellcolor[HTML]{FCFF2F}{\color[HTML]{000000} 12} & Allow user to add            & \cellcolor[HTML]{FCFF2F}6  \\
+    determine object        &            &        & \cellcolor[HTML]{FCFF2F}{\color[HTML]{000000} }   & item manually (app)          & \cellcolor[HTML]{FCFF2F}   \\ \hline
+    \begin{tabular}[c]{@{}l@{}}Hardware damaged due\\  to\end{tabular} &
+      Probable &
+      Severe &
+      \cellcolor[HTML]{FD6864}20 &
+      Coat hardware with &
+      \cellcolor[HTML]{FCFF2F}10 \\
+    moisture/temp in Fridge &            &        & \cellcolor[HTML]{FD6864}                          & protection and keep airtight & \cellcolor[HTML]{FCFF2F}   \\ \hline
+    Finger caught in door &
+      Rare &
+      Small &
+      \cellcolor[HTML]{67FD9A}{\color[HTML]{000000} 2} &
+      Do no use excessively &
+      \cellcolor[HTML]{67FD9A}1 \\
+                            &            &        & \cellcolor[HTML]{67FD9A}{\color[HTML]{000000} }   & strong magnets               & \cellcolor[HTML]{67FD9A}   \\ \hline
+    Issues with server      & Unlikely   & Large  & \cellcolor[HTML]{F8FF00}8                         & Carry out regular            & \cellcolor[HTML]{67FD9A}4  \\
+                            &            &        & \cellcolor[HTML]{F8FF00}                          & server maintance             & \cellcolor[HTML]{67FD9A}   \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{figure}
+\centering
+\caption{Gantt Chart}
+\label{tab:gantt}
+\begin{ganttchart}[
+    title height=.75, title top shift=0, hgrid, vgrid,
+    x unit= .75cm,
+    y unit title= 0.45cm,
+    y unit chart= .45cm,
+    vrule/.style={very thick, black},
+    bar label node/.append style={align=right},
+    title label font=\small,
+    bar label font=\tiny,
+    group label font=\small,
+    vrule label font=\small
+    ]{1}{16}
+    %\caption{Gantt Chart}
+    %\label{tab:gantt}
+
+    \gantttitlelist{1,...,11}{1} \gantttitle{H1}{1} \gantttitle{H2}{1} \gantttitle{H3}{1} \gantttitle{H4}{1} \gantttitlelist{12,...,12}{1} \\
+
+    \ganttgroup{ {\bf Research}}{2}{3} \\
+    \ganttbar{Microcontrollers, Sensors \\ \textit{Isaac, Yohan}}{2}{3} \\
+    \ganttbar{OpenCV \\ \textit{Jamie, Ioanna}}{2}{3} \\ 
+    \ganttbar{App and Backend \\ \textit{Hamzah, Alex}}{2}{3} \\
+    \ganttbar{Pi Networking \\ \textit{Alex, Alfie}}{2}{3} \\
+
+    \ganttgroup{{\bf Hardware}}{3}{9} \\
+    \ganttbar{Fridge Box \\ \textit{Jamie, Yohan, Isaac}}{3}{5} \\
+    \ganttbar{Box Internal Wiring \\ \textit{Yohan, Hamzah}}{5}{8} \\ 
+    \ganttbar{Sensor Placement \\ \textit{Hamzah, Yohan, Isaac}}{5}{9} \\
+
+    \ganttgroup{{\bf Software}}{5}{11} \\
+    \ganttbar{Microcontroller Code \\ \textit{Isaac, Yohan}}{5}{8} \\
+    \ganttbar{Barcode/Item Dector \\ \textit{Alfie, Jamie, Ioanna}}{5}{11} \\ 
+    \ganttbar{Pi Networking \\ \textit{Alex, Alfie}}{8}{11} \\
+    \ganttbar{Cloud and Backend \\ \textit{Hamzah, Alex}}{3}{9} \\ 
+    \ganttbar{Web / App \\ \textit{Hamzah, Alex}}{3}{11} \\ 
+
+    \ganttgroup{{\bf Report}}{3}{6} \ganttgroup{}{11}{16} \\
+    \ganttbar{Overview \\ \textit{Isaac}}{3}{6} \ganttbar{}{11}{16}\\
+    \ganttbar{Tech Outline \\ \textit{Yohan, Ioanna}}{4}{6} \ganttbar{}{11}{15}\\ 
+    \ganttbar{Sustainability \\ \textit{Hamzah}}{4}{6} \ganttbar{}{11}{15}\\
+    \ganttbar{Project Management \\ \textit{Alfie, Jamie}}{4}{6} \ganttbar{}{11}{15}\\ 
+    \ganttbar{Appendices \\ \textit{Alex}}{3}{6} \ganttbar{}{11}{13}
+
+    %\ganttgroup{{\bf Presentation}}{14}{19} \\
+    %\ganttbar{Introduction / Overview \\ \textit{Isaac, Alex}}{14}{19} \\
+    %\ganttbar{Technical Spec \\ \textit{Yohan, Ioanna}}{14}{19} \\ 
+    %\ganttbar{Sustainability \\ \textit{Hamzah}}{14}{19} \\
+    %\ganttbar{Project Management \\ \textit{Alfie, Jamie}}{14}{19} \\ 
+    %\ganttbar{Closing Statement \\ \textit{Alex}}{14}{19}
+
+    \ganttvrule{Design Brief}{5} 
+    \ganttvrule{Report}{16} 
+    %\ganttvrule[vrule label node/.append style={anchor=north east}]{Final Assessment}{19} \ganttnewline
+    %\ganttvrule{Assessment}{19} 
+\end{ganttchart}
+\end{figure}
+
+As for costing, the “Fridge” outer shell we require $2m^2$ of acrylic, approximately £30.
+ESP32-Cam costs £11, RPi £32 and Weight Sensor £9 [5][6][7]. Smaller components will be provided by the UG Labs. 

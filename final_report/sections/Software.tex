@@ -1,0 +1,764 @@
+\subsection{ESP32 Firmware Code[YJ]}
+
+The following sections below will provide the reader with knowledge of Firmware code.
+By doing so, the reader will understand how all the pieces of software fit together and the intensive testing done to test the features.
+Throughout this section, the reader will learn how the raw sensor values received help produce meaningful behavior on the product side.
+I will discuss the knowledge and skills I gained during this process.
+
+The hardware controller chosen for this project was from the ESP-32 family.
+The system was architected to have its operating system using FreeRTOS.
+The system uses software timers to calculate how long the door has been kept open.
+The calibrated sensor values, the door and alarm states are packaged as a JSON document and transmitted to the Raspberry Pi through serial communication.
+The code development and integration started after proof that the individual sensors would behave and operate as designed during our initial testing.
+The tasks and timers created matched the design specification that was agreed upon by the group.
+
+Attached below is the system-level diagram for the microcontroller.
+The weight values are stored and used as a comparison again for the next reading to determine the object's direction.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Logo.png}
+    \caption{Place Holder: UML for System Machine}
+    \label{fig:placeholder}
+\end{figure} 
+
+\subsubsection{RTOS [YJ]}
+
+RTOS is commonly known as Real Time Operating System.
+It is an operating system with key features such as predictability and determinism.
+An operating system is a computer program that supports a computer's fundamental functions and provides services to other programs that run on the computer.
+RTOS creates tasks based on priority while keeping the context switching to the minimum.
+Context switching is storing the current state of the thread that is resumed later at a different point in time.
+It allows multiple processes to share the same CPU, which is the core feature of multitasking operations.
+\cite{RTOS:1} \cite{RTOS:2}
+
+The RTOS kernel used in this project is FreeRTOS.
+FreeRTOS is small and light to run on small microcontrollers.
+It is preferable because most microcontrollers do not have enough RAM and flash storage.
+FreeRTOS also makes it easy to connect IoT( Internet Of Things) devices to the AWS( Amazon Web Services )services by Amazon.
+
+Espressif Systems is a privately held fabless semiconductor company.
+They provide wireless communications and Wi-Fi chips in mobile devices and the Internet of Things applications.
+The Smart-Fridge uses the ESP-32-Wroom-32 microcontroller.
+The Software Development Kit provided by Espressif has a different version of FreeRTOS with slight variations from the vanilla FreeRTOS natively used.
+It allows us to freely call the API functions of the FreeRTOS without having to download or include any library.
+
+For this project, to keep in mind simplicity and rapid prototyping and testing requirements, I have designed the tasks system as follows.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Logo.png}
+    \caption{Place Holder: Task Create}
+    \label{fig:placeholder}
+\end{figure} 
+
+The threads generated using "xTaskCreate" are getSensorData and sendData.
+The data shared between these two tasks is handled through a message queue buffer.
+It prevents memory corruption where one thread reads while the other writes simultaneously.
+This message queue is made by "xQueueCreate".
+The data collected in the "getSensorData" task is sent to the message queue by "xQueueSend", and the "sendData" receives the latest data on this message stack by “xQueueReceive".
+
+I initially struggled to get the tasks to run on the microcontroller as I was dealing with dangerous memory access errors.
+After reading the documentation provided on the FreeRTOS website, I was able to debug the solution and solve the issue.
+To understand the timing difference and priority between the two threads, I wanted to provide the lowest delay possible for the sensors so that the system would not miss any event that occurred.
+The delay on the data transfer is at 1 second.
+It gives time for the processor to average the raw readings and provides accurate results.
+
+\subsubsection{Software Timer [YJ]}
+
+A software timer is a function that executes after a pre-defined period.
+The task called after the timer should perform simple short tasks such as toggling a state or changing a variable so that the system does not hang in this state or accidentally trigger the watchdog and reset the microcontroller.
+The function executed by the timer is called the timer's callback function.
+
+As the name suggests, the software timer calculates the time by the operating system and does not rely on the hardware.
+The advantages of the software timer are that they do not add any processing overhead and take up minimal space on the applications binary.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Logo.png}
+    \caption{Place Holder: ???}
+    \label{fig:placeholder}
+\end{figure} 
+
+In our application, we first declare the software timer and define its duration along with if it is a timer to be repeated automatically by the system or manually triggered by a set condition.
+The Timer callback function changes the state of the "alarmState", which activates the buzzer till the door of the fridge is closed.
+
+\subsubsection{ESP-Pi Communication [YJ]}
+
+The ESP-Firmware must communicate with the Raspberry Pi.
+The messages to the pi are on an agreed-upon pre-defined data table mentioned below.
+The table mentioned below tells the Pi the current state of the fridge regarding the alarm, door and objects entering and leaving the fridge.
+
+\input{tables/contrib.tex}
+
+Three states tell the direction of the object, they are no changes in the path, an item is leaving the fridge, and an item is entering the smart fridge.
+The other values are booleans that tell the Pi if the door is open and if the alarm has been raised for the door being open for too long.
+
+Communication between the ESP32 and the Pi happens through the UART protocol.
+A JSON packet is packaged with the three states, as seen below and sent to the Pi.
+JSON serialisation is favourable to transferring data as the system can send all the information in a single message packet.
+The drawback of this system is that there is only one-way communication between the two boards using one UART serial port.
+
+The fix is to utilise the second set of UART pins on the Esp32 if the ports are unused.
+
+The ArduinoJSON library determined how the messages were packed on a JSON document and sent via the serial port.
+The JSOC document requires a key that maps to a value.
+I struggled with sending the JSON document through the second UART port on the development board.
+The board's documentation sheet mentioned that there were two sets of UART pins enabled on the development board but only able to transmit and receive.
+I tested this by connecting the pins to an Arduino UNO board running a deserialisation script that printed NULL but printed the values using the default pins for Transmit and receives on the ESP-32 board.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Logo.png}
+    \caption{Place Holder: Board?}
+    \label{fig:placeholder}
+\end{figure} 
+
+An image of the expiration date and product put in the fridge is captured through a web camera.
+
+\subsection{Raspberry Pi Overview [AW]}
+
+As mentioned in the system overview, the Raspberry Pi receives a JSON packet from the ESP-32 which will alter the response of the Pi and change the data to be sent to the database.
+The JSON itself is discussed at further length in the Pi Serial Input section.
+The Raspberry Pi also handles the camera, the computer vision calculations, and the networking to the database.
+These are the features that will be explored in this section, starting with the different computer vision methods utilized.
+
+\subsubsection{Pi Object and character recognition [IB]}
+
+There are two tasks that utilize object and character recognition.
+The first one is the expiration date which is implemented using a OpenCV and a python library and the output gives the characters, in this case the numbers of the expiration date.
+The second task is to take an image of the product and using an already trained model, the product will be classified and return its class.
+	
+
+\subsubsection{Expiration Date - Character Recognition [IP]}
+
+The implementation of the expiration date recognition requires loading an image and then processing it to be able to use a function that will extract the digits detected.
+The function that identifies and extracts the characters comes from a library called PyTesseract.
+PyTesseract is a python tool used for optical character recognition, that recognizes and extracts characters on an image [pypiPytesseract].
+The code written can be found in a repository on github.
+In the code implemented, the image is loaded using the OpenCV library's image read function (imread) and then converted from BGR to RGB channel ordering, again using an OpenCV library function.
+The function named image\_to\_string from PyTesseract tool is then called which takes in the rgb image and stored in a variable.
+The variable holds the text of the characters extracted and is the output of the code.
+
+A virtual environment was used to run the code in which the PyTesseract was installed, as well as the rest of the necessary libraries such as OpenCV.
+
+The PyTesseract tool is an engine that functions by following a series of stages that include finding and nesting the outlines, organising into text lines, and then the recognition follows using an adaptive classifier.
+The first step is inspecting the nesting of the general outlines as well as the smaller ones.
+The outlines are assembled into objects which are then organised into text lines.
+The next step includes testing whether the test lines are fixed pitch, and the text lines are divided into words according to the spacing between them.
+Recognition of the text is the next process that takes place, which is done by firstly recognising each word and then passing it into a classifier.
+The process is repeated for the case where the classification didn't successfully recognize words [TesseractOverview].
+
+The performance of the expiration date detection was tested using images initially with just numbers and then of more complicated images, meaning the products with expiration date on them.
+In the images with just numbers taken from google, the average performance was satisfactory as the output of the code returned the number that was embedded on the image.
+The images that contained the products had a poorer performance as the majority of the images were not as clear regarding the intensity of the image and the shape of the characters.
+Initially, this was a major drawback as other than the images used for testing from the internet, images were captured from the ESP32 camera but failed the tests, as they were very blurry and unfocused.
+This was discussed with the rest of team, and it was decided that the ESP32 camera wouldn't be used, and a web camera would replace it.
+Images captured from the webcam were then tested and had a much-improved performance.
+The lighting when the image is captured is highly important as it can zero the possibility of the function's ability to read and extract the characters.
+
+\subsubsection{Product detection – Object recognition [IP]}
+
+The product detection was implemented by training a convolutional neural network using a public dataset.
+The dataset included images of grocery items of 43 different classes, that included mainly vegetables and fruits, as well as other products.
+There are a total of 5,571 images that are used for training, testing and validation sets.
+The model is trained on this dataset, and then the image captured from the fridge is tested on the model.
+
+\subsubsection{Background theory on design implementation [IP]}
+
+A convolutional neural network (CNN) was used as it is considered as one of the most efficient algorithms for image classification.
+In this case, a simple architecture of a CNN was designed with the addition of using a pre-trained model, using transfer learning.
+A model consists of layers in which the training of the data takes place.
+The first layers of a model train the data on more generic features such as shapes, edges, and colours, whereas the higher layers learn more complex and specific features.
+A more efficient way to train the data would be to use a model that has been pre-trained in the more generic task features and complete training only for the more complex task features.
+The pre-trained model used is the VGG16 architecture which consists of 16 layers that hold the learnable parameters (weights), 3 convolutional layers, 5 max pooling layers and 3 dense layers, in total 21 layers [VGG16overview].
+The convolutional layers use filters, or kernels with the purpose of performing the convolution operation on the input and give an output of a feature map that comprises the features detected.
+The max pooling layers perform an operation that takes the maximum value of a specified region on the feature map with the aim to reduce its dimension.
+Lastly, the dense layers contain the neurons that are connected to the ones in the previous convolutional layers with the aim to perform the classification.
+The architecture of the VGG16 architecture is shown in figure [update].
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/CNN/VGG-16.png}
+    \caption{VGG16 Architecture}
+    \label{fig:cnn}
+\end{figure} 
+
+\subsubsection{Pre-processing of the dataset [IP]}
+
+The dataset that is used as the input to train the model required processing into the appropriate train, test, and validation sets.
+The training and validation sets contain the data based on which the model is trained on, and the test set contains the data used to test the performance of the trained model.
+
+The dataset consists of 3 main categories, which were vegetables, fruits, and packages.
+Within each of these three categories, there were subcategories which resulted in 43 classes in total from all categories.
+The goal of the classifier is to classify what the product is, so between these 43 classes, and not to which generic group/category they belong to.
+Therefore, the 3 categories were removed, and all 43 classes were put under the same folder, for all three training, testing and validation sets.
+The dataset had already completed the splitting between the sets.
+The dataset was taken from a repository [dataset] and was used for a research paper.
+
+dataset???
+
+\subsubsection{Model architecture [IP]}
+
+For the model architecture, as mentioned before in the background theory, a VGG16 pre-trained model was used for which the features learned were stored in some filed, known as the bottleneck files.
+The bottleneck files were created for all three tests (training, testing and validation) and were loaded to be used as the according data.
+The labels for each class were generated using the ImageDataGenerator, a TensorFlow pre-processing function and were transform the data to a binary class matrix before passing it to the model.
+After the data and the labels for each set were prepared, the model architecture was designed.
+A sequential model was initialised, as the following layers used are in a linear stack.
+The first layer, which is a Flatten layer, contains the data that has been taken from the bottleneck files.
+The dense layers contained the activation function that determined the values that the neurons would hold.
+The dropout layers randomly neutralise some neurons during the training with the aim of preventing overfitting, meaning the model not being able to generalise and only being able to accurately predict the already trained data.
+A SoftMax activation function was used to compute the probabilities for the output for all the classes.
+After the model's architecture design, the data was fitted in the model and the training occurred.
+A batch size and number of epochs was specified.
+After the training, the weights of the model were saved, and an accuracy and loss score were printed.
+
+\subsubsection{Product Detection Evaluation [IP]}
+
+For the testing part of the product detection, two functions were created, one to read the image and another to predict the class of the image based on the model.
+
+\subsubsection{Barcode Detection [JG]}
+
+An important feature of the smart fridge was to identify the products placed inside it.
+One of the ways in which we sought to achieve this was using a barcode detection system.
+The idea for this was to find and decode barcodes found within the image received from the camera.
+This would then be sent to the server to identify the product.
+The code for barcode detection would be written in Python, using the OpenCV library to search the image for the barcodes, as well as any other libraries required to efficiently complete this task.
+It was decided that we would use an 'off-the-shelf' algorithm as inspiration which we could later adapt to suit our needs.
+Overall, three algorithms were tested in order to arrive at the best option for our product.
+They were tested using three images containing barcodes.
+
+The first image was the back of a notebook.
+The idea was that this image would be the simplest as the barcode would be located on a flat, smooth surface.
+A chosen algorithm would be expected to correctly detect and decode this barcode.
+The second image was a barcode on a jar.
+This image was intended to be more challenging as the surface of the barcode, although smooth, was no longer flat as it followed the curve of the jar.
+A chosen algorithm would again be expected to detect this barcode, albeit with a lower success rate.
+The third was of a barcode on a bottle.
+This image was selected to be the most challenging of the three as the surface of the barcode was neither flat nor smooth.
+A chosen algorithm was not required to successfully detect or decode the barcode in this image as its purpose was mainly to test the limits of each algorithm.
+
+The first algorithm [Detecting Barcodes in Images with Python and OpenCV] only detected barcodes and did not decode them.
+However, this was chosen as a starting point as [1] explained the workings of the algorithm clearly and in detail.
+The algorithm begins by converting the image to greyscale using the Sobel function found within the OpenCV library.
+From this the x and y gradients from the Scharr operator are subtracted which gives the regions of the image which have the largest horizontal gradients and the lowest vertical gradients as these are most likely to contain barcodes within them.
+The next step was to blur the image and to threshold the image, so that, pixels in which it was decided that a barcode is unlikely to be, could be set to black and pixels where a barcode was likely to be, could be set to white.
+This would reduce the noise of the image in order to make the following steps easier and more effective.
+The code up to this point is shown in the image below.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=0.5\textwidth]{Chapter 4/Barcode Detection/Figure1.png}
+    \caption{Greyscaling and Blurring Code}
+    \label{fig:bc1}
+\end{figure} 
+
+However, this previous step would also create gaps within the actual barcode.
+Therefore, it was necessary to perform morphological operations using a rectangular kernel, once to close gaps between bars in the barcodes, and again to close any gaps within these bars.
+These were then followed by four iterations of dilations which aimed to remove any remaining gaps in the barcode.
+The next step was to find the largest contour in the image as this is likely the region which contains the barcode.
+The code for this is shown below.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=0.5\textwidth]{Chapter 4/Barcode Detection/Figure2.png}
+    \caption{Gap Closing and Contour Finding Code}
+    \label{fig:bc2}
+\end{figure} 
+
+This algorithm's performance on the three test images exceeded expectations.
+It was able to correctly detect the barcodes on both the notebook and the jar, however, the algorithm was also able to detect the barcode on the bottle.
+Therefore, the only disadvantage of this algorithm was the missing functionality for decoding barcodes.
+Due to the quality of the results, this functionality was added and tested.
+Unfortunately, it was not possible for this to be implemented in a way that kept the results of the barcode detection within the time that was allocated for this algorithm.
+
+The second algorithm [Barcode-Reader] added onto the first in that it included functionality for both detecting and decoding barcodes.
+The sections of code dedicated to detecting the barcodes were very similar as the same method was used, with most differences being due to the use of different libraries.
+However, the code for decoding the barcodes was new and therefore, the most interesting section.
+
+As with detecting the barcode, the first step to reading the barcode was to convert the image to greyscale.
+The image was then thresholded in order to identify the individual bars within the barcode.
+Following this, a similar method to the previous algorithm is used to remove gaps from the barcode.
+The code for this is shown below.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=0.5\textwidth]{Chapter 4/Barcode Detection/Figure3.png}
+    \caption{Greyscaling, Thresholding and Cleaning Code}
+    \label{fig:bc3}
+\end{figure} 
+
+Following this the algorithm is then able to extract the binary code from the barcode.
+This is done using a separate function within the program, getBinary().
+This function works by first calculating the exact boundaries of the barcode.
+These are then used to iterate over the barcode as the program finds the average value of the pixels in each bar.
+Then, if the average value is high, the bar is read as a '1', otherwise, the bar is read as a '0'.
+In the decodeBarcode() function, the barcode is then converted from binary into the appropriate number.
+The code for this is shown below.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=0.5\textwidth]{Chapter 4/Barcode Detection/Figure4.png}
+    \caption{Binary Extracting Code}
+    \label{fig:bc4}
+\end{figure} 
+
+This algorithm's performance on the test images fell below expectations as it failed to either detect or decode the barcode in any of the three images.
+It was suspected that there may have been an error in the code which caused this.
+Therefore, the algorithm was tested using the test image provided by [Barcode-Reader].
+When tested with this image the algorithm functioned properly, detecting the barcode and decoding it correctly.
+In order to test whether one section of the code was working worse than the other, the barcode decoding sections of the code were implemented with the barcode detection of the previous algorithm.
+However, this did not improve its performance.
+Therefore, this algorithm was discarded as an option.
+
+The third algorithm [How to Make a Barcode Reader in Python] also provided functionality for both detecting and decoding barcodes.
+However, this algorithm achieved this using the pyzbar library, which was designed for detecting and decoding barcodes.
+As a result, the code for this third algorithm is much more condensed and easier to read.
+For example, when using the pyzbar library, detecting and decoding a barcode is done with one line of code.
+This is shown in the image below.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=0.5\textwidth]{Chapter 4/Barcode Detection/Figure5.png}
+    \caption{Barcode Detection and Decoding Code (highlighted)}
+    \label{fig:bc5} 
+\end{figure} 
+
+The program then used the glob library to iterate through files of the name “barcode*” where '*' is a number and added them to a list.
+From here the program could iterate through the list, decoding the barcodes in each of these images.
+
+This algorithm performed as expected on the tests.
+It was able to both read and decode the barcode on both the notebook and the jam.
+Despite this, the algorithm was unable to either detect or decode the barcode on the bottle, however, given the challenging condition of that barcode, this was not a requirement for an algorithm to be chosen.
+The results for each test are shown below.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Barcode Detection/Figure6.png}
+    \caption{First Result}
+    \label{fig:bc6} 
+\end{figure} 
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Barcode Detection/Figure7.png}
+    \caption{Second Result}
+    \label{fig:bc7} 
+\end{figure} 
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Barcode Detection/Figure8.png}
+    \caption{Third Result}
+    \label{fig:bc8} 
+\end{figure} 
+
+
+Given the results shown in figures 6-8, this algorithm was chosen for use in our product.
+In its original state, the algorithm already satisfied most of the product's needs as it could decode barcodes from an image.
+However, it was necessary to add an error message for cases where the barcode could not be decoded.
+The first step was to declare a variable, 'barcodefound', at the start of the decode() function and set it equal to 0.
+This variable would later tell us whether a barcode had been decoded.
+Then, in the for loop within the same function, this variable would be changed to 1.
+This worked because the program would only enter the loop if there were items in the decoded\_objects list.
+As each item in this list was a barcode, if this list was empty, a barcode was not found within the image and, therefore, the 'barcodefound' variable would remain unchanged.
+However, if there was at least one item in the list, 'barcodefound' was changed to 1.
+This was then followed by an if statement to check the value of 'barcodefound'.
+If this was still equal to 0, a message was printed to the terminal.
+This can be seen in figure 8, with the code shown below.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Barcode Detection/Figure9.png}
+    \caption{Error Checking Code}
+    \label{fig:bc9} 
+\end{figure} 
+
+\subsubsection{Pi Camera [AW]}
+
+A USB camera is plugged into the Raspberry Pi.
+Using the OpenCV library to access the camera, pictures can be taken and then analyzed by the previously discussed computer vision methods.
+The webcam being used is not perfect but is suitable for a first prototype.
+It is unable to have its focus adjusted programmatically so the camera will have to be focused manually when being fitted into the enclosure.
+
+This is fine for now but in the future, it would be appropriate to replace the webcam with a different camera that allows for focus to be adjusted automatically and is more suited to fitting within the housing of a fridge.
+By doing this, the reliability of extracting barcodes and expiration dates would increase due to having higher clarity images.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Pi Camera/ImageOfWebcam.jpg}
+    \caption{Webcam}
+    \label{fig:webcam} 
+\end{figure} 
+
+The images are stored in a bitmap image file, known as BMP for short.
+This is done to maintain a high-resolution image as opposed to the JPEG file format.
+Figure [IMAGE OF PI BARCODE] shows an image from the camera on the raspberry pi.
+
+Since the original design intended for an ESP32 camera to be used, the webcam was a backup idea that had to be utilized with the time left.
+Fortunately, the Pi is perfectly suited to handling the camera since the open cv library is already a requirement and the goal was to transfer the image from the ESP-32 to the Pi regardless.
+Ultimately, it has increased the complexity of the wiring while decreasing the complexity of the ESP-32 and Raspberry Pi code.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Pi Camera/PiBoxTakenByCamera.png}
+    \caption{Picture from Webcam}
+    \label{fig:webcampic} 
+\end{figure} 
+
+In figure [FIGURE IMAGE OF RASP PI BOX] a picture taken by the webcam of the Raspberry Pi box barcode can be seen.
+In the terminal the byte value of b'1373331' is detected which matches the number written on the box.
+
+\subsubsection{Pi Serial Input [AW]}
+
+To communicate between the ESP-32 and Raspberry Pi, the serial RX and TX pins are connected.
+As seen on the pinout [RASPBBERRY \_PI\_DOCUMENTATION\_REFERENCE], the GPIO 14 (TXD) pin is used to transmit data and the GPIO 15 (RXD) pin is used to receive data.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Serial Input/PiPinout.png}
+    \caption{GPIO of the RPI}
+    \label{fig:rpigpio} 
+\end{figure} 
+
+The information received will be a JSON file containing the status of the door, the direction of movement and if the alarm is sounding.
+The JSON format table can be seen in figure [FIGURE NUMBER OF TABLE IN EARLIER SECTION].
+
+The ESP-32 was connected to the Raspberry Pi by using two jumper wires to test if the serial input was functional and as seen in [FIGURE 2, JSONSERIALINPUT]
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Serial Input/SerialRead.png}
+    \caption{Serial Data from ESP}
+    \label{fig:rpiserial} 
+\end{figure} 
+
+The message received was: “b'{“direction”:2,”switch”:true,”alarm”:false} r n”
+
+Which means that an item is entering the fridge, while the door is open and the alarm is not sounding.
+
+\subsubsection{Pi Communications [ASH]}
+
+For the PI to function it needs to read known items from the database as well as add and remove instances of the items from people's inventory.
+Supabase, our back-end, provides a python API to interact with the tables as well as the handle user authentication.
+However for ease of use for the Pi Software team multiple functions where designed to simplify and abstract the database commands and manage the database connection the background.
+These key functions allow the PI to: retrieve items, add items to inventory, remove items from the inventory and log the user in.
+
+This was done by creating a class that expands on the provided “Client” class from the Supabase python API.
+The Client class exposes the same commands as the JS commands and allows the user to perform various actions, however for the RPI side of the communication we are only concerned with interacting with the database.
+The commands exposed by Supabase require syntax similar to the SQL command used to drive the database directly, however as mentioned we wanted to abstract these so the SQL commands and code required to package items as JSON have been wrapped into simple commands to getItemID, addItem, and removeItem.
+Below in Figure [x] is some sample code of the addItem code.
+The class also deals with logging the user in, ensuring we can access the users data and subsequently terminating the upon deletions.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Logo.png}
+    \caption{Place Holder: SupaBase Client Sample Code}
+    \label{fig:placeholder}
+\end{figure} 
+
+As with the rest of the code base, the communication section was created entirely separately to the main code base meaning that the initial structure was rather different and integration was required.
+These changes were later unified in the code refactor.
+After this refactor the database code worked well with the rest of the code base, and, as the API is similar in python and JavaScript, the experience of writing this code was easily transferred to creating the App.
+
+\subsubsection {Pi Integration [AW]}
+
+The main bulk of integration is sitting down with the team members who worked on their individual sections while moving the python code to the Raspberry Pi environment.
+This ensures that the transition is smooth and that issues are solved as quickly as possible.
+\input{tables/contrib.tex}
+
+These modules were installed using “pip install” on the Linux environment on the Pi.
+
+Once all the required modules were installed, the code from other group members must be compiled into a main loop to run on the Pi.
+On the other hand, each part must be tested individually first.
+This was done by creating a simple loop that asks the user which section they want to run.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Pi Integration/PiTestLoop.png}
+    \caption{Test Loop Code}
+    \label{fig:tlcode}
+\end{figure} 
+
+As seen in figure \ref{fig:tlcode} the letter S can be input to take a single image and check for barcodes, the letter B to check a burst of images for barcodes, the letter C to test the serial input from the ESP-32, N to test the neural network on an image and X to cancel the program and exit.
+This allows the core base functionality to be tested individually before the final implementation.
+
+\subsubsection {Code Refactor [ASH, AW]}
+
+As is inevitable when code is written by many different people, especially when the overall design is not determined before coding begins, our code base was somewhat inconsistent, poorly formatted and used different conventions.
+To allows us to iterate and improve the code faster once the different sections, such as the barcode recognition, produce detection, and database iterations, were combined, we took the time to refactor the code into something of a more unified and thought out design.
+
+The first step in the refactor was simply to remove all the unused code (including imports), debug images, and other files left behind from testing.
+This alone already made large improvements to readability of the code and allowed us to start making decision like what format to use and how to restructure the code.
+Other, more superficial changes, such as setting up a “.gitignore” file to clean up the repository and a requirements file to help set up the requirements on new machines were also made.
+
+After this initial clean-up, we decided to rework the code in a more object orientent style, similar to how the Supabase communication section was initally written.
+While doing this we also tried to adopt a more consistent naming scheme for both function and member variables.
+This was done in order to unify the style of each of the section, making the code much easier to understand and edit.
+We settled for the design seen below in Figure \ref{fig:oocd}, table [x] provides more detail on these member functions and variables.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Code Refactor/Class Diagram.png}
+    \caption{Object Oriented Class Diagram}
+    \label{fig:oocd}
+\end{figure} 
+
+Now the fridges core operations where encompassed in a single object, which itself contains instance of the of objects that simplify and abstract the usage of the CNN product detector, Supabase database connection, and camera.
+After this major refactor, we also changed the layout of the python files them selves, placing them in a Smart Fridge directory with an “\_\_init\_\_.py” file which is required for the code to show up as a module.
+This allows us to cleanly import all our code into a short run file which will start everything we need for the Smart Fridge's local operation.
+
+While it would have been preferably to have never needed a refactor, this would have slowed initial programming down and would have required many assumption about what choices would be made by other people in the team.
+As effort would have been required to integrate the code regardless, doing this refactor allowed us examine our code as well as improve it as we went along.
+Testing for this was rather simple, as the end goal was essentially to maintain the same functionality as before, meaning the same test could be run.
+This refactor was a success as we managed to improve the code slightly with some optimizations all the while making it much more readable and easier to set-up on another device.
+
+\input{tables/contrib.tex}
+
+
+\subsubsection{Back-End [ASH]}
+
+To present the user with the content of their Smart Fridge in the app and/or website the data needs to be stored somewhere that is always accessible.
+Whilst this data could be stored and transmitted locally from the Smart Fridge, this would either require that the user to be on their local area network to access the data, which is rather restrictive, or for that the Smart Fridge to be accessible beyond the local area network, which requires more complicated networking and could cause network security risks.
+Furthermore, the client brief requires data transmission to “a known free secure location” leading us to use a cloud solution.
+
+We chose to use Supabase, a platform utilizing open-source technologies for creating mobile and web applications, which integrates a cloud database, user authentication, easy APIs and more.
+Supabase's database is a relational database, which consists of various tables where every entry has a unique ID.
+Supabase was chosen as if offers easier migrations, as well as the option of self-hosting, when compared to competitors, such as AWS Amplify and Firebase, as the underlying software is open source.
+Furthermore the a relation database was preferred to No-SQL approach taken by Firebase.
+
+For the Smart Fridge we made use of three tables; the first table contains a list of possible items, each of them with a unique ID, the barcode value, item name, comment and an image.
+This table is used by the Raspberry Pi in the Smart Fridge to look up what items it has scanned.
+Every user has read access to these values and for this prototype the table will be populated by us with common items.
+The second table contains the details of each user (we have one user per fridge), which consists of their email and user ID, as well as some of the last login date and time.
+As well as a password hash used for login.
+Besides for login, users can not access this data and for this prototype only “dummy” users with fictional emails are used.
+This table is also part of Supabase's built in “auth” scheme.
+Our third, and primary, table is where we store the actual inventory of the users.
+The table contains instances of the items, where each row has the item's id from the previous table, the associated user ID, expiry data and possible comment.
+We have set up Supabase database rules, using Row Level Security, to ensure users can only request rows (which represent the individual items) from this table when the user ID column matches their users ID, ensuring that people cannot access other people's data.
+Tables one and three create our public scheme and can be seen below in Figure [X].
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Logo.png}
+    \caption{Place Holder: DB Diagram}
+    \label{fig:placeholder}
+\end{figure} 
+
+
+Using Supabase made our database easy to set up and use, and the API provided both in JavaScript and python made interaction simple for both the Smart Fridge itself as well as the website and app.
+However one disadvantage of Supabase is the lack of hosting for our Front Ends, meaning that we need to host them separately [maybe mention where?].
+This aside, the back end worked exactly as intended and provided a secure location to transmit data to.
+
+\subsubsection{App [ASH]}
+
+Apps have become the way people interact with many facets of modern life and with nearly XX\% [statitca] of the population using .
+This why we decided to also allow the user to access the Smart Fridge via an app, along side the website, both of these services provide the user with the inventory of their Fridge ([check if true] and feed into APIs to provide insights).
+While much of the core functionality overlaps with a website, the app needs to be designed very differently to work on a smartphone however the medium also provides opportunities such as sending notification the user as well as having a camera connected directly to the device.
+With this in mind we planned to create an app that had all the core functionality of the website of viewing the inventory, making updates to the inventory, seeing insights about the inventory such as recipe recommendations and nutritional data and as well as dealing with user authentication.
+The app will also expand on this by providing notifications based on expires, informing the user when the fridge is left open, and allowing the user to use their phone camera to scan in them when the Smart Fridge misses them.
+
+React Native, Meta's mobile app development platform using the extremely popular React JavaScript user interface framework, was our natural choice for an app.
+This is because React Native is used to create mobile apps for countless companies, ranging from Fortune 500s and start-ups [cite React Native], meaning it powerful and versatile enough to create anything we require.
+Having prior experience in React also reduced the learning curve required to make this app.
+Furthermore, as React Native is based on React, often used to create websites, code between the app and website could have been shared.
+Eventually however, the decision was made to have the website written in python, regardless React Native can still render as a website meaning we also have an alternative website.
+
+The core functionality of the app is is mostly supported by two external systems, the Supabase library that allows for quick and easy connection to our back-end and the Edamam API.
+The Supabase library allows us easily create a connection to the database, allowing to to handle user logins and database looks-ups and updates.
+There is also functionality to subscribe to events on the database, meaning the app will update without needing a manual refresh when and item is added to the Fridge.
+Login also supports the “oauth” standard, allowing users to connect using a long list of accounts such as their Google or Facebook login, however this was disabled for the prototype as we only used dummy accounts with passwords.
+The Edaman API provides the nutritional analysis and recipe search functionality of the app.
+The API is very powerful and claims to contain the nutritional data of close to 900,000 foods and to have over 2.3 million recipes [cite Edaman website].
+This along side the natural language processing on their end allows us to send over a list of the user items, as well as attached comments containing further information about the item such as brand or unit, and receive high quality data as a response.
+These response can then be displayed to the user.
+
+The Smart Fridge app consists of three primary screen, pictured below in Figure [screenshow of screen].
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Logo.png}
+    \caption{Place Holder: App Screenshots}
+    \label{fig:placeholder}
+\end{figure} 
+
+Sub-figure [I think you can figure it out] shows the Login-In screen, pictured filled with our dummy login details.
+Sub-figure [] shows the primary inventory screen, this is the main screen the user will interact with and also allows for navigation to the other screens.
+The final sub-figure ([]) contains the analysis screen presenting the insights from the API to the user.
+This screen contain the core required functionality for the app, however in a more market ready product features such as user sign up and user settings management would also be required on the app.
+Placeholder navigation to these screens is available however they are currently blank.
+
+On the login in screen the user has to enter their username and password to login and gain access.
+This will only have to be done once, as the login will then stores unless the user clears their App data.
+
+On the inventory screen the user can view the inventory, seeing the name and expiry date of each of their items as well as a little picture provided by us to represent the item.
+They can also manage the inventory, if need be, either by tapping an item to modify the expiry date or remove item or by using the add item button to add an item either by name (or by using the camera for barcodes).
+
+On the analysis screen the user is simply present with the useful insights based on their Smart Fridge's content, this is split into nutritional data as well as recipes.
+Being able to provide these insights without the user having to manually manage an inventory is one of the core value proposition of the Smart Fridge.
+
+Besides the screen available on the app, we also communicate to the user using notification.
+These notification will occur when items approach expiry as well as when the Fridge has been left open for an extended period of time.
+
+Testing the core functionality of the app was done throughout development, as a “Minimum Viable Product” approach was taken.
+Meaning that the app began as a very bare-bone, but fully functional product which only showed the inventory.
+By slowing adding to this base, and constantly testing the core feature, we were able to create a more complicated App whose core features had been thoroughly tested by the end of this initial development.
+This could have been improved with more solid test cases, simply to ensure every case was tested consistently.
+However even without this method the end result meets all the set out goals and the app serves as a useful way for the user to view the collected data.
+
+\subsection{Website [HH]}
+
+A key component of the smart fridge is a companion website that allows the user to view their inventory and add items that cannot currently be processed by the scanning systems.
+
+We utilised a Postgres database known as Supabase which is instrumental for storing and accessing key data from any network.
+
+\subsubsection{User Login [HH]}
+
+On the first visit to the website, the user is prompted to log in.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/User Login/LoggedIn.png}
+    \caption{Login Prompt}
+    \label{fig:login}
+\end{figure} 
+
+If the login attempt fails, the user is prompted to try again.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/User Login/LoginFailed.png}
+    \caption{Failed Login}
+    \label{fig:loginfail}
+\end{figure} 
+
+After successfully logging in, the website proceeds to the main page.
+If the user revisits the website at a later date, they will remain logged in until they decide to sign out.
+This can be done by opening the sidebar in the top left
+
+At any time, the user can log out by opening the sidebar in the top left corner and clicking the Logout button.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/User Login/LoginImage.png}
+    \caption{Logout}
+    \label{fig:logout}
+\end{figure} 
+Passwords are hashed before being stored.
+Hashing is vital for security as it converts plain text into a long string of characters that cannot be reversed back into plain text.
+
+A connection to the database is only established after a successful login attempt.
+
+
+\subsubsection{Displaying Data [HH]}
+
+Once the user is logged in, they will see their inventory presented in a colourful table.
+
+Data is displayed in a dataframe, in a colour related to its expiration status.
+This is done by executing an SQL statement selecting only the relevant columns belonging to the user that is currently logged in.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/Displaying Data/ReturnStatement.png}
+    \caption{SQL Query}
+    \label{fig:sqlquery}
+\end{figure} 
+
+\subsubsection{Adding records [HH]}
+
+Adding new items to the fridge is as simple as entering the name, expiration date and quantity.
+
+The below images show this process in action.
+The user 'Iceman' starts with an empty fridge, hence there is nothing to display in the table.
+We can populate the table with a few items.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/AddingRecords/EmptyRows.png}
+    \caption{Empty Table}
+    \label{fig:empty}
+\end{figure} 
+
+The first step is to expand the 'Add Record' tab and enter the details and press 'Add' – this also allows you to enter multiple items into the table.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/AddingRecords/AddingTurkey.png}
+    \caption{Adding Turkey}
+    \label{fig:addturk}
+\end{figure} 
+
+When the 'Send to SupaBase' button is clicked,  the data in the table above is converted into a list suitable for a SQL insert statement.
+When this statement is executed, the table will automatically update, and the Add Record table will be cleared in case you want to add more items.
+
+Below is an image of the table displaying our newly added items.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=.33\textwidth]{Chapter 4/Hamzah Website/AddingRecords/FilledTable.png}
+    \caption{Filled Table}
+    \label{fig:websitetable}
+\end{figure} 
+
+Looking at the SupaBase shows the same results.
+It is important to note that the barcode\_id and item\_id entries are empty.
+If the user was required to enter these values, the process of adding entries would be hindered significantly.
+Likewise this information is not presented on the website.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/AddingRecords/FilledTable2nd.png}
+    \caption{SupaBase Table}
+    \label{fig:subapasetable}
+\end{figure} 
+
+\subsubsection{Gallery [HH]}
+
+Initially, I had planned for the website to display an image of the fridge taken by the internal camera.
+If the user clicked the gallery expander, the website would fetch the image from a database.
+Unfortunately, the hardware was not capable of transmitting this amount of data.
+
+For now, an image of penguins is fetched from the internet to showcase how this potential feature could be implemented.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/Gallery/Penguins.png}
+    \caption{Gallery}
+    \label{fig:gallery}
+\end{figure} 
+
+\subsubsection{Recipes [HH]}
+
+WIP
+
+Using Edamam API
+
+
+
+\subsubsection{Developments [HH]}
+
+My first prototype started with reading a CSV file and displaying them on the screen.
+The aim of this was to demonstrate how data could be displayed.
+The CSV file was read and parsed into a dataframe, then converted to an AgGrid.
+
+With the data in an AgGrid, I was now able to modify the appearance through JsCode – in this case changing the colours of cells.
+
+Here we can see each row is highlighted in red, orange and green, representing the status of the food (expired, soon to be expired, and not close to being expired).
+This feature alerts the user to the status of their fridge contents.
+If food is red, then it is past its expiration date and this food shouldn't be consumed.
+Fortunately, food that should be consumed soon are highlighted to minimise food wastage.
+
+Initially, the food status was an additional column to be stored in the database, but this is not an ideal solution.
+Ideally, the status should be determined by the expiration date alone and somehow be displayed.
+
+I created a function that returns the difference in days between an input date (expiration date of the food item) and today's date.
+
+Now that each item has a countdown in days, we can add a new column to the table and fill it with the appropriate status – and hence the appropriate colour.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/Developments/ColourfulTable.png}
+    \caption{Another Filled Table}
+    \label{fig:devtable}
+\end{figure} 

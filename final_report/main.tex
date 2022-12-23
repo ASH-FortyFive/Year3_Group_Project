@@ -1,0 +1,82 @@
+\PassOptionsToPackage{table}{xcolor}
+%\documentclass[10pt]{article}
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+%\usepackage[a4paper,width=185mm,top=18mm,bottom=18mm]{geometry}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{pgfgantt}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{xltabular}
+\usepackage{blindtext}
+\usepackage{longtable}
+\usepackage[
+    backend=biber,
+    style=ieee
+]{biblatex}
+\addbibresource{main.bib}
+
+\graphicspath{ {./images/} }
+\pagestyle{fancy}
+
+\fancyhead[L]{Design Brief}
+\fancyhead[R]{25th of October 2022}
+
+\cfoot{} % get rid of the page number 
+\fancyfoot[L]{Group I}
+\fancyhead[C]{}
+\fancyfoot[R]{\thepage}
+
+
+\begin{document}
+
+\input{{sections/Title.tex}}
+\begin{center}
+\section*{Abstract}
+\end{center}
+\blindtext
+
+\clearpage
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\clearpage
+
+\section{Introduction}
+\input{sections/Introduction.tex}
+
+\section{Background}
+\input{sections/Background.tex}
+
+\section{Hardware}
+\input{sections/Hardware.tex}
+
+\section{Software}
+\input{sections/Software.tex}
+
+\section{Enclosure}
+\input{sections/Enclosure.tex}
+
+\section{Reflections}
+\input{sections/PMandR.tex}
+
+
+
+\clearpage
+\appendix
+\section{References}
+\section{Meeting Notes}
+\printbibliography
+%\includepdf[pages=-]{Appendix/SAGE.pdf}
+%\includepdf[pages=-]{Appendix/EIA.pdf}
+%\includepdf[pages=-]{Appendix/DMP.pdf}
+%\section{Meeting Notes}
+%\input{sections/Appendix.tex}
+
+
+\end{document}

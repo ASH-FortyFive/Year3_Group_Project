@@ -1,0 +1,1205 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.20)  23 DEC 2022 22:23
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/ash/Documents/Year3_Group_Project/final_report/main.tex
+(/home/ash/Documents/Year3_Group_Project/final_report/main.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+) (/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count193
+\Gm@cntv=\count194
+\c@Gm@tempcnt=\count195
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks19
+) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip49
+\f@nch@O@elh=\skip50
+\f@nch@O@erh=\skip51
+\f@nch@O@olh=\skip52
+\f@nch@O@orh=\skip53
+\f@nch@O@elf=\skip54
+\f@nch@O@erf=\skip55
+\f@nch@O@olf=\skip56
+\f@nch@O@orf=\skip57
+) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+) (/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
+ (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count196
+\calc@Bcount=\count197
+\calc@Adimen=\dimen149
+\calc@Bdimen=\dimen150
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count198
+\calc@Cskip=\skip60
+) (/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen151
+\ESO@tempdimb=\dimen152
+ (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+ (/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen153
+\ar@mcellbox=\box50
+\extrarowheight=\dimen154
+\NC@list=\toks20
+\extratabsurround=\skip61
+\backup@length=\skip62
+\ar@cellbox=\box51
+)
+\everycr=\toks21
+\minrowclearance=\skip63
+)
+\rownum=\count199
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+))
+\AM@pagewidth=\dimen155
+\AM@pageheight=\dimen156
+\AM@fboxrule=\dimen157
+ (/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count266
+\AM@pagebox=\box52
+\AM@global@opts=\toks22
+\AM@pagecnt=\count267
+\AM@toc@title=\toks23
+\c@AM@survey=\count268
+\AM@templatesizebox=\box53
+) (/home/ash/texmf/tex/latex/pgfgantt/pgfgantt.sty
+Package: pgfgantt 2018/01/10 v5.0 Draw Gantt diagrams with TikZ
+ (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks24
+\pgfutil@tempdima=\dimen158
+\pgfutil@tempdimb=\dimen159
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box54
+) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks27
+))
+\pgf@x=\dimen160
+\pgf@y=\dimen161
+\pgf@xa=\dimen162
+\pgf@ya=\dimen163
+\pgf@xb=\dimen164
+\pgf@yb=\dimen165
+\pgf@xc=\dimen166
+\pgf@yc=\dimen167
+\pgf@xd=\dimen168
+\pgf@yd=\dimen169
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count269
+\c@pgf@countb=\count270
+\c@pgf@countc=\count271
+\c@pgf@countd=\count272
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
+\pgf@sys@id@count=\count273
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count274
+\pgfsyssoftpath@bigbuffer@items=\count275
+) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen170
+\pgfmath@count=\count276
+\pgfmath@box=\box55
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
+) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count277
+)) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen171
+\pgf@picmaxx=\dimen172
+\pgf@picminy=\dimen173
+\pgf@picmaxy=\dimen174
+\pgf@pathminx=\dimen175
+\pgf@pathmaxx=\dimen176
+\pgf@pathminy=\dimen177
+\pgf@pathmaxy=\dimen178
+\pgf@xx=\dimen179
+\pgf@xy=\dimen180
+\pgf@yx=\dimen181
+\pgf@yy=\dimen182
+\pgf@zx=\dimen183
+\pgf@zy=\dimen184
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen185
+\pgf@path@lasty=\dimen186
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen187
+\pgf@shorten@start@additional=\dimen188
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box56
+\pgf@hbox=\box57
+\pgf@layerbox@main=\box58
+\pgf@picture@serial@count=\count278
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen189
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen190
+\pgf@pt@y=\dimen191
+\pgf@pt@temp=\dimen192
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen193
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen194
+\pgf@sys@shading@range@num=\count279
+\pgf@shadingcount=\count280
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box59
+)) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box60
+) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen195
+\pgf@nodesepend=\dimen196
+) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen197
+\pgffor@skip=\dimen198
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count281
+\pgfplotmarksize=\dimen199
+)
+\tikz@lastx=\dimen256
+\tikz@lasty=\dimen257
+\tikz@lastxsaved=\dimen258
+\tikz@lastysaved=\dimen259
+\tikz@lastmovetox=\dimen260
+\tikz@lastmovetoy=\dimen261
+\tikzleveldistance=\dimen262
+\tikzsiblingdistance=\dimen263
+\tikz@figbox=\box61
+\tikz@figbox@bg=\box62
+\tikz@tempbox=\box63
+\tikz@tempbox@bg=\box64
+\tikztreelevel=\count282
+\tikznumberofchildren=\count283
+\tikznumberofcurrentchild=\count284
+\tikz@fig@count=\count285
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count286
+\pgfmatrixcurrentcolumn=\count287
+\pgf@matrix@numberofcolumns=\count288
+)
+\tikz@expandcount=\count289
+ (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\arrowsize=\dimen264
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@layerbox@background=\box65
+\pgf@layerboxsaved@background=\box66
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfcalendar.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.code.tex
+File: pgfcalendar.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+\pgfcalendarcurrentjulian=\count290
+\pgf@cal@easter@Y=\count291
+\pgf@cal@easter@G=\count292
+\pgf@cal@easter@C=\count293
+\pgf@cal@easter@X=\count294
+\pgf@cal@easter@Z=\count295
+\pgf@cal@easter@D=\count296
+\pgf@cal@easter@E=\count297
+\pgf@cal@easter@N=\count298
+\pgf@cal@easter@M=\count299
+\pgf@cal@easter@julianday=\count300
+))
+\gtt@currentline=\count301
+\gtt@lasttitleline=\count302
+\gtt@currgrid=\count303
+\gtt@chartwidth=\count304
+\gtt@lasttitleslot=\count305
+\gtt@elementid=\count306
+\gtt@today@slot=\count307
+\gtt@startjulian=\count308
+\gtt@endjulian=\count309
+\gtt@chartid=\count310
+\gtt@vrule@slot=\count311
+\gtt@calendar@slots=\count312
+\gtt@calendar@weeknumber=\count313
+\gtt@calendar@startofweek=\count314
+\gtt@left@slot=\count315
+\gtt@right@slot=\count316
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip64
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks36
+\ex@=\dimen265
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen266
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count317
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count318
+\leftroot@=\count319
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count320
+\DOTSCASE@=\count321
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box67
+\strutbox@=\box68
+\big@size=\dimen267
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count322
+\c@MaxMatrixCols=\count323
+\dotsspace@=\muskip16
+\c@parentequation=\count324
+\dspbrk@lvl=\count325
+\tag@help=\toks37
+\row@=\count326
+\column@=\count327
+\maxfields@=\count328
+\andhelp@=\toks38
+\eqnshift@=\dimen268
+\alignsep@=\dimen269
+\tagshift@=\dimen270
+\tagwidth@=\dimen271
+\totwidth@=\dimen272
+\lineht@=\dimen273
+\@envbody=\toks39
+\multlinegap=\skip65
+\multlinetaggap=\skip66
+\mathdisplay@stack=\toks40
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count329
+\float@exts=\toks41
+\float@box=\box69
+\@float@everytoks=\toks42
+\@floatcapt=\box70
+) (/usr/share/texmf-dist/tex/latex/xltabular/xltabular.sty
+Package: xltabular 2020/11/04 v0.2e `xltabular' package (hv,RN)
+ (/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen274
+\TX@old@table=\dimen275
+\TX@old@col=\dimen276
+\TX@target=\dimen277
+\TX@delta=\dimen278
+\TX@cols=\count330
+\TX@ftn=\toks43
+) (/usr/share/texmf-dist/tex/latex/ltablex/ltablex.sty
+Package: ltablex 2014/08/13 v1.1 Modified tabularx
+ (/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip67
+\LTright=\skip68
+\LTpre=\skip69
+\LTpost=\skip70
+\LTchunksize=\count331
+\LTcapwidth=\dimen279
+\LT@head=\box71
+\LT@firsthead=\box72
+\LT@foot=\box73
+\LT@lastfoot=\box74
+\LT@gbox=\box75
+\LT@cols=\count332
+\LT@rows=\count333
+\c@LT@tables=\count334
+\c@LT@chunks=\count335
+\LT@p@ftn=\toks44
+))) (/usr/share/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ (/usr/share/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count336
+\c@Blindtext=\count337
+\c@blind@countparstart=\count338
+\blind@countxx=\count339
+\blindtext@numBlindtext=\count340
+\blind@countyy=\count341
+\c@blindlist=\count342
+\c@blindlistlevel=\count343
+\c@blindlist@level=\count344
+\blind@listitem=\count345
+\c@blind@listcount=\count346
+\c@blind@levelcount=\count347
+\blind@mathformula=\count348
+\blind@Mathformula=\count349
+\c@blind@randomcount=\count350
+\c@blind@randommax=\count351
+\c@blind@pangramcount=\count352
+\c@blind@pangrammax=\count353
+) (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
+ (/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count354
+) (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+ (/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count355
+ (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count356
+\c@listtotal=\count357
+\c@listcount=\count358
+\c@liststart=\count359
+\c@liststop=\count360
+\c@citecount=\count361
+\c@citetotal=\count362
+\c@multicitecount=\count363
+\c@multicitetotal=\count364
+\c@instcount=\count365
+\c@maxnames=\count366
+\c@minnames=\count367
+\c@maxitems=\count368
+\c@minitems=\count369
+\c@citecounter=\count370
+\c@maxcitecounter=\count371
+\c@savedcitecounter=\count372
+\c@uniquelist=\count373
+\c@uniquename=\count374
+\c@refsection=\count375
+\c@refsegment=\count376
+\c@maxextratitle=\count377
+\c@maxextratitleyear=\count378
+\c@maxextraname=\count379
+\c@maxextradate=\count380
+\c@maxextraalpha=\count381
+\c@abbrvpenalty=\count382
+\c@highnamepenalty=\count383
+\c@lownamepenalty=\count384
+\c@maxparens=\count385
+\c@parenlevel=\count386
+\blx@tempcnta=\count387
+\blx@tempcntb=\count388
+\blx@tempcntc=\count389
+\c@blx@maxsection=\count390
+\c@blx@maxsegment@0=\count391
+\blx@notetype=\count392
+\blx@parenlevel@text=\count393
+\blx@parenlevel@foot=\count394
+\c@blx@sectionciteorder@0=\count395
+\blx@entrysetcounter=\count396
+\blx@biblioinstance=\count397
+\labelnumberwidth=\skip71
+\labelalphawidth=\skip72
+\biblabelsep=\skip73
+\bibitemsep=\skip74
+\bibnamesep=\skip75
+\bibinitsep=\skip76
+\bibparsep=\skip77
+\bibhang=\skip78
+\blx@bcfin=\read3
+\blx@bcfout=\write4
+\blx@langwohyphens=\language87
+\c@mincomprange=\count398
+\c@maxcomprange=\count399
+\c@mincompwidth=\count400
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'ieee.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count401
+\c@savedafterword=\count402
+\c@annotator=\count403
+\c@savedannotator=\count404
+\c@author=\count405
+\c@savedauthor=\count406
+\c@bookauthor=\count407
+\c@savedbookauthor=\count408
+\c@commentator=\count409
+\c@savedcommentator=\count410
+\c@editor=\count411
+\c@savededitor=\count412
+\c@editora=\count413
+\c@savededitora=\count414
+\c@editorb=\count415
+\c@savededitorb=\count416
+\c@editorc=\count417
+\c@savededitorc=\count418
+\c@foreword=\count419
+\c@savedforeword=\count420
+\c@holder=\count421
+\c@savedholder=\count422
+\c@introduction=\count423
+\c@savedintroduction=\count424
+\c@namea=\count425
+\c@savednamea=\count426
+\c@nameb=\count427
+\c@savednameb=\count428
+\c@namec=\count429
+\c@savednamec=\count430
+\c@translator=\count431
+\c@savedtranslator=\count432
+\c@shortauthor=\count433
+\c@savedshortauthor=\count434
+\c@shorteditor=\count435
+\c@savedshorteditor=\count436
+\c@labelname=\count437
+\c@savedlabelname=\count438
+\c@institution=\count439
+\c@savedinstitution=\count440
+\c@lista=\count441
+\c@savedlista=\count442
+\c@listb=\count443
+\c@savedlistb=\count444
+\c@listc=\count445
+\c@savedlistc=\count446
+\c@listd=\count447
+\c@savedlistd=\count448
+\c@liste=\count449
+\c@savedliste=\count450
+\c@listf=\count451
+\c@savedlistf=\count452
+\c@location=\count453
+\c@savedlocation=\count454
+\c@organization=\count455
+\c@savedorganization=\count456
+\c@origlocation=\count457
+\c@savedoriglocation=\count458
+\c@origpublisher=\count459
+\c@savedorigpublisher=\count460
+\c@publisher=\count461
+\c@savedpublisher=\count462
+\c@language=\count463
+\c@savedlanguage=\count464
+\c@origlanguage=\count465
+\c@savedoriglanguage=\count466
+\c@pageref=\count467
+\c@savedpageref=\count468
+\shorthandwidth=\skip79
+\shortjournalwidth=\skip80
+\shortserieswidth=\skip81
+\shorttitlewidth=\skip82
+\shortauthorwidth=\skip83
+\shorteditorwidth=\skip84
+\locallabelnumberwidth=\skip85
+\locallabelalphawidth=\skip86
+\localshorthandwidth=\skip87
+\localshortjournalwidth=\skip88
+\localshortserieswidth=\skip89
+\localshorttitlewidth=\skip90
+\localshortauthorwidth=\skip91
+\localshorteditorwidth=\skip92
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+\c@textcitecount=\count469
+\c@textcitetotal=\count470
+\c@textcitemaxnames=\count471
+\c@biburlbigbreakpenalty=\count472
+\c@biburlbreakpenalty=\count473
+\c@biburlnumpenalty=\count474
+\c@biburlucpenalty=\count475
+\c@biburllcpenalty=\count476
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count477
+)
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
+File: ieee.bbx 2021/12/06 v1.3f biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count478
+\c@bbx:relatedtotal=\count479
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
+File: ieee.cbx 2021/12/06 v1.3f biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count480
+\c@cbx@tempcntb=\count481
+\c@cbx@tempcntc=\count482
+\c@cbx@tempcntd=\count483
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\cites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+ (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-04-10 L3 programming layer (loader) 
+ (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count484
+\l__pdf_internal_box=\box76
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2022-04-10 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
+))
+\@quotelevel=\count485
+\@quotereset=\count486
+ (./main.aux
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count487
+\scratchdimen=\dimen280
+\scratchbox=\box77
+\nofMPsegments=\count488
+\nofMParguments=\count489
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count490
+\MPscratchDim=\dimen281
+\MPnumerator=\count491
+\makeMPintoPDFobject=\count492
+\everyMPtoPDFconversion=\toks46
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) (/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+ (/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 34.
+Package biblatex Info: Reference segment=0 on input line 34.
+ (./sections/Title.tex
+<./images//Logo.png, id=4, 1027.84pt x 305.14pt>
+File: ./images//Logo.png Graphic file (type png)
+<use ./images//Logo.png>
+Package pdftex.def Info: ./images//Logo.png  used on input line 3.
+(pdftex.def)             Requested size: 483.69687pt x 143.5974pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//Logo.png>]) [1] (./main.toc [2
+
+])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ (./main.lof [3])
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
+ (./main.lot)
+\tf@lot=\write7
+\openout7 = `main.lot'.
+
+ [4] (./sections/Introduction.tex (./tables/contrib.tex)) (./sections/Background.tex [5
+
+] [6]
+<./images//Chapter 2/SystemOverview.png, id=36, 452.892pt x 176.3388pt>
+File: ./images//Chapter 2/SystemOverview.png Graphic file (type png)
+<use ./images//Chapter 2/SystemOverview.png>
+Package pdftex.def Info: ./images//Chapter 2/SystemOverview.png  used on input line 101.
+(pdftex.def)             Requested size: 483.69687pt x 188.33893pt.
+ (./tables/contrib.tex) [7 <./images//Chapter 2/SystemOverview.png>] (./tables/contrib.tex) (./tables/contrib.tex) (./tables/contrib.tex)
+<./images//Chapter 2/PhaseDiagram.png, id=42, 452.892pt x 187.902pt>
+File: ./images//Chapter 2/PhaseDiagram.png Graphic file (type png)
+<use ./images//Chapter 2/PhaseDiagram.png>
+Package pdftex.def Info: ./images//Chapter 2/PhaseDiagram.png  used on input line 130.
+(pdftex.def)             Requested size: 483.69687pt x 200.68901pt.
+ [8]) (./sections/Hardware.tex (./tables/contrib.tex) [9 <./images//Chapter 2/PhaseDiagram.png>] [10]
+<./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png, id=53, 361.35pt x 151.2852pt>
+File: ./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png Graphic file (type png)
+<use ./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png>
+Package pdftex.def Info: ./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png  used on input line 118.
+(pdftex.def)             Requested size: 483.69687pt x 202.50873pt.
+<./images//Chapter 3/Weight Sensor/WeightSensorPicture.png, id=54, 306.9066pt x 216.81pt>
+File: ./images//Chapter 3/Weight Sensor/WeightSensorPicture.png Graphic file (type png)
+<use ./images//Chapter 3/Weight Sensor/WeightSensorPicture.png>
+Package pdftex.def Info: ./images//Chapter 3/Weight Sensor/WeightSensorPicture.png  used on input line 129.
+(pdftex.def)             Requested size: 483.69687pt x 341.73228pt.
+ [11 <./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png>]
+<./images//Chapter 3/Weight Sensor/WeightSensorCalibrationCode.png, id=59, 226.446pt x 361.35pt>
+File: ./images//Chapter 3/Weight Sensor/WeightSensorCalibrationCode.png Graphic file (type png)
+<use ./images//Chapter 3/Weight Sensor/WeightSensorCalibrationCode.png>
+Package pdftex.def Info: ./images//Chapter 3/Weight Sensor/WeightSensorCalibrationCode.png  used on input line 141.
+(pdftex.def)             Requested size: 241.84843pt x 385.94044pt.
+ [12 <./images//Chapter 3/Weight Sensor/WeightSensorPicture.png>]
+<./images//Chapter 3/Weight Sensor/LoadCellTestTerminal.png, id=65, 361.35pt x 146.949pt>
+File: ./images//Chapter 3/Weight Sensor/LoadCellTestTerminal.png Graphic file (type png)
+<use ./images//Chapter 3/Weight Sensor/LoadCellTestTerminal.png>
+Package pdftex.def Info: ./images//Chapter 3/Weight Sensor/LoadCellTestTerminal.png  used on input line 166.
+(pdftex.def)             Requested size: 483.69687pt x 196.70435pt.
+ [13 <./images//Chapter 3/Weight Sensor/WeightSensorCalibrationCode.png>]
+<./images//Chapter 3/Weight Sensor/WeightSensorWiredImage.png, id=70, 361.35pt x 250.0542pt>
+File: ./images//Chapter 3/Weight Sensor/WeightSensorWiredImage.png Graphic file (type png)
+<use ./images//Chapter 3/Weight Sensor/WeightSensorWiredImage.png>
+Package pdftex.def Info: ./images//Chapter 3/Weight Sensor/WeightSensorWiredImage.png  used on input line 178.
+(pdftex.def)             Requested size: 483.69687pt x 334.71983pt.
+ [14 <./images//Chapter 3/Weight Sensor/LoadCellTestTerminal.png> <./images//Chapter 3/Weight Sensor/WeightSensorWiredImage.png>]
+<./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Camera.png, id=76, 335.8146pt x 361.35pt>
+File: ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Camera.png Graphic file (type png)
+<use ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Camera.png>
+Package pdftex.def Info: ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Camera.png  used on input line 200.
+(pdftex.def)             Requested size: 362.77264pt x 390.35695pt.
+<./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Picture.png, id=77, 361.35pt x 271.7352pt>
+File: ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Picture.png Graphic file (type png)
+<use ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Picture.png>
+Package pdftex.def Info: ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Picture.png  used on input line 221.
+(pdftex.def)             Requested size: 483.69687pt x 363.74178pt.
+ [15 <./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Camera.png>]
+<./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32BetterPicture.png, id=82, 361.35pt x 270.7716pt>
+File: ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32BetterPicture.png Graphic file (type png)
+<use ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32BetterPicture.png>
+Package pdftex.def Info: ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32BetterPicture.png  used on input line 247.
+(pdftex.def)             Requested size: 483.69687pt x 362.45195pt.
+ [16 <./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Picture.png>]
+<./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png, id=87, 361.35pt x 233.1912pt>
+File: ./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png Graphic file (type png)
+<use ./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png>
+Package pdftex.def Info: ./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png  used on input line 277.
+(pdftex.def)             Requested size: 483.69687pt x 312.1472pt.
+ [17 <./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32BetterPicture.png>]
+File: ./images//Logo.png Graphic file (type png)
+<use ./images//Logo.png>
+Package pdftex.def Info: ./images//Logo.png  used on input line 302.
+(pdftex.def)             Requested size: 483.69687pt x 143.5974pt.
+File: ./images//Logo.png Graphic file (type png)
+<use ./images//Logo.png>
+Package pdftex.def Info: ./images//Logo.png  used on input line 312.
+(pdftex.def)             Requested size: 483.69687pt x 143.5974pt.
+ [18 <./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png>]) (./sections/Software.tex
+File: ./images//Logo.png Graphic file (type png)
+<use ./images//Logo.png>
+Package pdftex.def Info: ./images//Logo.png  used on input line 20.
+(pdftex.def)             Requested size: 483.69687pt x 143.5974pt.
+ [19]
+File: ./images//Logo.png Graphic file (type png)
+<use ./images//Logo.png>
+Package pdftex.def Info: ./images//Logo.png  used on input line 50.
+(pdftex.def)             Requested size: 483.69687pt x 143.5974pt.
+File: ./images//Logo.png Graphic file (type png)
+<use ./images//Logo.png>
+Package pdftex.def Info: ./images//Logo.png  used on input line 78.
+(pdftex.def)             Requested size: 483.69687pt x 143.5974pt.
+ [20] (./tables/contrib.tex)
+File: ./images//Logo.png Graphic file (type png)
+<use ./images//Logo.png>
+Package pdftex.def Info: ./images//Logo.png  used on input line 112.
+(pdftex.def)             Requested size: 483.69687pt x 143.5974pt.
+ [21] [22]
+<./images//Chapter 4/CNN/VGG-16.png, id=109, 215.8245pt x 185.931pt>
+File: ./images//Chapter 4/CNN/VGG-16.png Graphic file (type png)
+<use ./images//Chapter 4/CNN/VGG-16.png>
+Package pdftex.def Info: ./images//Chapter 4/CNN/VGG-16.png  used on input line 182.
+(pdftex.def)             Requested size: 483.69687pt x 416.72087pt.
+ [23] [24 <./images//Chapter 4/CNN/VGG-16.png>]
+<./images//Chapter 4/Barcode Detection/Figure1.png, id=118, 279.9258pt x 141.6492pt>
+File: ./images//Chapter 4/Barcode Detection/Figure1.png Graphic file (type png)
+<use ./images//Chapter 4/Barcode Detection/Figure1.png>
+Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure1.png  used on input line 251.
+(pdftex.def)             Requested size: 241.84843pt x 122.3822pt.
+<./images//Chapter 4/Barcode Detection/Figure2.png, id=119, 267.8808pt x 147.9126pt>
+File: ./images//Chapter 4/Barcode Detection/Figure2.png Graphic file (type png)
+<use ./images//Chapter 4/Barcode Detection/Figure2.png>
+Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure2.png  used on input line 264.
+(pdftex.def)             Requested size: 241.84843pt x 133.53989pt.
+ [25 <./images//Chapter 4/Barcode Detection/Figure1.png>]
+<./images//Chapter 4/Barcode Detection/Figure3.png, id=124, 267.8808pt x 147.9126pt>
+File: ./images//Chapter 4/Barcode Detection/Figure3.png Graphic file (type png)
+<use ./images//Chapter 4/Barcode Detection/Figure3.png>
+Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure3.png  used on input line 286.
+(pdftex.def)             Requested size: 241.84843pt x 133.53989pt.
+<./images//Chapter 4/Barcode Detection/Figure4.png, id=125, 298.2342pt x 141.1674pt>
+File: ./images//Chapter 4/Barcode Detection/Figure4.png Graphic file (type png)
+<use ./images//Chapter 4/Barcode Detection/Figure4.png>
+Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure4.png  used on input line 301.
+(pdftex.def)             Requested size: 241.84843pt x 114.4828pt.
+ [26 <./images//Chapter 4/Barcode Detection/Figure2.png> <./images//Chapter 4/Barcode Detection/Figure3.png>]
+<./images//Chapter 4/Barcode Detection/Figure5.png, id=131, 268.3626pt x 84.315pt>
+File: ./images//Chapter 4/Barcode Detection/Figure5.png Graphic file (type png)
+<use ./images//Chapter 4/Barcode Detection/Figure5.png>
+Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure5.png  used on input line 322.
+(pdftex.def)             Requested size: 241.84843pt x 75.9844pt.
+<./images//Chapter 4/Barcode Detection/Figure6.png, id=132, 231.7458pt x 69.3792pt>
+File: ./images//Chapter 4/Barcode Detection/Figure6.png Graphic file (type png)
+<use ./images//Chapter 4/Barcode Detection/Figure6.png>
+Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure6.png  used on input line 337.
+(pdftex.def)             Requested size: 483.69687pt x 144.82297pt.
+<./images//Chapter 4/Barcode Detection/Figure7.png, id=133, 243.309pt x 58.2978pt>
+File: ./images//Chapter 4/Barcode Detection/Figure7.png Graphic file (type png)
+<use ./images//Chapter 4/Barcode Detection/Figure7.png>
+Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure7.png  used on input line 344.
+(pdftex.def)             Requested size: 483.69687pt x 115.90857pt.
+ [27 <./images//Chapter 4/Barcode Detection/Figure4.png> <./images//Chapter 4/Barcode Detection/Figure5.png> <./images//Chapter 4/Barcode Detection/Figure6.png>]
+<./images//Chapter 4/Barcode Detection/Figure8.png, id=140, 270.7716pt x 51.5526pt>
+File: ./images//Chapter 4/Barcode Detection/Figure8.png Graphic file (type png)
+<use ./images//Chapter 4/Barcode Detection/Figure8.png>
+Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure8.png  used on input line 351.
+(pdftex.def)             Requested size: 483.69687pt x 92.0984pt.
+<./images//Chapter 4/Barcode Detection/Figure9.png, id=141, 268.8444pt x 131.0496pt>
+File: ./images//Chapter 4/Barcode Detection/Figure9.png Graphic file (type png)
+<use ./images//Chapter 4/Barcode Detection/Figure9.png>
+Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure9.png  used on input line 372.
+(pdftex.def)             Requested size: 483.69687pt x 235.7791pt.
+ [28 <./images//Chapter 4/Barcode Detection/Figure7.png> <./images//Chapter 4/Barcode Detection/Figure8.png> <./images//Chapter 4/Barcode Detection/Figure9.png>]
+<./images//Chapter 4/Pi Camera/ImageOfWebcam.jpg, id=148, 261.22594pt x 247.67531pt>
+File: ./images//Chapter 4/Pi Camera/ImageOfWebcam.jpg Graphic file (type jpg)
+<use ./images//Chapter 4/Pi Camera/ImageOfWebcam.jpg>
+Package pdftex.def Info: ./images//Chapter 4/Pi Camera/ImageOfWebcam.jpg  used on input line 389.
+(pdftex.def)             Requested size: 483.69687pt x 458.6154pt.
+<./images//Chapter 4/Pi Camera/PiBoxTakenByCamera.png, id=149, 412.596pt x 278.8965pt>
+File: ./images//Chapter 4/Pi Camera/PiBoxTakenByCamera.png Graphic file (type png)
+<use ./images//Chapter 4/Pi Camera/PiBoxTakenByCamera.png>
+Package pdftex.def Info: ./images//Chapter 4/Pi Camera/PiBoxTakenByCamera.png  used on input line 404.
+(pdftex.def)             Requested size: 483.69687pt x 326.95444pt.
+ [29 <./images//Chapter 4/Pi Camera/ImageOfWebcam.jpg>]
+<./images//Chapter 4/Serial Input/PiPinout.png, id=153, 413.253pt x 237.177pt>
+File: ./images//Chapter 4/Serial Input/PiPinout.png Graphic file (type png)
+<use ./images//Chapter 4/Serial Input/PiPinout.png>
+Package pdftex.def Info: ./images//Chapter 4/Serial Input/PiPinout.png  used on input line 419.
+(pdftex.def)             Requested size: 483.69687pt x 277.60452pt.
+ [30 <./images//Chapter 4/Pi Camera/PiBoxTakenByCamera.png>]
+<./images//Chapter 4/Serial Input/SerialRead.png, id=159, 453.19313pt x 52.69687pt>
+File: ./images//Chapter 4/Serial Input/SerialRead.png Graphic file (type png)
+<use ./images//Chapter 4/Serial Input/SerialRead.png>
+Package pdftex.def Info: ./images//Chapter 4/Serial Input/SerialRead.png  used on input line 431.
+(pdftex.def)             Requested size: 483.69687pt x 56.24356pt.
+File: ./images//Logo.png Graphic file (type png)
+<use ./images//Logo.png>
+Package pdftex.def Info: ./images//Logo.png  used on input line 455.
+(pdftex.def)             Requested size: 483.69687pt x 143.5974pt.
+ [31 <./images//Chapter 4/Serial Input/PiPinout.png> <./images//Chapter 4/Serial Input/SerialRead.png>] (./tables/contrib.tex)
+<./images//Chapter 4/Pi Integration/PiTestLoop.png, id=165, 453.19313pt x 136.25906pt>
+File: ./images//Chapter 4/Pi Integration/PiTestLoop.png Graphic file (type png)
+<use ./images//Chapter 4/Pi Integration/PiTestLoop.png>
+Package pdftex.def Info: ./images//Chapter 4/Pi Integration/PiTestLoop.png  used on input line 478.
+(pdftex.def)             Requested size: 483.69687pt x 145.42981pt.
+ [32 <./images//Chapter 4/Pi Integration/PiTestLoop.png>]
+<./images//Chapter 4/Code Refactor/Class Diagram.png, id=170, 359.379pt x 347.8815pt>
+File: ./images//Chapter 4/Code Refactor/Class Diagram.png Graphic file (type png)
+<use ./images//Chapter 4/Code Refactor/Class Diagram.png>
+Package pdftex.def Info: ./images//Chapter 4/Code Refactor/Class Diagram.png  used on input line 502.
+(pdftex.def)             Requested size: 483.69687pt x 468.2237pt.
+ [33 <./images//Chapter 4/Code Refactor/Class Diagram.png>] (./tables/contrib.tex)
+File: ./images//Logo.png Graphic file (type png)
+<use ./images//Logo.png>
+Package pdftex.def Info: ./images//Logo.png  used on input line 544.
+(pdftex.def)             Requested size: 483.69687pt x 143.5974pt.
+ [34]
+File: ./images//Logo.png Graphic file (type png)
+<use ./images//Logo.png>
+Package pdftex.def Info: ./images//Logo.png  used on input line 581.
+(pdftex.def)             Requested size: 483.69687pt x 143.5974pt.
+ [35]
+<./images//Chapter 4/Hamzah Website/User Login/LoggedIn.png, id=181, 361.35pt x 119.69719pt>
+File: ./images//Chapter 4/Hamzah Website/User Login/LoggedIn.png Graphic file (type png)
+<use ./images//Chapter 4/Hamzah Website/User Login/LoggedIn.png>
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/User Login/LoggedIn.png  used on input line 622.
+(pdftex.def)             Requested size: 483.69687pt x 160.22534pt.
+ [36]
+<./images//Chapter 4/Hamzah Website/User Login/LoginFailed.png, id=186, 361.35pt x 176.15813pt>
+File: ./images//Chapter 4/Hamzah Website/User Login/LoginFailed.png Graphic file (type png)
+<use ./images//Chapter 4/Hamzah Website/User Login/LoginFailed.png>
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/User Login/LoginFailed.png  used on input line 631.
+(pdftex.def)             Requested size: 483.69687pt x 235.80336pt.
+<./images//Chapter 4/Hamzah Website/User Login/LoginImage.png, id=187, 361.35pt x 149.8097pt>
+File: ./images//Chapter 4/Hamzah Website/User Login/LoginImage.png Graphic file (type png)
+<use ./images//Chapter 4/Hamzah Website/User Login/LoginImage.png>
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/User Login/LoginImage.png  used on input line 644.
+(pdftex.def)             Requested size: 483.69687pt x 200.53362pt.
+ [37 <./images//Chapter 4/Hamzah Website/User Login/LoggedIn.png> <./images//Chapter 4/Hamzah Website/User Login/LoginFailed.png>]
+<./images//Chapter 4/Hamzah Website/Displaying Data/ReturnStatement.png, id=193, 361.35pt x 21.83156pt>
+File: ./images//Chapter 4/Hamzah Website/Displaying Data/ReturnStatement.png Graphic file (type png)
+<use ./images//Chapter 4/Hamzah Website/Displaying Data/ReturnStatement.png>
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/Displaying Data/ReturnStatement.png  used on input line 663.
+(pdftex.def)             Requested size: 483.69687pt x 29.22346pt.
+<./images//Chapter 4/Hamzah Website/AddingRecords/EmptyRows.png, id=194, 361.35pt x 146.04562pt>
+File: ./images//Chapter 4/Hamzah Website/AddingRecords/EmptyRows.png Graphic file (type png)
+<use ./images//Chapter 4/Hamzah Website/AddingRecords/EmptyRows.png>
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/AddingRecords/EmptyRows.png  used on input line 678.
+(pdftex.def)             Requested size: 483.69687pt x 195.49506pt.
+<./images//Chapter 4/Hamzah Website/AddingRecords/AddingTurkey.png, id=195, 283.81032pt x 252.945pt>
+File: ./images//Chapter 4/Hamzah Website/AddingRecords/AddingTurkey.png Graphic file (type png)
+<use ./images//Chapter 4/Hamzah Website/AddingRecords/AddingTurkey.png>
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/AddingRecords/AddingTurkey.png  used on input line 687.
+(pdftex.def)             Requested size: 483.69687pt x 431.13554pt.
+ [38 <./images//Chapter 4/Hamzah Website/User Login/LoginImage.png> <./images//Chapter 4/Hamzah Website/Displaying Data/ReturnStatement.png> <./images//Chapter 4/Hamzah Website/AddingRecords/EmptyRows.png>]
+<./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable.png, id=202, 361.35pt x 155.83218pt>
+File: ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable.png Graphic file (type png)
+<use ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable.png>
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable.png  used on input line 699.
+(pdftex.def)             Requested size: 159.62085pt x 68.83743pt.
+<./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable2nd.png, id=203, 361.35pt x 64.74188pt>
+File: ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable2nd.png Graphic file (type png)
+<use ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable2nd.png>
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable2nd.png  used on input line 711.
+(pdftex.def)             Requested size: 483.69687pt x 86.66277pt.
+ [39 <./images//Chapter 4/Hamzah Website/AddingRecords/AddingTurkey.png> <./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable.png>]
+<./images//Chapter 4/Hamzah Website/Gallery/Penguins.png, id=209, 361.35pt x 231.86626pt>
+File: ./images//Chapter 4/Hamzah Website/Gallery/Penguins.png Graphic file (type png)
+<use ./images//Chapter 4/Hamzah Website/Gallery/Penguins.png>
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/Gallery/Penguins.png  used on input line 726.
+(pdftex.def)             Requested size: 483.69687pt x 310.37366pt.
+ [40 <./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable2nd.png> <./images//Chapter 4/Hamzah Website/Gallery/Penguins.png>]
+<./images//Chapter 4/Hamzah Website/Developments/ColourfulTable.png, id=215, 303.38344pt x 148.30406pt>
+File: ./images//Chapter 4/Hamzah Website/Developments/ColourfulTable.png Graphic file (type png)
+<use ./images//Chapter 4/Hamzah Website/Developments/ColourfulTable.png>
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/Developments/ColourfulTable.png  used on input line 761.
+(pdftex.def)             Requested size: 483.69687pt x 236.45177pt.
+) (./sections/Enclosure.tex
+<./images//Chapter 5/Box/BoxSchematic1.png, id=216, 207.6558pt x 151.767pt>
+File: ./images//Chapter 5/Box/BoxSchematic1.png Graphic file (type png)
+<use ./images//Chapter 5/Box/BoxSchematic1.png>
+Package pdftex.def Info: ./images//Chapter 5/Box/BoxSchematic1.png  used on input line 18.
+(pdftex.def)             Requested size: 159.62085pt x 116.66641pt.
+ [41 <./images//Chapter 4/Hamzah Website/Developments/ColourfulTable.png> <./images//Chapter 5/Box/BoxSchematic1.png>]
+<./images//Chapter 5/Box/BoxSchematic2.png, id=222, 247.6452pt x 151.767pt>
+File: ./images//Chapter 5/Box/BoxSchematic2.png Graphic file (type png)
+<use ./images//Chapter 5/Box/BoxSchematic2.png>
+Package pdftex.def Info: ./images//Chapter 5/Box/BoxSchematic2.png  used on input line 31.
+(pdftex.def)             Requested size: 159.62085pt x 97.82295pt.
+<./images//Chapter 5/Box/Schematic2DoorOpen.png, id=223, 210.5685pt x 159.9795pt>
+File: ./images//Chapter 5/Box/Schematic2DoorOpen.png Graphic file (type png)
+<use ./images//Chapter 5/Box/Schematic2DoorOpen.png>
+Package pdftex.def Info: ./images//Chapter 5/Box/Schematic2DoorOpen.png  used on input line 45.
+(pdftex.def)             Requested size: 159.62085pt x 121.27322pt.
+<./images//Chapter 5/Box/PictureOfBox1.png, id=224, 125.8155pt x 188.8875pt>
+File: ./images//Chapter 5/Box/PictureOfBox1.png Graphic file (type png)
+<use ./images//Chapter 5/Box/PictureOfBox1.png>
+Package pdftex.def Info: ./images//Chapter 5/Box/PictureOfBox1.png  used on input line 62.
+(pdftex.def)             Requested size: 159.62085pt x 239.64233pt.
+ [42 <./images//Chapter 5/Box/BoxSchematic2.png> <./images//Chapter 5/Box/Schematic2DoorOpen.png>]
+<./images//Chapter 5/Box/BoxDesign3.png, id=231, 185.931pt x 158.0085pt>
+File: ./images//Chapter 5/Box/BoxDesign3.png Graphic file (type png)
+<use ./images//Chapter 5/Box/BoxDesign3.png>
+Package pdftex.def Info: ./images//Chapter 5/Box/BoxDesign3.png  used on input line 79.
+(pdftex.def)             Requested size: 159.62085pt x 135.6556pt.
+ [43 <./images//Chapter 5/Box/PictureOfBox1.png> <./images//Chapter 5/Box/BoxDesign3.png>]) (./sections/PMandR.tex [44] [45]) [46] [47
+
+] (./main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 25190 strings out of 478238
+ 524333 string characters out of 5850455
+ 1213956 words of memory out of 5000000
+ 42919 multiletter control sequences out of 15000+600000
+ 472987 words of font info for 41 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 99i,12n,94p,1506b,1265s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (48 pages, 5619876 bytes).
+PDF statistics:
+ 295 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
+

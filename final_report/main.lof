@@ -1,0 +1,51 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces System Overview Block Diagram}}{7}{}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Phase Diagram}}{9}{}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Load Cell Circuit Diagram}}{11}{}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Load Cell Prototype}}{12}{}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Load Cell Calibration Code}}{13}{}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Load Cell Terminal}}{14}{}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Load Cell Fully Wired}}{14}{}%
+\contentsline {figure}{\numberline {8}{\ignorespaces ESP Camera Code}}{15}{}%
+\contentsline {figure}{\numberline {9}{\ignorespaces First Picture from ESP Camera}}{16}{}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Better Picture from ESP CAM}}{17}{}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Buzzer Circuit Diagram}}{18}{}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Place Holder: Magnet Pic}}{18}{}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Place Holder: HAL Code}}{19}{}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Place Holder: UML for System Machine}}{19}{}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Place Holder: Task Create}}{20}{}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Place Holder: ???}}{21}{}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Place Holder: Board?}}{22}{}%
+\contentsline {figure}{\numberline {18}{\ignorespaces VGG16 Architecture}}{24}{}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Greyscaling and Blurring Code}}{25}{}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Gap Closing and Contour Finding Code}}{26}{}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Greyscaling, Thresholding and Cleaning Code}}{26}{}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Binary Extracting Code}}{27}{}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Barcode Detection and Decoding Code (highlighted)}}{27}{}%
+\contentsline {figure}{\numberline {24}{\ignorespaces First Result}}{27}{}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Second Result}}{28}{}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Third Result}}{28}{}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Error Checking Code}}{28}{}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Webcam}}{29}{}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Picture from Webcam}}{30}{}%
+\contentsline {figure}{\numberline {30}{\ignorespaces GPIO of the RPI}}{31}{}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Serial Data from ESP}}{31}{}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Place Holder: SupaBase Client Sample Code}}{32}{}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Test Loop Code}}{32}{}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Object Oriented Class Diagram}}{33}{}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Place Holder: DB Diagram}}{35}{}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Place Holder: App Screenshots}}{36}{}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Login Prompt}}{37}{}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Failed Login}}{37}{}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Logout}}{38}{}%
+\contentsline {figure}{\numberline {40}{\ignorespaces SQL Query}}{38}{}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Empty Table}}{38}{}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Adding Turkey}}{39}{}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Filled Table}}{39}{}%
+\contentsline {figure}{\numberline {44}{\ignorespaces SupaBase Table}}{40}{}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Gallery}}{40}{}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Another Filled Table}}{41}{}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Initial design of Smart Fridge.}}{41}{}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Updated Fridge Design.}}{42}{}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Fridge Design using 2 acrylic sheets.}}{42}{}%
+\contentsline {figure}{\numberline {50}{\ignorespaces First Built Box}}{43}{}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Fridge Design with no Hinges}}{43}{}%

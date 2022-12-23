@@ -1,0 +1,62 @@
+\contentsline {section}{\numberline {1}Introduction}{5}{}%
+\contentsline {section}{\numberline {2}Background}{5}{}%
+\contentsline {subsection}{\numberline {2.1}Technological Background [ASH]}{5}{}%
+\contentsline {subsection}{\numberline {2.2} Sustainability}{5}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Social [IP]}{5}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Economic [JG, IP]}{6}{}%
+\contentsline {subsubsection}{\numberline {2.2.3}Environmental [IP]}{6}{}%
+\contentsline {subsection}{\numberline {2.3}System Overview [IB]}{7}{}%
+\contentsline {subsection}{\numberline {2.4}Dependency Table [IB]}{8}{}%
+\contentsline {subsection}{\numberline {2.5}MOSCOW Diagram [IB]}{8}{}%
+\contentsline {subsection}{\numberline {2.6}SWOT Analysis [IB]}{8}{}%
+\contentsline {subsection}{\numberline {2.7}Client Requirements [IB]}{8}{}%
+\contentsline {subsection}{\numberline {2.8}Phase Diagram [IB]}{9}{}%
+\contentsline {section}{\numberline {3}Hardware}{9}{}%
+\contentsline {subsection}{\numberline {3.1}Hardware Overview}{9}{}%
+\contentsline {subsection}{\numberline {3.2}Power Distribution [ASH]}{9}{}%
+\contentsline {subsection}{\numberline {3.3}PI HAT [ASH]}{10}{}%
+\contentsline {subsection}{\numberline {3.4}Weight Sensor [IB]}{11}{}%
+\contentsline {subsection}{\numberline {3.5}ESP-32 Wrover Dev-Board Camera [IB]}{15}{}%
+\contentsline {subsection}{\numberline {3.6}Buzzer [IB]}{17}{}%
+\contentsline {subsection}{\numberline {3.7}HAL Sensor [YJ]}{18}{}%
+\contentsline {section}{\numberline {4}Software}{19}{}%
+\contentsline {subsection}{\numberline {4.1}ESP32 Firmware Code[YJ]}{19}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}RTOS [YJ]}{19}{}%
+\contentsline {subsubsection}{\numberline {4.1.2}Software Timer [YJ]}{20}{}%
+\contentsline {subsubsection}{\numberline {4.1.3}ESP-Pi Communication [YJ]}{21}{}%
+\contentsline {subsection}{\numberline {4.2}Raspberry Pi Overview [AW]}{22}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}Pi Object and character recognition [IB]}{22}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}Expiration Date - Character Recognition [IP]}{22}{}%
+\contentsline {subsubsection}{\numberline {4.2.3}Product detection – Object recognition [IP]}{23}{}%
+\contentsline {subsubsection}{\numberline {4.2.4}Background theory on design implementation [IP]}{23}{}%
+\contentsline {subsubsection}{\numberline {4.2.5}Pre-processing of the dataset [IP]}{24}{}%
+\contentsline {subsubsection}{\numberline {4.2.6}Model architecture [IP]}{24}{}%
+\contentsline {subsubsection}{\numberline {4.2.7}Product Detection Evaluation [IP]}{25}{}%
+\contentsline {subsubsection}{\numberline {4.2.8}Barcode Detection [JG]}{25}{}%
+\contentsline {subsubsection}{\numberline {4.2.9}Pi Camera [AW]}{29}{}%
+\contentsline {subsubsection}{\numberline {4.2.10}Pi Serial Input [AW]}{30}{}%
+\contentsline {subsubsection}{\numberline {4.2.11}Pi Communications [ASH]}{31}{}%
+\contentsline {subsubsection}{\numberline {4.2.12}Pi Integration [AW]}{32}{}%
+\contentsline {subsubsection}{\numberline {4.2.13}Code Refactor [ASH, AW]}{33}{}%
+\contentsline {subsubsection}{\numberline {4.2.14}Back-End [ASH]}{34}{}%
+\contentsline {subsubsection}{\numberline {4.2.15}App [ASH]}{35}{}%
+\contentsline {subsection}{\numberline {4.3}Website [HH]}{36}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}User Login [HH]}{36}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}Displaying Data [HH]}{38}{}%
+\contentsline {subsubsection}{\numberline {4.3.3}Adding records [HH]}{38}{}%
+\contentsline {subsubsection}{\numberline {4.3.4}Gallery [HH]}{40}{}%
+\contentsline {subsubsection}{\numberline {4.3.5}Recipes [HH]}{40}{}%
+\contentsline {subsubsection}{\numberline {4.3.6}Developments [HH]}{40}{}%
+\contentsline {section}{\numberline {5}Enclosure}{41}{}%
+\contentsline {subsection}{\numberline {5.1}Prototype 1 [JG]}{41}{}%
+\contentsline {subsection}{\numberline {5.2}Prototype 2 [YJ]}{43}{}%
+\contentsline {section}{\numberline {6}Reflections}{44}{}%
+\contentsline {subsection}{\numberline {6.1}Isaac Baglin [IB]}{44}{}%
+\contentsline {subsection}{\numberline {6.2}Jamie Gomez [JG]}{44}{}%
+\contentsline {subsection}{\numberline {6.3}Hamzah Hasnain [HH]}{45}{}%
+\contentsline {subsection}{\numberline {6.4}Ioanna Papanikolaou [IP]}{45}{}%
+\contentsline {subsection}{\numberline {6.5}Yohan John [YJ]}{45}{}%
+\contentsline {subsection}{\numberline {6.6}Alexandre Symeonidis-Herzig [ASH]}{45}{}%
+\contentsline {subsection}{\numberline {6.7}Alfie Walding [AW]}{46}{}%
+\contentsline {section}{\numberline {A}References}{47}{}%
+\contentsline {section}{\numberline {B}Meeting Notes}{47}{}%
