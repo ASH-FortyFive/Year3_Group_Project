@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.20)  3 JAN 2023 07:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.20)  3 JAN 2023 08:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -772,26 +772,114 @@ Package biblatex Info: ... and expl3
 Package: xparse 2022-01-12 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
+)) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
+ (/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen288
+\Hy@linkcounter=\count488
+\Hy@pagecounter=\count489
+ (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count490
+ (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4137.
+Package hyperref Info: Link nesting OFF on input line 4142.
+Package hyperref Info: Hyper index ON on input line 4145.
+Package hyperref Info: Plain pages OFF on input line 4152.
+Package hyperref Info: Backreferencing OFF on input line 4157.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4390.
+\c@Hy@tempcnt=\count491
+LaTeX Info: Redefining \url on input line 4749.
+\XeTeXLinkMargin=\dimen289
+ (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\@quotelevel=\count488
-\@quotereset=\count489
+\Fld@menulength=\count492
+\Field@Width=\dimen290
+\Fld@charsize=\dimen291
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+LaTeX Info: Redefining \ref on input line 6097.
+LaTeX Info: Redefining \pageref on input line 6101.
+ (/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count493
+\c@Item=\count494
+\c@Hfootnote=\count495
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
+ (/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count496
+\c@bookmark@seq@number=\count497
+ (/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
+\Hy@SectionHShift=\skip92
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 31.
+\@quotelevel=\count498
+\@quotereset=\count499
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -829,16 +917,16 @@ LaTeX Font Info:    ... okay on input line 33.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count490
-\scratchdimen=\dimen288
+\scratchcounter=\count500
+\scratchdimen=\dimen292
 \scratchbox=\box77
-\nofMPsegments=\count491
-\nofMParguments=\count492
+\nofMPsegments=\count501
+\nofMParguments=\count502
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count493
-\MPscratchDim=\dimen289
-\MPnumerator=\count494
-\makeMPintoPDFobject=\count495
+\MPscratchCnt=\count503
+\MPscratchDim=\dimen293
+\MPnumerator=\count504
+\makeMPintoPDFobject=\count505
 \everyMPtoPDFconversion=\toks45
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -853,6 +941,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -867,29 +956,51 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 33.
-Package biblatex Info: Reference segment=0 on input line 33.
+Package biblatex Info: Reference section=0 on input line 44.
+Package biblatex Info: Reference segment=0 on input line 44.
+Package hyperref Info: Link coloring ON on input line 44.
+ (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+ (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count506
+)
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
+ (./main.out) (./main.out)
+\@outlinefile=\write5
+\openout5 = `main.out'.
+
  (./sections/Title.tex
-<./images//Logo.png, id=4, 1027.84pt x 305.14pt>
+<./images//Logo.png, id=296, 1027.84pt x 305.14pt>
 File: ./images//Logo.png Graphic file (type png)
 <use ./images//Logo.png>
 Package pdftex.def Info: ./images//Logo.png  used on input line 3.
 (pdftex.def)             Requested size: 483.69687pt x 143.5974pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//Logo.png>]) [1] (./main.toc [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//Logo.png>])
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.55 \clearpage
+                [1] (./main.toc [2
 
 ])
-\tf@toc=\write5
-\openout5 = `main.toc'.
+\tf@toc=\write6
+\openout6 = `main.toc'.
 
  (./main.lof [3])
-\tf@lof=\write6
-\openout6 = `main.lof'.
+\tf@lof=\write7
+\openout7 = `main.lof'.
 
  (./main.lot)
-\tf@lot=\write7
-\openout7 = `main.lot'.
+\tf@lot=\write8
+\openout8 = `main.lot'.
 
  [4] (./sections/Introduction.tex (./tables/contrib.tex
 Overfull \hbox (33.39694pt too wide) in alignment at lines 5--12
@@ -908,124 +1019,154 @@ Overfull \hbox (33.39694pt too wide) in alignment at lines 14--37
 
 [5
 
-])) (./sections/Background.tex [6] [7]
-<./images//Chapter 2/SystemOverview.png, id=41, 452.892pt x 176.3388pt>
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.37 \end{longtable}
+                    ])) (./sections/Background.tex [6] [7]
+<./images//Chapter 2/SystemOverview.png, id=729, 452.892pt x 176.3388pt>
 File: ./images//Chapter 2/SystemOverview.png Graphic file (type png)
 <use ./images//Chapter 2/SystemOverview.png>
 Package pdftex.def Info: ./images//Chapter 2/SystemOverview.png  used on input line 121.
 (pdftex.def)             Requested size: 483.69687pt x 188.33893pt.
- [8 <./images//Chapter 2/SystemOverview.png>] (./tables/depend.tex) (./tables/moscow.tex) (./tables/swot.tex [9]) (./tables/clientbrief.tex)
-<./images//Chapter 2/PhaseDiagram.png, id=50, 452.892pt x 187.902pt>
+ [8 <./images//Chapter 2/SystemOverview.png>] (./tables/depend.tex) (./tables/moscow.tex) (./tables/swot.tex [9
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.16     \end{longtable}
+                        
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.16     \end{longtable}
+                        ]) (./tables/clientbrief.tex)
+<./images//Chapter 2/PhaseDiagram.png, id=741, 452.892pt x 187.902pt>
 File: ./images//Chapter 2/PhaseDiagram.png Graphic file (type png)
 <use ./images//Chapter 2/PhaseDiagram.png>
 Package pdftex.def Info: ./images//Chapter 2/PhaseDiagram.png  used on input line 151.
 (pdftex.def)             Requested size: 483.69687pt x 200.68901pt.
- [10]) (./sections/Hardware.tex
-<./images//Chapter 3/Hardware Overview/Hardware Overview.jpg, id=54, 361.35pt x 213.1965pt>
+ [10
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.155 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.155 
+      ]) (./sections/Hardware.tex
+<./images//Chapter 3/Hardware Overview/Hardware Overview.jpg, id=747, 361.35pt x 213.1965pt>
 File: ./images//Chapter 3/Hardware Overview/Hardware Overview.jpg Graphic file (type jpg)
 <use ./images//Chapter 3/Hardware Overview/Hardware Overview.jpg>
 Package pdftex.def Info: ./images//Chapter 3/Hardware Overview/Hardware Overview.jpg  used on input line 11.
 (pdftex.def)             Requested size: 241.84843pt x 142.69125pt.
  (./tables/power.tex [11 <./images//Chapter 2/PhaseDiagram.png> <./images//Chapter 3/Hardware Overview/Hardware Overview.jpg>])
-<./images//Chapter 3/alexandre/powerschem.png, id=59, 368.87813pt x 210.41109pt>
+<./images//Chapter 3/alexandre/powerschem.png, id=755, 368.87813pt x 210.41109pt>
 File: ./images//Chapter 3/alexandre/powerschem.png Graphic file (type png)
 <use ./images//Chapter 3/alexandre/powerschem.png>
 Package pdftex.def Info: ./images//Chapter 3/alexandre/powerschem.png  used on input line 35.
 (pdftex.def)             Requested size: 241.84843pt x 137.95029pt.
- [12 <./images//Chapter 3/alexandre/powerschem.png (PNG copy)>]
-<./images//Chapter 3/alexandre/pcb.png, id=64, 347.04657pt x 280.04625pt>
+ [12
+pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.76 
+      <./images//Chapter 3/alexandre/powerschem.png (PNG copy)>]
+<./images//Chapter 3/alexandre/pcb.png, id=766, 347.04657pt x 280.04625pt>
 File: ./images//Chapter 3/alexandre/pcb.png Graphic file (type png)
 <use ./images//Chapter 3/alexandre/pcb.png>
 Package pdftex.def Info: ./images//Chapter 3/alexandre/pcb.png  used on input line 88.
 (pdftex.def)             Requested size: 241.84843pt x 195.16357pt.
-<./images//Chapter 3/alexandre/pcbreal.jpg, id=65, 4047.12pt x 3035.34pt>
+<./images//Chapter 3/alexandre/pcbreal.jpg, id=768, 4047.12pt x 3035.34pt>
 File: ./images//Chapter 3/alexandre/pcbreal.jpg Graphic file (type jpg)
 <use ./images//Chapter 3/alexandre/pcbreal.jpg>
 Package pdftex.def Info: ./images//Chapter 3/alexandre/pcbreal.jpg  used on input line 103.
 (pdftex.def)             Requested size: 241.84843pt x 181.37149pt.
  [13 <./images//Chapter 3/alexandre/pcb.png (PNG copy)>]
-<./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png, id=69, 361.35pt x 151.2852pt>
+<./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png, id=773, 361.35pt x 151.2852pt>
 File: ./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png Graphic file (type png)
 <use ./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png>
 Package pdftex.def Info: ./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png  used on input line 130.
 (pdftex.def)             Requested size: 483.69687pt x 202.50873pt.
-<./images//Chapter 3/Weight Sensor/WeightSensorPicture.png, id=70, 306.9066pt x 216.81pt>
+<./images//Chapter 3/Weight Sensor/WeightSensorPicture.png, id=774, 306.9066pt x 216.81pt>
 File: ./images//Chapter 3/Weight Sensor/WeightSensorPicture.png Graphic file (type png)
 <use ./images//Chapter 3/Weight Sensor/WeightSensorPicture.png>
 Package pdftex.def Info: ./images//Chapter 3/Weight Sensor/WeightSensorPicture.png  used on input line 141.
 (pdftex.def)             Requested size: 483.69687pt x 341.73228pt.
  [14 <./images//Chapter 3/alexandre/pcbreal.jpg> <./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png>]
-<./images//Chapter 3/Weight Sensor/WeightSensorCalibrationCode.png, id=75, 226.446pt x 361.35pt>
+<./images//Chapter 3/Weight Sensor/WeightSensorCalibrationCode.png, id=780, 226.446pt x 361.35pt>
 File: ./images//Chapter 3/Weight Sensor/WeightSensorCalibrationCode.png Graphic file (type png)
 <use ./images//Chapter 3/Weight Sensor/WeightSensorCalibrationCode.png>
 Package pdftex.def Info: ./images//Chapter 3/Weight Sensor/WeightSensorCalibrationCode.png  used on input line 153.
 (pdftex.def)             Requested size: 241.84843pt x 385.94044pt.
  [15 <./images//Chapter 3/Weight Sensor/WeightSensorPicture.png>]
-<./images//Chapter 3/Weight Sensor/LoadCellTestTerminal.png, id=80, 361.35pt x 146.949pt>
+<./images//Chapter 3/Weight Sensor/LoadCellTestTerminal.png, id=786, 361.35pt x 146.949pt>
 File: ./images//Chapter 3/Weight Sensor/LoadCellTestTerminal.png Graphic file (type png)
 <use ./images//Chapter 3/Weight Sensor/LoadCellTestTerminal.png>
 Package pdftex.def Info: ./images//Chapter 3/Weight Sensor/LoadCellTestTerminal.png  used on input line 178.
 (pdftex.def)             Requested size: 483.69687pt x 196.70435pt.
  [16 <./images//Chapter 3/Weight Sensor/WeightSensorCalibrationCode.png>]
-<./images//Chapter 3/Weight Sensor/WeightSensorWiredImage.png, id=85, 361.35pt x 250.0542pt>
+<./images//Chapter 3/Weight Sensor/WeightSensorWiredImage.png, id=792, 361.35pt x 250.0542pt>
 File: ./images//Chapter 3/Weight Sensor/WeightSensorWiredImage.png Graphic file (type png)
 <use ./images//Chapter 3/Weight Sensor/WeightSensorWiredImage.png>
 Package pdftex.def Info: ./images//Chapter 3/Weight Sensor/WeightSensorWiredImage.png  used on input line 190.
 (pdftex.def)             Requested size: 483.69687pt x 334.71983pt.
  [17 <./images//Chapter 3/Weight Sensor/LoadCellTestTerminal.png> <./images//Chapter 3/Weight Sensor/WeightSensorWiredImage.png>]
-<./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Camera.png, id=91, 335.8146pt x 361.35pt>
+<./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Camera.png, id=799, 335.8146pt x 361.35pt>
 File: ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Camera.png Graphic file (type png)
 <use ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Camera.png>
 Package pdftex.def Info: ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Camera.png  used on input line 212.
 (pdftex.def)             Requested size: 362.77264pt x 390.35695pt.
-<./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Picture.png, id=92, 361.35pt x 271.7352pt>
+<./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Picture.png, id=800, 361.35pt x 271.7352pt>
 File: ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Picture.png Graphic file (type png)
 <use ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Picture.png>
 Package pdftex.def Info: ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Picture.png  used on input line 233.
 (pdftex.def)             Requested size: 483.69687pt x 363.74178pt.
  [18 <./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Camera.png>]
-<./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32BetterPicture.png, id=98, 361.35pt x 270.7716pt>
+<./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32BetterPicture.png, id=807, 361.35pt x 270.7716pt>
 File: ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32BetterPicture.png Graphic file (type png)
 <use ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32BetterPicture.png>
 Package pdftex.def Info: ./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32BetterPicture.png  used on input line 259.
 (pdftex.def)             Requested size: 483.69687pt x 362.45195pt.
  [19 <./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32Picture.png>]
-<./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png, id=103, 361.35pt x 233.1912pt>
+<./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png, id=813, 361.35pt x 233.1912pt>
 File: ./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png Graphic file (type png)
 <use ./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png>
 Package pdftex.def Info: ./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png  used on input line 289.
 (pdftex.def)             Requested size: 483.69687pt x 312.1472pt.
  [20 <./images//Chapter 3/ESP-32 Wrover Dev Board/ESP32BetterPicture.png>]
-<./images//Chapter 3/Hal Sensor/HalSensorModule.png, id=108, 146.79843pt x 146.79843pt>
+<./images//Chapter 3/Hal Sensor/HalSensorModule.png, id=819, 146.79843pt x 146.79843pt>
 File: ./images//Chapter 3/Hal Sensor/HalSensorModule.png Graphic file (type png)
 <use ./images//Chapter 3/Hal Sensor/HalSensorModule.png>
 Package pdftex.def Info: ./images//Chapter 3/Hal Sensor/HalSensorModule.png  used on input line 314.
 (pdftex.def)             Requested size: 120.92421pt x 120.92427pt.
-<./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png, id=109, 147.4965pt x 361.35pt>
+<./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png, id=820, 147.4965pt x 361.35pt>
 File: ./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png Graphic file (type png)
 <use ./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png>
 Package pdftex.def Info: ./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png  used on input line 324.
 (pdftex.def)             Requested size: 159.62085pt x 391.07925pt.
  [21 <./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png> <./images//Chapter 3/Hal Sensor/HalSensorModule.png>]
-<./images//Chapter 3/Hal Sensor/HalSensorBox.png, id=115, 277.911pt x 208.5975pt>
+<./images//Chapter 3/Hal Sensor/HalSensorBox.png, id=827, 277.911pt x 208.5975pt>
 File: ./images//Chapter 3/Hal Sensor/HalSensorBox.png Graphic file (type png)
 <use ./images//Chapter 3/Hal Sensor/HalSensorBox.png>
 Package pdftex.def Info: ./images//Chapter 3/Hal Sensor/HalSensorBox.png  used on input line 334.
 (pdftex.def)             Requested size: 241.84843pt x 181.52928pt.
  [22 <./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png> <./images//Chapter 3/Hal Sensor/HalSensorBox.png>]
-<./images//Chapter 3/LEDs/LED.png, id=121, 96.36pt x 127.97812pt>
+<./images//Chapter 3/LEDs/LED.png, id=834, 96.36pt x 127.97812pt>
 File: ./images//Chapter 3/LEDs/LED.png Graphic file (type png)
 <use ./images//Chapter 3/LEDs/LED.png>
 Package pdftex.def Info: ./images//Chapter 3/LEDs/LED.png  used on input line 359.
 (pdftex.def)             Requested size: 159.62085pt x 211.99641pt.
 ) (./sections/Software.tex
-<./images//Chapter 4/Firmware Code ESP32/ESP32ClassDiagram.png, id=122, 361.35pt x 243.91125pt>
+<./images//Chapter 4/Firmware Code ESP32/ESP32ClassDiagram.png, id=835, 361.35pt x 243.91125pt>
 File: ./images//Chapter 4/Firmware Code ESP32/ESP32ClassDiagram.png Graphic file (type png)
 <use ./images//Chapter 4/Firmware Code ESP32/ESP32ClassDiagram.png>
 Package pdftex.def Info: ./images//Chapter 4/Firmware Code ESP32/ESP32ClassDiagram.png  used on input line 20.
 (pdftex.def)             Requested size: 319.2417pt x 215.49112pt.
  [23 <./images//Chapter 3/LEDs/LED.png>] [24 <./images//Chapter 4/Firmware Code ESP32/ESP32ClassDiagram.png>] (./tables/yohan.tex)
-<./images//Chapter 4/EspToPiCommunication/JSONPACKET.png, id=132, 361.35pt x 90.3375pt>
+<./images//Chapter 4/EspToPiCommunication/JSONPACKET.png, id=851, 361.35pt x 90.3375pt>
 File: ./images//Chapter 4/EspToPiCommunication/JSONPACKET.png Graphic file (type png)
 <use ./images//Chapter 4/EspToPiCommunication/JSONPACKET.png>
 Package pdftex.def Info: ./images//Chapter 4/EspToPiCommunication/JSONPACKET.png  used on input line 97.
@@ -1038,508 +1179,523 @@ File: ./images//Logo.png Graphic file (type png)
 <use ./images//Logo.png>
 Package pdftex.def Info: ./images//Logo.png  used on input line 108.
 (pdftex.def)             Requested size: 193.47948pt x 57.43709pt.
- [25 <./images//Chapter 4/EspToPiCommunication/JSONPACKET.png>]
-<./images//Chapter 4/CNN/VGG-16.png, id=137, 215.8245pt x 185.931pt>
+ [25
+pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.119 
+       <./images//Chapter 4/EspToPiCommunication/JSONPACKET.png>]
+<./images//Chapter 4/CNN/VGG-16.png, id=857, 215.8245pt x 185.931pt>
 File: ./images//Chapter 4/CNN/VGG-16.png Graphic file (type png)
 <use ./images//Chapter 4/CNN/VGG-16.png>
 Package pdftex.def Info: ./images//Chapter 4/CNN/VGG-16.png  used on input line 176.
 (pdftex.def)             Requested size: 319.2417pt x 275.03735pt.
  [26] [27 <./images//Chapter 4/CNN/VGG-16.png>]
-<./images//Chapter 4/Barcode Detection/Figure1.png, id=145, 279.9258pt x 141.6492pt>
+<./images//Chapter 4/Barcode Detection/Figure1.png, id=870, 279.9258pt x 141.6492pt>
 File: ./images//Chapter 4/Barcode Detection/Figure1.png Graphic file (type png)
 <use ./images//Chapter 4/Barcode Detection/Figure1.png>
 Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure1.png  used on input line 262.
 (pdftex.def)             Requested size: 241.84843pt x 122.3822pt.
-<./images//Chapter 4/Barcode Detection/Figure2.png, id=146, 267.8808pt x 147.9126pt>
+<./images//Chapter 4/Barcode Detection/Figure2.png, id=871, 267.8808pt x 147.9126pt>
 File: ./images//Chapter 4/Barcode Detection/Figure2.png Graphic file (type png)
 <use ./images//Chapter 4/Barcode Detection/Figure2.png>
 Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure2.png  used on input line 275.
 (pdftex.def)             Requested size: 241.84843pt x 133.53989pt.
  [28 <./images//Chapter 4/Barcode Detection/Figure1.png>]
-<./images//Chapter 4/Barcode Detection/Figure3.png, id=151, 267.8808pt x 147.9126pt>
+<./images//Chapter 4/Barcode Detection/Figure3.png, id=877, 267.8808pt x 147.9126pt>
 File: ./images//Chapter 4/Barcode Detection/Figure3.png Graphic file (type png)
 <use ./images//Chapter 4/Barcode Detection/Figure3.png>
 Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure3.png  used on input line 297.
 (pdftex.def)             Requested size: 241.84843pt x 133.53989pt.
-<./images//Chapter 4/Barcode Detection/Figure4.png, id=152, 298.2342pt x 141.1674pt>
+<./images//Chapter 4/Barcode Detection/Figure4.png, id=878, 298.2342pt x 141.1674pt>
 File: ./images//Chapter 4/Barcode Detection/Figure4.png Graphic file (type png)
 <use ./images//Chapter 4/Barcode Detection/Figure4.png>
 Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure4.png  used on input line 312.
 (pdftex.def)             Requested size: 241.84843pt x 114.4828pt.
  [29 <./images//Chapter 4/Barcode Detection/Figure2.png> <./images//Chapter 4/Barcode Detection/Figure3.png> <./images//Chapter 4/Barcode Detection/Figure4.png>]
-<./images//Chapter 4/Barcode Detection/Figure5.png, id=159, 268.3626pt x 84.315pt>
+<./images//Chapter 4/Barcode Detection/Figure5.png, id=886, 268.3626pt x 84.315pt>
 File: ./images//Chapter 4/Barcode Detection/Figure5.png Graphic file (type png)
 <use ./images//Chapter 4/Barcode Detection/Figure5.png>
 Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure5.png  used on input line 333.
 (pdftex.def)             Requested size: 241.84843pt x 75.9844pt.
-<./images//Chapter 4/Barcode Detection/Figure6.png, id=160, 231.7458pt x 69.3792pt>
+<./images//Chapter 4/Barcode Detection/Figure6.png, id=887, 231.7458pt x 69.3792pt>
 File: ./images//Chapter 4/Barcode Detection/Figure6.png Graphic file (type png)
 <use ./images//Chapter 4/Barcode Detection/Figure6.png>
 Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure6.png  used on input line 348.
 (pdftex.def)             Requested size: 319.2417pt x 95.58351pt.
-<./images//Chapter 4/Barcode Detection/Figure7.png, id=161, 243.309pt x 58.2978pt>
+<./images//Chapter 4/Barcode Detection/Figure7.png, id=888, 243.309pt x 58.2978pt>
 File: ./images//Chapter 4/Barcode Detection/Figure7.png Graphic file (type png)
 <use ./images//Chapter 4/Barcode Detection/Figure7.png>
 Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure7.png  used on input line 355.
 (pdftex.def)             Requested size: 319.2417pt x 76.49965pt.
-<./images//Chapter 4/Barcode Detection/Figure8.png, id=162, 270.7716pt x 51.5526pt>
+<./images//Chapter 4/Barcode Detection/Figure8.png, id=889, 270.7716pt x 51.5526pt>
 File: ./images//Chapter 4/Barcode Detection/Figure8.png Graphic file (type png)
 <use ./images//Chapter 4/Barcode Detection/Figure8.png>
 Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure8.png  used on input line 362.
 (pdftex.def)             Requested size: 319.2417pt x 60.78511pt.
  [30 <./images//Chapter 4/Barcode Detection/Figure5.png> <./images//Chapter 4/Barcode Detection/Figure6.png> <./images//Chapter 4/Barcode Detection/Figure7.png> <./images//Chapter 4/Barcode Detection/Figure8.png>]
-<./images//Chapter 4/Barcode Detection/Figure9.png, id=171, 268.8444pt x 131.0496pt>
+<./images//Chapter 4/Barcode Detection/Figure9.png, id=899, 268.8444pt x 131.0496pt>
 File: ./images//Chapter 4/Barcode Detection/Figure9.png Graphic file (type png)
 <use ./images//Chapter 4/Barcode Detection/Figure9.png>
 Package pdftex.def Info: ./images//Chapter 4/Barcode Detection/Figure9.png  used on input line 383.
 (pdftex.def)             Requested size: 319.2417pt x 155.615pt.
-<./images//Chapter 4/Pi Camera/ImageOfWebcam.jpg, id=172, 261.22594pt x 247.67531pt>
+<./images//Chapter 4/Pi Camera/ImageOfWebcam.jpg, id=900, 261.22594pt x 247.67531pt>
 File: ./images//Chapter 4/Pi Camera/ImageOfWebcam.jpg Graphic file (type jpg)
 <use ./images//Chapter 4/Pi Camera/ImageOfWebcam.jpg>
 Package pdftex.def Info: ./images//Chapter 4/Pi Camera/ImageOfWebcam.jpg  used on input line 400.
 (pdftex.def)             Requested size: 241.84843pt x 229.3077pt.
-<./images//Chapter 4/Pi Camera/PiBoxTakenByCamera.png, id=173, 412.596pt x 278.8965pt>
+<./images//Chapter 4/Pi Camera/PiBoxTakenByCamera.png, id=901, 412.596pt x 278.8965pt>
 File: ./images//Chapter 4/Pi Camera/PiBoxTakenByCamera.png Graphic file (type png)
 <use ./images//Chapter 4/Pi Camera/PiBoxTakenByCamera.png>
 Package pdftex.def Info: ./images//Chapter 4/Pi Camera/PiBoxTakenByCamera.png  used on input line 415.
 (pdftex.def)             Requested size: 319.2417pt x 215.79358pt.
  [31 <./images//Chapter 4/Barcode Detection/Figure9.png> <./images//Chapter 4/Pi Camera/ImageOfWebcam.jpg>]
-<./images//Chapter 4/Serial Input/PiPinout.png, id=178, 413.253pt x 237.177pt>
+<./images//Chapter 4/Serial Input/PiPinout.png, id=907, 413.253pt x 237.177pt>
 File: ./images//Chapter 4/Serial Input/PiPinout.png Graphic file (type png)
 <use ./images//Chapter 4/Serial Input/PiPinout.png>
 Package pdftex.def Info: ./images//Chapter 4/Serial Input/PiPinout.png  used on input line 430.
 (pdftex.def)             Requested size: 319.2417pt x 183.22035pt.
-<./images//Chapter 4/Serial Input/SerialRead.png, id=179, 453.19313pt x 52.69687pt>
+<./images//Chapter 4/Serial Input/SerialRead.png, id=908, 453.19313pt x 52.69687pt>
 File: ./images//Chapter 4/Serial Input/SerialRead.png Graphic file (type png)
 <use ./images//Chapter 4/Serial Input/SerialRead.png>
 Package pdftex.def Info: ./images//Chapter 4/Serial Input/SerialRead.png  used on input line 442.
 (pdftex.def)             Requested size: 483.69687pt x 56.24356pt.
- [32 <./images//Chapter 4/Pi Camera/PiBoxTakenByCamera.png> <./images//Chapter 4/Serial Input/PiPinout.png> <./images//Chapter 4/Serial Input/SerialRead.png>] (./tables/librarytable.tex [33])
-<./images//Chapter 4/Pi Integration/PiTestLoop.png, id=189, 453.19313pt x 136.25906pt>
+ [32 <./images//Chapter 4/Pi Camera/PiBoxTakenByCamera.png> <./images//Chapter 4/Serial Input/PiPinout.png> <./images//Chapter 4/Serial Input/SerialRead.png>] (./tables/librarytable.tex [33
+pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.61 \end{longtable}
+                    ])
+<./images//Chapter 4/Pi Integration/PiTestLoop.png, id=920, 453.19313pt x 136.25906pt>
 File: ./images//Chapter 4/Pi Integration/PiTestLoop.png Graphic file (type png)
 <use ./images//Chapter 4/Pi Integration/PiTestLoop.png>
 Package pdftex.def Info: ./images//Chapter 4/Pi Integration/PiTestLoop.png  used on input line 483.
 (pdftex.def)             Requested size: 483.69687pt x 145.42981pt.
-<./images//Chapter 4/Code Refactor/Class Diagram.png, id=190, 359.379pt x 347.8815pt>
+<./images//Chapter 4/Code Refactor/Class Diagram.png, id=923, 359.379pt x 347.8815pt>
 File: ./images//Chapter 4/Code Refactor/Class Diagram.png Graphic file (type png)
 <use ./images//Chapter 4/Code Refactor/Class Diagram.png>
 Package pdftex.def Info: ./images//Chapter 4/Code Refactor/Class Diagram.png  used on input line 507.
 (pdftex.def)             Requested size: 319.2417pt x 309.02965pt.
- [34 <./images//Chapter 4/Pi Integration/PiTestLoop.png>] (./tables/codetable.tex [35 <./images//Chapter 4/Code Refactor/Class Diagram.png>]) [36]
-<./images//Chapter 3/alexandre/db.png, id=203, 386.19281pt x 286.06876pt>
+ [34 <./images//Chapter 4/Pi Integration/PiTestLoop.png>] (./tables/codetable.tex [35
+pdfTeX warning (ext4): destination with the same identifier (name{table.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.72     \end{longtable}
+                         <./images//Chapter 4/Code Refactor/Class Diagram.png>]) [36]
+<./images//Chapter 3/alexandre/db.png, id=940, 386.19281pt x 286.06876pt>
 File: ./images//Chapter 3/alexandre/db.png Graphic file (type png)
 <use ./images//Chapter 3/alexandre/db.png>
-Package pdftex.def Info: ./images//Chapter 3/alexandre/db.png  used on input line 549.
+Package pdftex.def Info: ./images//Chapter 3/alexandre/db.png  used on input line 550.
 (pdftex.def)             Requested size: 483.69687pt x 358.29657pt.
  [37 <./images//Chapter 3/alexandre/db.png (PNG copy)>]
-<./images//Chapter 4/app_pic/Login.png, id=207, 1445.4pt x 2409.0pt>
+<./images//Chapter 4/app_pic/Login.png, id=951, 1445.4pt x 2409.0pt>
 File: ./images//Chapter 4/app_pic/Login.png Graphic file (type png)
 <use ./images//Chapter 4/app_pic/Login.png>
-Package pdftex.def Info: ./images//Chapter 4/app_pic/Login.png  used on input line 587.
+Package pdftex.def Info: ./images//Chapter 4/app_pic/Login.png  used on input line 588.
 (pdftex.def)             Requested size: 127.69716pt x 212.79399pt.
-<./images//Chapter 4/app_pic/Inv.png, id=208, 1445.4pt x 2409.0pt>
+<./images//Chapter 4/app_pic/Inv.png, id=952, 1445.4pt x 2409.0pt>
 File: ./images//Chapter 4/app_pic/Inv.png Graphic file (type png)
 <use ./images//Chapter 4/app_pic/Inv.png>
-Package pdftex.def Info: ./images//Chapter 4/app_pic/Inv.png  used on input line 591.
+Package pdftex.def Info: ./images//Chapter 4/app_pic/Inv.png  used on input line 592.
 (pdftex.def)             Requested size: 127.69716pt x 212.79399pt.
-<./images//Chapter 4/app_pic/Rec.png, id=209, 1445.4pt x 2409.0pt>
+<./images//Chapter 4/app_pic/Rec.png, id=953, 1445.4pt x 2409.0pt>
 File: ./images//Chapter 4/app_pic/Rec.png Graphic file (type png)
 <use ./images//Chapter 4/app_pic/Rec.png>
-Package pdftex.def Info: ./images//Chapter 4/app_pic/Rec.png  used on input line 595.
+Package pdftex.def Info: ./images//Chapter 4/app_pic/Rec.png  used on input line 596.
 (pdftex.def)             Requested size: 127.69716pt x 212.79399pt.
-<./images//Chapter 4/Hamzah Website/UserLogin/Fig1.png, id=210, 264.23718pt x 264.99pt>
+ [38 <./images//Chapter 4/app_pic/Login.png> <./images//Chapter 4/app_pic/Inv.png> <./images//Chapter 4/app_pic/Rec.png>]
+<./images//Chapter 4/Hamzah Website/UserLogin/Fig1.png, id=962, 264.23718pt x 264.99pt>
 File: ./images//Chapter 4/Hamzah Website/UserLogin/Fig1.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/UserLogin/Fig1.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/UserLogin/Fig1.png  used on input line 639.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/UserLogin/Fig1.png  used on input line 642.
 (pdftex.def)             Requested size: 159.62085pt x 160.07481pt.
-<./images//Chapter 4/Hamzah Website/UserLogin/Fig2.png, id=211, 262.73157pt x 286.82156pt>
+<./images//Chapter 4/Hamzah Website/UserLogin/Fig2.png, id=963, 262.73157pt x 286.82156pt>
 File: ./images//Chapter 4/Hamzah Website/UserLogin/Fig2.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/UserLogin/Fig2.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/UserLogin/Fig2.png  used on input line 644.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/UserLogin/Fig2.png  used on input line 647.
 (pdftex.def)             Requested size: 159.62085pt x 174.26064pt.
- [38 <./images//Chapter 4/app_pic/Login.png> <./images//Chapter 4/app_pic/Inv.png> <./images//Chapter 4/app_pic/Rec.png>]
-<./images//Chapter 4/Hamzah Website/HomePage/Fig3.png, id=218, 290.58563pt x 311.66437pt>
+<./images//Chapter 4/Hamzah Website/HomePage/Fig3.png, id=964, 290.58563pt x 311.66437pt>
 File: ./images//Chapter 4/Hamzah Website/HomePage/Fig3.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/HomePage/Fig3.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/HomePage/Fig3.png  used on input line 658.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/HomePage/Fig3.png  used on input line 661.
 (pdftex.def)             Requested size: 159.62085pt x 171.20192pt.
-<./images//Chapter 4/Hamzah Website/HomePage/Fig4.png, id=219, 361.35pt x 170.13562pt>
+<./images//Chapter 4/Hamzah Website/HomePage/Fig4.png, id=965, 361.35pt x 170.13562pt>
 File: ./images//Chapter 4/Hamzah Website/HomePage/Fig4.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/HomePage/Fig4.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/HomePage/Fig4.png  used on input line 663.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/HomePage/Fig4.png  used on input line 666.
 (pdftex.def)             Requested size: 159.62085pt x 75.15584pt.
-<./images//Chapter 4/Hamzah Website/FetchingData/Fig5.png, id=220, 361.35pt x 10.53937pt>
+<./images//Chapter 4/Hamzah Website/FetchingData/Fig5.png, id=966, 361.35pt x 10.53937pt>
 File: ./images//Chapter 4/Hamzah Website/FetchingData/Fig5.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/FetchingData/Fig5.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/FetchingData/Fig5.png  used on input line 677.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/FetchingData/Fig5.png  used on input line 680.
 (pdftex.def)             Requested size: 483.69687pt x 14.10785pt.
-<./images//Chapter 4/Hamzah Website/InventoryTable/Fig6.png, id=221, 361.35pt x 130.23656pt>
+<./images//Chapter 4/Hamzah Website/InventoryTable/Fig6.png, id=967, 361.35pt x 130.23656pt>
 File: ./images//Chapter 4/Hamzah Website/InventoryTable/Fig6.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/InventoryTable/Fig6.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/InventoryTable/Fig6.png  used on input line 688.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/InventoryTable/Fig6.png  used on input line 691.
 (pdftex.def)             Requested size: 319.2417pt x 115.06161pt.
  [39 <./images//Chapter 4/Hamzah Website/UserLogin/Fig1.png> <./images//Chapter 4/Hamzah Website/UserLogin/Fig2.png> <./images//Chapter 4/Hamzah Website/HomePage/Fig3.png> <./images//Chapter 4/Hamzah Website/HomePage/Fig4.png> <./images//Chapter 4/Hamzah Website/FetchingData/Fig5.png>]
-<./images//Chapter 4/Hamzah Website/InventoryTable/Fig7.png, id=230, 361.35pt x 85.06781pt>
+<./images//Chapter 4/Hamzah Website/InventoryTable/Fig7.png, id=977, 361.35pt x 85.06781pt>
 File: ./images//Chapter 4/Hamzah Website/InventoryTable/Fig7.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/InventoryTable/Fig7.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/InventoryTable/Fig7.png  used on input line 705.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/InventoryTable/Fig7.png  used on input line 708.
 (pdftex.def)             Requested size: 319.2417pt x 75.15584pt.
-<./images//Chapter 4/Hamzah Website/InventoryTable/Fig8.png, id=231, 361.35pt x 178.41656pt>
+<./images//Chapter 4/Hamzah Website/InventoryTable/Fig8.png, id=978, 361.35pt x 178.41656pt>
 File: ./images//Chapter 4/Hamzah Website/InventoryTable/Fig8.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/InventoryTable/Fig8.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/InventoryTable/Fig8.png  used on input line 715.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/InventoryTable/Fig8.png  used on input line 718.
 (pdftex.def)             Requested size: 319.2417pt x 157.62775pt.
-<./images//Chapter 4/Hamzah Website/HowItWasCoded/fig9.png, id=232, 361.35pt x 48.18pt>
+<./images//Chapter 4/Hamzah Website/HowItWasCoded/fig9.png, id=979, 361.35pt x 48.18pt>
 File: ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig9.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig9.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig9.png  used on input line 730.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig9.png  used on input line 733.
 (pdftex.def)             Requested size: 319.2417pt x 42.56612pt.
  [40 <./images//Chapter 4/Hamzah Website/InventoryTable/Fig6.png> <./images//Chapter 4/Hamzah Website/InventoryTable/Fig7.png> <./images//Chapter 4/Hamzah Website/InventoryTable/Fig8.png>]
-<./images//Chapter 4/Hamzah Website/HowItWasCoded/fig10.png, id=239, 262.73157pt x 160.34906pt>
+<./images//Chapter 4/Hamzah Website/HowItWasCoded/fig10.png, id=988, 262.73157pt x 160.34906pt>
 File: ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig10.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig10.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig10.png  used on input line 743.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig10.png  used on input line 746.
 (pdftex.def)             Requested size: 159.62085pt x 97.4213pt.
-<./images//Chapter 4/Hamzah Website/HowItWasCoded/fig11.png, id=240, 361.35pt x 283.0575pt>
+<./images//Chapter 4/Hamzah Website/HowItWasCoded/fig11.png, id=989, 361.35pt x 283.0575pt>
 File: ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig11.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig11.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig11.png  used on input line 749.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig11.png  used on input line 752.
 (pdftex.def)             Requested size: 159.62085pt x 125.03806pt.
-<./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png, id=241, 361.35pt x 225.09094pt>
+<./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png, id=991, 361.35pt x 225.09094pt>
 File: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png  used on input line 774.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png  used on input line 777.
 (pdftex.def)             Requested size: 319.2417pt x 198.86371pt.
  [41 <./images//Chapter 4/Hamzah Website/HowItWasCoded/Fig9.png> <./images//Chapter 4/Hamzah Website/HowItWasCoded/fig10.png> <./images//Chapter 4/Hamzah Website/HowItWasCoded/Fig11.png> <./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png>]
-<./images//Chapter 4/Hamzah Website/AddingRecords/Fig13.png, id=249, 328.97906pt x 213.04594pt>
+<./images//Chapter 4/Hamzah Website/AddingRecords/Fig13.png, id=1001, 328.97906pt x 213.04594pt>
 File: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig13.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/AddingRecords/Fig13.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig13.png  used on input line 794.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig13.png  used on input line 797.
 (pdftex.def)             Requested size: 159.62085pt x 103.37265pt.
-<./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png, id=250, 361.35pt x 60.225pt>
+<./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png, id=1002, 361.35pt x 60.225pt>
 File: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png  used on input line 799.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png  used on input line 802.
 (pdftex.def)             Requested size: 159.62085pt x 26.60384pt.
 File: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png  used on input line 815.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png  used on input line 818.
 (pdftex.def)             Requested size: 319.2417pt x 198.86371pt.
 File: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png  used on input line 827.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png  used on input line 830.
 (pdftex.def)             Requested size: 319.2417pt x 198.86371pt.
  [42 <./images//Chapter 4/Hamzah Website/AddingRecords/Fig13.png> <./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png>]
-<./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png, id=257, 361.35pt x 327.47343pt>
+<./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png, id=1010, 361.35pt x 327.47343pt>
 File: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png  used on input line 842.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png  used on input line 845.
 (pdftex.def)             Requested size: 159.62085pt x 144.65839pt.
-<./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig18.png, id=258, 361.35pt x 196.48407pt>
+<./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig18.png, id=1011, 361.35pt x 196.48407pt>
 File: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig18.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig18.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig18.png  used on input line 847.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig18.png  used on input line 850.
 (pdftex.def)             Requested size: 159.62085pt x 86.79503pt.
-<./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig19.png, id=259, 361.35pt x 14.30344pt>
+<./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig19.png, id=1012, 361.35pt x 14.30344pt>
 File: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig19.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig19.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig19.png  used on input line 864.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig19.png  used on input line 867.
 (pdftex.def)             Requested size: 319.2417pt x 12.63681pt.
-<./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig20.png, id=260, 361.35pt x 127.22531pt>
+<./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig20.png, id=1013, 361.35pt x 127.22531pt>
 File: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig20.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig20.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig20.png  used on input line 880.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig20.png  used on input line 883.
 (pdftex.def)             Requested size: 159.62085pt x 56.2006pt.
-<./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig21.png, id=261, 361.35pt x 280.04625pt>
+<./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig21.png, id=1014, 361.35pt x 280.04625pt>
 File: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig21.png Graphic file (type png)
 <use ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig21.png>
-Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig21.png  used on input line 885.
+Package pdftex.def Info: ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig21.png  used on input line 888.
 (pdftex.def)             Requested size: 159.62085pt x 123.70786pt.
  [43 <./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png> <./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig18.png> <./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig19.png>]) (./sections/Enclosure.tex
-<./images//Chapter 5/Box/Prototype1/BoxSchematic1.png, id=268, 207.6558pt x 151.767pt>
+<./images//Chapter 5/Box/Prototype1/BoxSchematic1.png, id=1023, 207.6558pt x 151.767pt>
 File: ./images//Chapter 5/Box/Prototype1/BoxSchematic1.png Graphic file (type png)
 <use ./images//Chapter 5/Box/Prototype1/BoxSchematic1.png>
 Package pdftex.def Info: ./images//Chapter 5/Box/Prototype1/BoxSchematic1.png  used on input line 18.
 (pdftex.def)             Requested size: 319.2417pt x 233.35367pt.
  [44 <./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig20.png> <./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig21.png>]
-<./images//Chapter 5/Box/Prototype1/Schematic2DoorOpen.png, id=274, 210.5685pt x 159.9795pt>
+<./images//Chapter 5/Box/Prototype1/Schematic2DoorOpen.png, id=1031, 210.5685pt x 159.9795pt>
 File: ./images//Chapter 5/Box/Prototype1/Schematic2DoorOpen.png Graphic file (type png)
 <use ./images//Chapter 5/Box/Prototype1/Schematic2DoorOpen.png>
 Package pdftex.def Info: ./images//Chapter 5/Box/Prototype1/Schematic2DoorOpen.png  used on input line 30.
 (pdftex.def)             Requested size: 241.84843pt x 183.74797pt.
-<./images//Chapter 5/Box/Prototype1/PictureOfBox1.png, id=275, 125.8155pt x 188.8875pt>
+<./images//Chapter 5/Box/Prototype1/PictureOfBox1.png, id=1033, 125.8155pt x 188.8875pt>
 File: ./images//Chapter 5/Box/Prototype1/PictureOfBox1.png Graphic file (type png)
 <use ./images//Chapter 5/Box/Prototype1/PictureOfBox1.png>
 Package pdftex.def Info: ./images//Chapter 5/Box/Prototype1/PictureOfBox1.png  used on input line 45.
 (pdftex.def)             Requested size: 193.47578pt x 290.46971pt.
  [45 <./images//Chapter 5/Box/Prototype1/BoxSchematic1.png> <./images//Chapter 5/Box/Prototype1/Schematic2DoorOpen.png>]
-<./images//Chapter 5/Box/Prototype1/BoxDesign3.png, id=281, 185.931pt x 158.0085pt>
+<./images//Chapter 5/Box/Prototype1/BoxDesign3.png, id=1040, 185.931pt x 158.0085pt>
 File: ./images//Chapter 5/Box/Prototype1/BoxDesign3.png Graphic file (type png)
 <use ./images//Chapter 5/Box/Prototype1/BoxDesign3.png>
 Package pdftex.def Info: ./images//Chapter 5/Box/Prototype1/BoxDesign3.png  used on input line 61.
 (pdftex.def)             Requested size: 120.92421pt x 102.76456pt.
-<./images//Chapter 5/Box/Prototype2/RedBox.png, id=282, 135.0135pt x 185.931pt>
+<./images//Chapter 5/Box/Prototype2/RedBox.png, id=1042, 135.0135pt x 185.931pt>
 File: ./images//Chapter 5/Box/Prototype2/RedBox.png Graphic file (type png)
 <use ./images//Chapter 5/Box/Prototype2/RedBox.png>
 Package pdftex.def Info: ./images//Chapter 5/Box/Prototype2/RedBox.png  used on input line 86.
 (pdftex.def)             Requested size: 159.62085pt x 219.83923pt.
-<./images//Chapter 5/Box/Prototype2/RedBoxOpen.png, id=283, 195.786pt x 199.3995pt>
+<./images//Chapter 5/Box/Prototype2/RedBoxOpen.png, id=1043, 195.786pt x 199.3995pt>
 File: ./images//Chapter 5/Box/Prototype2/RedBoxOpen.png Graphic file (type png)
 <use ./images//Chapter 5/Box/Prototype2/RedBoxOpen.png>
 Package pdftex.def Info: ./images//Chapter 5/Box/Prototype2/RedBoxOpen.png  used on input line 90.
 (pdftex.def)             Requested size: 159.62085pt x 162.56848pt.
  [46 <./images//Chapter 5/Box/Prototype1/PictureOfBox1.png> <./images//Chapter 5/Box/Prototype1/BoxDesign3.png>]) (./sections/PMandR.tex
-<./images//Chapter 6/Reflection/GroupDiagram.png, id=289, 469.755pt x 193.77394pt>
+<./images//Chapter 6/Reflection/GroupDiagram.png, id=1051, 469.755pt x 193.77394pt>
 File: ./images//Chapter 6/Reflection/GroupDiagram.png Graphic file (type png)
 <use ./images//Chapter 6/Reflection/GroupDiagram.png>
 Package pdftex.def Info: ./images//Chapter 6/Reflection/GroupDiagram.png  used on input line 8.
 (pdftex.def)             Requested size: 319.2417pt x 131.68765pt.
-<./images//Chapter 6/Reflection/GanttChart.png, id=290, 481.04718pt x 363.60844pt>
+<./images//Chapter 6/Reflection/GanttChart.png, id=1053, 481.04718pt x 363.60844pt>
 File: ./images//Chapter 6/Reflection/GanttChart.png Graphic file (type png)
 <use ./images//Chapter 6/Reflection/GanttChart.png>
 Package pdftex.def Info: ./images//Chapter 6/Reflection/GanttChart.png  used on input line 21.
 (pdftex.def)             Requested size: 483.69687pt x 365.62154pt.
  [47 <./images//Chapter 5/Box/Prototype2/RedBox.png> <./images//Chapter 5/Box/Prototype2/RedBoxOpen.png> <./images//Chapter 6/Reflection/GroupDiagram.png>] [48 <./images//Chapter 6/Reflection/GanttChart.png>] [49]) [50]
-Overfull \hbox (23.89182pt too wide) in paragraph at lines 74--74
-[]\OT1/cmr/m/it/10 Digital so-lu-tions for the pre-ven-tion of chronic dis-eases\OT1/cmr/m/n/10 , 2022. [On-line]. Avail-able: $\OT1/cmtt/m/n/10 https : / / www . digitalhealth .
+Overfull \hbox (23.89182pt too wide) in paragraph at lines 85--85
+[]\OT1/cmr/m/it/10 Digital so-lu-tions for the pre-ven-tion of chronic dis-eases\OT1/cmr/m/n/10 , 2022. [On-line]. Avail-able: [][]$\OT1/cmtt/m/n/10 https : / / www . digitalhealth .
  []
 
 (./sections/Appendix.tex [51
 
 ]
-<./images//Chapter 3/alexandre/schem.png, id=315, 760.71703pt x 535.2497pt>
+<./images//Chapter 3/alexandre/schem.png, id=1097, 760.71703pt x 535.2497pt>
 File: ./images//Chapter 3/alexandre/schem.png Graphic file (type png)
 <use ./images//Chapter 3/alexandre/schem.png>
 Package pdftex.def Info: ./images//Chapter 3/alexandre/schem.png  used on input line 51.
 (pdftex.def)             Requested size: 483.69687pt x 340.3453pt.
  [52])
-<Appendix/SAGE.pdf, id=319, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1105, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf>
-Package pdftex.def Info: Appendix/SAGE.pdf  used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf  used on input line 87.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf>
-Package pdftex.def Info: Appendix/SAGE.pdf  used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf  used on input line 87.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Appendix/SAGE.pdf, id=322, page=1, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1108, page=1, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 1>
-Package pdftex.def Info: Appendix/SAGE.pdf , page1 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page1 used on input line 87.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 1>
-Package pdftex.def Info: Appendix/SAGE.pdf , page1 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page1 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [53 <./images//Chapter 3/alexandre/schem.png (PNG copy)>]
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 1>
-Package pdftex.def Info: Appendix/SAGE.pdf , page1 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page1 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 1>
-Package pdftex.def Info: Appendix/SAGE.pdf , page1 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page1 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 1>
-Package pdftex.def Info: Appendix/SAGE.pdf , page1 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page1 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [54 <./Appendix/SAGE.pdf>]
-<Appendix/SAGE.pdf, id=352, page=2, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1140, page=2, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 2>
-Package pdftex.def Info: Appendix/SAGE.pdf , page2 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page2 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 2>
-Package pdftex.def Info: Appendix/SAGE.pdf , page2 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page2 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 2>
-Package pdftex.def Info: Appendix/SAGE.pdf , page2 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page2 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [55 <./Appendix/SAGE.pdf>]
-<Appendix/SAGE.pdf, id=356, page=3, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1145, page=3, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 3>
-Package pdftex.def Info: Appendix/SAGE.pdf , page3 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page3 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 3>
-Package pdftex.def Info: Appendix/SAGE.pdf , page3 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page3 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 3>
-Package pdftex.def Info: Appendix/SAGE.pdf , page3 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page3 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [56 <./Appendix/SAGE.pdf>]
-<Appendix/SAGE.pdf, id=360, page=4, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1150, page=4, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 4>
-Package pdftex.def Info: Appendix/SAGE.pdf , page4 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page4 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 4>
-Package pdftex.def Info: Appendix/SAGE.pdf , page4 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page4 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 4>
-Package pdftex.def Info: Appendix/SAGE.pdf , page4 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page4 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [57 <./Appendix/SAGE.pdf>]
-<Appendix/SAGE.pdf, id=364, page=5, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1155, page=5, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 5>
-Package pdftex.def Info: Appendix/SAGE.pdf , page5 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page5 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 5>
-Package pdftex.def Info: Appendix/SAGE.pdf , page5 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page5 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 5>
-Package pdftex.def Info: Appendix/SAGE.pdf , page5 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page5 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [58 <./Appendix/SAGE.pdf>]
-<Appendix/SAGE.pdf, id=368, page=6, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1160, page=6, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 6>
-Package pdftex.def Info: Appendix/SAGE.pdf , page6 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page6 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 6>
-Package pdftex.def Info: Appendix/SAGE.pdf , page6 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page6 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 6>
-Package pdftex.def Info: Appendix/SAGE.pdf , page6 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page6 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [59 <./Appendix/SAGE.pdf>]
-<Appendix/SAGE.pdf, id=372, page=7, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1165, page=7, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 7>
-Package pdftex.def Info: Appendix/SAGE.pdf , page7 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page7 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 7>
-Package pdftex.def Info: Appendix/SAGE.pdf , page7 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page7 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 7>
-Package pdftex.def Info: Appendix/SAGE.pdf , page7 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page7 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [60 <./Appendix/SAGE.pdf>]
-<Appendix/SAGE.pdf, id=377, page=8, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1171, page=8, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 8>
-Package pdftex.def Info: Appendix/SAGE.pdf , page8 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page8 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 8>
-Package pdftex.def Info: Appendix/SAGE.pdf , page8 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page8 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 8>
-Package pdftex.def Info: Appendix/SAGE.pdf , page8 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page8 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [61 <./Appendix/SAGE.pdf>]
-<Appendix/SAGE.pdf, id=381, page=9, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1176, page=9, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 9>
-Package pdftex.def Info: Appendix/SAGE.pdf , page9 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page9 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 9>
-Package pdftex.def Info: Appendix/SAGE.pdf , page9 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page9 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 9>
-Package pdftex.def Info: Appendix/SAGE.pdf , page9 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page9 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [62 <./Appendix/SAGE.pdf>]
-<Appendix/SAGE.pdf, id=385, page=10, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1181, page=10, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 10>
-Package pdftex.def Info: Appendix/SAGE.pdf , page10 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page10 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 10>
-Package pdftex.def Info: Appendix/SAGE.pdf , page10 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page10 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 10>
-Package pdftex.def Info: Appendix/SAGE.pdf , page10 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page10 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [63 <./Appendix/SAGE.pdf>]
-<Appendix/SAGE.pdf, id=389, page=11, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1186, page=11, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 11>
-Package pdftex.def Info: Appendix/SAGE.pdf , page11 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page11 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 11>
-Package pdftex.def Info: Appendix/SAGE.pdf , page11 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page11 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 11>
-Package pdftex.def Info: Appendix/SAGE.pdf , page11 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page11 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [64 <./Appendix/SAGE.pdf>]
-<Appendix/SAGE.pdf, id=393, page=12, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1191, page=12, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 12>
-Package pdftex.def Info: Appendix/SAGE.pdf , page12 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page12 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 12>
-Package pdftex.def Info: Appendix/SAGE.pdf , page12 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page12 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 12>
-Package pdftex.def Info: Appendix/SAGE.pdf , page12 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page12 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [65 <./Appendix/SAGE.pdf>]
-<Appendix/SAGE.pdf, id=397, page=13, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1196, page=13, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 13>
-Package pdftex.def Info: Appendix/SAGE.pdf , page13 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page13 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 13>
-Package pdftex.def Info: Appendix/SAGE.pdf , page13 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page13 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 13>
-Package pdftex.def Info: Appendix/SAGE.pdf , page13 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page13 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [66 <./Appendix/SAGE.pdf>]
-<Appendix/SAGE.pdf, id=402, page=14, 614.295pt x 794.97pt>
+<Appendix/SAGE.pdf, id=1202, page=14, 614.295pt x 794.97pt>
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 14>
-Package pdftex.def Info: Appendix/SAGE.pdf , page14 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page14 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 14>
-Package pdftex.def Info: Appendix/SAGE.pdf , page14 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page14 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/SAGE.pdf Graphic file (type pdf)
 <use Appendix/SAGE.pdf, page 14>
-Package pdftex.def Info: Appendix/SAGE.pdf , page14 used on input line 76.
+Package pdftex.def Info: Appendix/SAGE.pdf , page14 used on input line 87.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [67 <./Appendix/SAGE.pdf>]
 
 pdfTeX warning: pdflatex (file ./Appendix/EIA.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Appendix/EIA.pdf, id=406, 614.295pt x 794.97pt>
+<Appendix/EIA.pdf, id=1207, 614.295pt x 794.97pt>
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf>
-Package pdftex.def Info: Appendix/EIA.pdf  used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf  used on input line 88.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
 pdfTeX warning: pdflatex (file ./Appendix/EIA.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf>
-Package pdftex.def Info: Appendix/EIA.pdf  used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf  used on input line 88.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
@@ -1547,89 +1703,89 @@ pdfTeX warning: pdflatex (file ./Appendix/EIA.pdf): PDF inclusion: found PDF ver
 
 
 pdfTeX warning: pdflatex (file ./Appendix/EIA.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Appendix/EIA.pdf, id=409, page=1, 614.295pt x 794.97pt>
+<Appendix/EIA.pdf, id=1210, page=1, 614.295pt x 794.97pt>
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf, page 1>
-Package pdftex.def Info: Appendix/EIA.pdf , page1 used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf , page1 used on input line 88.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf, page 1>
-Package pdftex.def Info: Appendix/EIA.pdf , page1 used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf , page1 used on input line 88.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf, page 1>
-Package pdftex.def Info: Appendix/EIA.pdf , page1 used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf , page1 used on input line 88.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf, page 1>
-Package pdftex.def Info: Appendix/EIA.pdf , page1 used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf , page1 used on input line 88.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf, page 1>
-Package pdftex.def Info: Appendix/EIA.pdf , page1 used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf , page1 used on input line 88.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [68 <./Appendix/EIA.pdf>]
 
 pdfTeX warning: pdflatex (file ./Appendix/EIA.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Appendix/EIA.pdf, id=430, page=2, 614.295pt x 794.97pt>
+<Appendix/EIA.pdf, id=1232, page=2, 614.295pt x 794.97pt>
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf, page 2>
-Package pdftex.def Info: Appendix/EIA.pdf , page2 used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf , page2 used on input line 88.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf, page 2>
-Package pdftex.def Info: Appendix/EIA.pdf , page2 used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf , page2 used on input line 88.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf, page 2>
-Package pdftex.def Info: Appendix/EIA.pdf , page2 used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf , page2 used on input line 88.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [69 <./Appendix/EIA.pdf>]
 
 pdfTeX warning: pdflatex (file ./Appendix/EIA.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Appendix/EIA.pdf, id=443, page=3, 614.295pt x 794.97pt>
+<Appendix/EIA.pdf, id=1247, page=3, 614.295pt x 794.97pt>
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf, page 3>
-Package pdftex.def Info: Appendix/EIA.pdf , page3 used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf , page3 used on input line 88.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf, page 3>
-Package pdftex.def Info: Appendix/EIA.pdf , page3 used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf , page3 used on input line 88.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf, page 3>
-Package pdftex.def Info: Appendix/EIA.pdf , page3 used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf , page3 used on input line 88.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [70 <./Appendix/EIA.pdf>]
 
 pdfTeX warning: pdflatex (file ./Appendix/EIA.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Appendix/EIA.pdf, id=448, page=4, 614.295pt x 794.97pt>
+<Appendix/EIA.pdf, id=1253, page=4, 614.295pt x 794.97pt>
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf, page 4>
-Package pdftex.def Info: Appendix/EIA.pdf , page4 used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf , page4 used on input line 88.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf, page 4>
-Package pdftex.def Info: Appendix/EIA.pdf , page4 used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf , page4 used on input line 88.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/EIA.pdf Graphic file (type pdf)
 <use Appendix/EIA.pdf, page 4>
-Package pdftex.def Info: Appendix/EIA.pdf , page4 used on input line 77.
+Package pdftex.def Info: Appendix/EIA.pdf , page4 used on input line 88.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [71 <./Appendix/EIA.pdf>]
 
 pdfTeX warning: pdflatex (file ./Appendix/DMP.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Appendix/DMP.pdf, id=453, 614.295pt x 794.97pt>
+<Appendix/DMP.pdf, id=1259, 614.295pt x 794.97pt>
 File: Appendix/DMP.pdf Graphic file (type pdf)
 <use Appendix/DMP.pdf>
-Package pdftex.def Info: Appendix/DMP.pdf  used on input line 78.
+Package pdftex.def Info: Appendix/DMP.pdf  used on input line 89.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
 pdfTeX warning: pdflatex (file ./Appendix/DMP.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: Appendix/DMP.pdf Graphic file (type pdf)
 <use Appendix/DMP.pdf>
-Package pdftex.def Info: Appendix/DMP.pdf  used on input line 78.
+Package pdftex.def Info: Appendix/DMP.pdf  used on input line 89.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
@@ -1637,77 +1793,79 @@ pdfTeX warning: pdflatex (file ./Appendix/DMP.pdf): PDF inclusion: found PDF ver
 
 
 pdfTeX warning: pdflatex (file ./Appendix/DMP.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Appendix/DMP.pdf, id=456, page=1, 614.295pt x 794.97pt>
+<Appendix/DMP.pdf, id=1262, page=1, 614.295pt x 794.97pt>
 File: Appendix/DMP.pdf Graphic file (type pdf)
 <use Appendix/DMP.pdf, page 1>
-Package pdftex.def Info: Appendix/DMP.pdf , page1 used on input line 78.
+Package pdftex.def Info: Appendix/DMP.pdf , page1 used on input line 89.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Appendix/DMP.pdf Graphic file (type pdf)
 <use Appendix/DMP.pdf, page 1>
-Package pdftex.def Info: Appendix/DMP.pdf , page1 used on input line 78.
+Package pdftex.def Info: Appendix/DMP.pdf , page1 used on input line 89.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/DMP.pdf Graphic file (type pdf)
 <use Appendix/DMP.pdf, page 1>
-Package pdftex.def Info: Appendix/DMP.pdf , page1 used on input line 78.
+Package pdftex.def Info: Appendix/DMP.pdf , page1 used on input line 89.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/DMP.pdf Graphic file (type pdf)
 <use Appendix/DMP.pdf, page 1>
-Package pdftex.def Info: Appendix/DMP.pdf , page1 used on input line 78.
+Package pdftex.def Info: Appendix/DMP.pdf , page1 used on input line 89.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/DMP.pdf Graphic file (type pdf)
 <use Appendix/DMP.pdf, page 1>
-Package pdftex.def Info: Appendix/DMP.pdf , page1 used on input line 78.
+Package pdftex.def Info: Appendix/DMP.pdf , page1 used on input line 89.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [72 <./Appendix/DMP.pdf>]
 
 pdfTeX warning: pdflatex (file ./Appendix/DMP.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Appendix/DMP.pdf, id=487, page=2, 614.295pt x 794.97pt>
+<Appendix/DMP.pdf, id=1293, page=2, 614.295pt x 794.97pt>
 File: Appendix/DMP.pdf Graphic file (type pdf)
 <use Appendix/DMP.pdf, page 2>
-Package pdftex.def Info: Appendix/DMP.pdf , page2 used on input line 78.
+Package pdftex.def Info: Appendix/DMP.pdf , page2 used on input line 89.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/DMP.pdf Graphic file (type pdf)
 <use Appendix/DMP.pdf, page 2>
-Package pdftex.def Info: Appendix/DMP.pdf , page2 used on input line 78.
+Package pdftex.def Info: Appendix/DMP.pdf , page2 used on input line 89.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/DMP.pdf Graphic file (type pdf)
 <use Appendix/DMP.pdf, page 2>
-Package pdftex.def Info: Appendix/DMP.pdf , page2 used on input line 78.
+Package pdftex.def Info: Appendix/DMP.pdf , page2 used on input line 89.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [73 <./Appendix/DMP.pdf>]
 
 pdfTeX warning: pdflatex (file ./Appendix/DMP.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Appendix/DMP.pdf, id=500, page=3, 614.295pt x 794.97pt>
+<Appendix/DMP.pdf, id=1307, page=3, 614.295pt x 794.97pt>
 File: Appendix/DMP.pdf Graphic file (type pdf)
 <use Appendix/DMP.pdf, page 3>
-Package pdftex.def Info: Appendix/DMP.pdf , page3 used on input line 78.
+Package pdftex.def Info: Appendix/DMP.pdf , page3 used on input line 89.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/DMP.pdf Graphic file (type pdf)
 <use Appendix/DMP.pdf, page 3>
-Package pdftex.def Info: Appendix/DMP.pdf , page3 used on input line 78.
+Package pdftex.def Info: Appendix/DMP.pdf , page3 used on input line 89.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix/DMP.pdf Graphic file (type pdf)
 <use Appendix/DMP.pdf, page 3>
-Package pdftex.def Info: Appendix/DMP.pdf , page3 used on input line 78.
+Package pdftex.def Info: Appendix/DMP.pdf , page3 used on input line 89.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [74 <./Appendix/DMP.pdf>] (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: F795D94B8B87D8B7B09CBEA7DFD2CE1B;11817.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27031 strings out of 478238
- 568718 string characters out of 5850455
- 1241473 words of memory out of 5000000
- 44687 multiletter control sequences out of 15000+600000
+ 33393 strings out of 478238
+ 666457 string characters out of 5850455
+ 1334892 words of memory out of 5000000
+ 50725 multiletter control sequences out of 15000+600000
  475572 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,94p,1506b,1272s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,17n,94p,1526b,1323s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb>
-Output written on main.pdf (75 pages, 11582815 bytes).
+Output written on main.pdf (75 pages, 11607028 bytes).
 PDF statistics:
- 556 PDF objects out of 1000 (max. 8388607)
- 277 compressed objects within 3 object streams
- 0 named destinations out of 1000 (max. 500000)
- 513 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1420 PDF objects out of 1440 (max. 8388607)
+ 1132 compressed objects within 12 object streams
+ 247 named destinations out of 1000 (max. 500000)
+ 1089 words of extra memory for PDF output out of 10000 (max. 10000000)
 

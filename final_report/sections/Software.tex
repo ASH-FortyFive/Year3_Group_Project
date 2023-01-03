@@ -451,17 +451,17 @@ Which means that an item is entering the fridge, while the door is open and the 
 \subsubsection{Pi Communications [ASH]}
 
 For the PI to function it needs to read known items from the database as well as add and remove instances of the items from people's inventory.
-Supabase, our back-end, provides a python API to interact with the tables as well as the handle user authentication.
-However for ease of use for the Pi Software team multiple functions where designed to simplify and abstract the database commands and manage the database connection the background.
-These key functions allow the PI to: retrieve items, add items to inventory, remove items from the inventory and log the user in.
+Supabase, our back-end, provides a python API to interact with the tables as well as to handle user authentication.
+However for ease of use for the Pi Software team multiple functions were designed to simplify and abstract the database commands and manage the database connection in the background.
+These key functions allow the PI to: retrieve items, add items to the inventory, remove items from the inventory and log the user in.
 
 This was done by creating a class that expands on the provided “Client” class from the Supabase python API.
 The Client class exposes the same commands as the JS commands and allows the user to perform various actions, however for the RPI side of the communication we are only concerned with interacting with the database.
 The commands exposed by Supabase require syntax similar to the SQL command used to drive the database directly, however as mentioned we wanted to abstract these so the SQL commands and code required to package items as JSON have been wrapped into simple commands to getItemID, addItem, and removeItem.
-The class also deals with logging the user in, ensuring we can access the users data and subsequently terminating the upon deletions.
-All these functions were tested with simple unit test that would login, check items, add items, remove items, get a barcode and logout.
+The class also deals with logging the user in, ensuring we can access the user's data, and subsequently logging out when appropriate.
+All these functions were tested with a simple unit test that would log in, check items, add items, remove items, get a barcode, and log out.
 
-As with the rest of the code base, the communication section was created entirely separately to the main code base meaning that the initial structure was rather different and integration was required.
+As with the rest of the code base, the communication section was created entirely separately from the main code base meaning that the initial structure was rather different and integration was required.
 These changes were later unified in the code refactor.
 After this refactor the database code worked well with the rest of the code base, and, as the API is similar in python and JavaScript, the experience of writing this code was easily transferred to creating the App.
 
@@ -490,16 +490,16 @@ This allows the core base functionality to be tested individually before the fin
 
 \subsubsection {Code Refactor [ASH, AW]}
 
-As is inevitable when code is written by many different people, especially when the overall design is not determined before coding begins, our code base was somewhat inconsistent, poorly formatted and used different conventions.
-To allows us to iterate and improve the code faster once the different sections, such as the barcode recognition, produce detection, and database iterations, were combined, we took the time to refactor the code into something of a more unified and thought out design.
+As is inevitable when code is written by many different people, in particular when the overall design is not determined before coding begins, our code base was somewhat inconsistent, poorly formatted, and used different conventions.
+To allow us to iterate and improve the code faster once the different sections, such as the barcode recognition, produce detection, and database iterations were combined, we took the time to refactor the code into something of a more unified and thought-out design.
 
 The first step in the refactor was simply to remove all the unused code (including imports), debug images, and other files left behind from testing.
-This alone already made large improvements to readability of the code and allowed us to start making decision like what format to use and how to restructure the code.
-Other, more superficial changes, such as setting up a “.gitignore” file to clean up the repository and a requirements file to help set up the requirements on new machines were also made.
+This alone already made large improvements to the readability of the code and allowed us to start making decisions such as what format to use and how to restructure the code.
+Other, more superficial changes,  were also made. These changes included setting up a “.gitignore” file to clean up the repository and a requirements file to help set up the requirements on new machines
 
-After this initial clean-up, we decided to rework the code in a more object orientent style, similar to how the Supabase communication section was initally written.
+After this initial clean-up, we decided to rework the code in a more object-oriented style, similar to how the Supabase communication section was initially written.
 While doing this we also tried to adopt a more consistent naming scheme for both function and member variables.
-This was done in order to unify the style of each of the section, making the code much easier to understand and edit.
+This was done to unify the style of each section, making the code much easier to understand and edit.
 We settled for the design seen below in Figure \ref{fig:oocd}, table [x] provides more detail on these member functions and variables.
 
 \begin{figure}[H]        
@@ -509,39 +509,40 @@ We settled for the design seen below in Figure \ref{fig:oocd}, table [x] provide
     \label{fig:oocd}
 \end{figure} 
 
-Now the fridges core operations where encompassed in a single object, which itself contains instance of the of objects that simplify and abstract the usage of the CNN product detector, Supabase database connection, and camera.
-After this major refactor, we also changed the layout of the python files them selves, placing them in a Smart Fridge directory with an “\_\_init\_\_.py” file which is required for the code to show up as a module.
-This allows us to cleanly import all our code into a short run file which will start everything we need for the Smart Fridge's local operation.
+Now the fridge's core operations were encompassed in a single object, which itself contains instances of the objects that simplify and abstract the usage of the CNN product detector, Supabase database connection, and camera.
+After this major refactor, we also changed the layout of the python files themselves, placing them in a Smart Fridge directory with an “\_\_init\_\_.py” file which is required for the code to show up as a module.
+This allows us to cleanly import all our code into a short-run file which will start everything we need for the Smart Fridge's local operation.
 
-While it would have been preferably to have never needed a refactor, this would have slowed initial programming down and would have required many assumption about what choices would be made by other people in the team.
-As effort would have been required to integrate the code regardless, doing this refactor allowed us examine our code as well as improve it as we went along.
+While it would have been preferable to have never needed to refactor, this would have slowed initial programming down and would have required many assumptions about what choices would be made by other people on the team.
+As effort would have been required to integrate the code regardless, doing this refactor allowed us to examine our code as well as improve it as we went along.
 Testing for this was rather simple, as the end goal was essentially to maintain the same functionality as before, meaning the same test could be run.
-This refactor was a success as we managed to improve the code slightly with some optimizations all the while making it much more readable and easier to set-up on another device.
+This refactor was a success as we managed to improve the code slightly with some optimizations all the while making it much more readable and easier to set up on another device.
 
 \input{tables/codetable.tex}
 
 
 \subsection{Back-End [ASH]}
 
-To present the user with the content of their Smart Fridge in the app and/or website the data needs to be stored somewhere that is always accessible.
-Whilst this data could be stored and transmitted locally from the Smart Fridge, this would either require that the user to be on their local area network to access the data, which is rather restrictive, or for that the Smart Fridge to be accessible beyond the local area network, which requires more complicated networking and could cause network security risks.
+To present the user with the content of their Smart Fridge in an app and/or website the relevant data needs to be stored somewhere that is always accessible.
+While this data could be stored and transmitted locally from the Smart Fridge, this would either require that the user to be on their local area network to access the data, which is restrictive, or for that the Smart Fridge to be accessible beyond the local area network, which requires more complicated networking and could cause network security risks.
 Furthermore, the client brief requires data transmission to “a known free secure location” leading us to use a cloud solution.
 
-We chose to use Supabase, a platform utilizing open-source technologies for creating mobile and web applications, which integrates a cloud database, user authentication, easy APIs and more.
+We chose to use Supabase, a platform utilizing open-source technologies for creating mobile and web applications, which integrates a cloud database, user authentication, easy APIs, and more.
 Supabase's database is a relational database, which consists of various tables where every entry has a unique ID.
-Supabase was chosen as if offers easier migrations, as well as the option of self-hosting, when compared to competitors, such as AWS Amplify and Firebase, as the underlying software is open source.
-Furthermore the a relation database was preferred to No-SQL approach taken by Firebase.
+Supabase was chosen as it offers easier migrations, as well as the option of self-hosting when compared to competitors, such as AWS Amplify and Firebase, as the underlying software is open source.
+Furthermore the a relation database was preferred to the No-SQL approach taken by Firebase.
 
-For the Smart Fridge we made use of three tables; the first table contains a list of possible items, each of them with a unique ID, the barcode value, item name, comment and an image.
+For the Smart Fridge, we made use of three tables; the first table contains a list of possible items, each of them with a unique ID, the barcode value, item name, comment, and an image.
 This table is used by the Raspberry Pi in the Smart Fridge to look up what items it has scanned.
-Every user has read access to these values and for this prototype the table will be populated by us with common items.
-The second table contains the details of each user (we have one user per fridge), which consists of their email and user ID, as well as some of the last login date and time.
+Every user has read access to these values and for this prototype, the table will be populated by us with common items.
+The second table contains the details of each user (we have one user per fridge), which consists primarily of their email and user ID.
+Some additional data such as the last login time and date is also stored.
 As well as a password hash used for login.
-Besides for login, users can not access this data and for this prototype only “dummy” users with fictional emails are used.
-This table is also part of Supabase's built in “auth” scheme.
-Our third, and primary, table is where we store the actual inventory of the users.
-The table contains instances of the items, where each row has the item's id from the previous table, the associated user ID, expiry data and possible comment.
-We have set up Supabase database rules, using Row Level Security, to ensure users can only request rows (which represent the individual items) from this table when the user ID column matches their users ID, ensuring that people cannot access other people's data.
+Besides login, users can not access this data and for this prototype, only “dummy” users with fictional emails are used.
+This table is also part of Supabase's built-in “auth” scheme.
+Our third, and primary, the table is where we store the actual inventory of the users.
+The table contains instances of the items, where each row has the item's id from the previous table, the associated user ID, expiry date, and possible comments.
+We have set up Supabase database rules, using Row Level Security, to ensure users can only request rows (which represent the individual items) from this table when the user ID column matches their user's ID, ensuring that people cannot access other people's data.
 Tables one and three create our public scheme and can be seen below in Figure \ref{fig:DB_Diagram}.
 
 \begin{figure}[H]        
@@ -552,34 +553,34 @@ Tables one and three create our public scheme and can be seen below in Figure \r
 \end{figure} 
 
 Using Supabase made our database easy to set up and use, and the API provided both in JavaScript and python made interaction simple for both the Smart Fridge itself as well as the website and app.
-However one disadvantage of Supabase is the lack of hosting for our Front Ends, meaning that we need to host them separately.
+However, one disadvantage of Supabase is the lack of hosting for our Front Ends, meaning that we need to host them separately.
 This aside, the back end worked exactly as intended and provided a secure location to transmit data to.
 
 \subsection{App [ASH]}
 
 Smartphones are owned by over 80\% \cite{stat} of all UK adults and with that apps have become the way people interact with many facets of modern life.
-This why we decided to also allow the user to access the Smart Fridge via an app, along side the website, both of these services provide the user with the inventory of their Fridge and feed into APIs to provide insights.
-While much of the core functionality overlaps with a website, the app needs to be designed very differently to work on a smartphone however the medium also provides opportunities such as sending notification the user as well as having a camera connected directly to the device.
-With this in mind we planned to create an app that had all the core functionality of the website of viewing the inventory, making updates to the inventory, seeing insights about the inventory such as recipe recommendations and nutritional data and as well as dealing with user authentication.
-The app will also expand on this by providing notifications based on expires, informing the user when the fridge is left open, and allowing the user to use their phone camera to scan in them when the Smart Fridge misses them.
+This why we decided to also allow the user to access the Smart Fridge via an app, alongside the website, both of these services provide the user with the inventory of their Fridge and feed into APIs to provide insights.
+While much of the core functionality overlaps with a website, the app needs to be designed very differently to work on a smartphone however the medium also provides opportunities such as sending notifications to the user as well as having a camera connected directly to the device.
+With this in mind, we planned to create an app that had all the core functionality of the website: viewing the inventory, making updates to the inventory, seeing insights about the inventory such as recipe recommendations and nutritional data, and dealing with user authentication.
+The app will also expand on this by providing notifications based on expiration, informing the user when the fridge is left open.
 
 React Native, Meta's mobile app development platform using the extremely popular React JavaScript user interface framework, was our natural choice for an app.
-This is because React Native is used to create mobile apps for countless companies, ranging from Fortune 500s and start-ups \cite{react}, meaning it powerful and versatile enough to create anything we require.
+This is because React Native is used to creating mobile apps for countless companies, ranging from Fortune 500s and start-ups \cite{react}, meaning it is powerful and versatile enough to create anything we require.
 Having prior experience in React also reduced the learning curve required to make this app.
 Furthermore, as React Native is based on React, often used to create websites, code between the app and website could have been shared.
-Eventually however, the decision was made to have the website written in python, regardless React Native can still render as a website meaning we also have an alternative website.
+Eventually, however, the decision was made to have the website written in python, regardless React Native can still render as a website meaning we also have an alternative website that works well on desktop and mobile.
 
-The core functionality of the app is is mostly supported by two external systems, the Supabase library that allows for quick and easy connection to our back-end and the Edamam API.
-The Supabase library allows us easily create a connection to the database, allowing to to handle user logins and database looks-ups and updates.
-There is also functionality to subscribe to events on the database, meaning the app will update without needing a manual refresh when and item is added to the Fridge.
-Login also supports the “oauth” standard, allowing users to connect using a long list of accounts such as their Google or Facebook login, however this was disabled for the prototype as we only used dummy accounts with passwords.
-The Edaman API provides the nutritional analysis and recipe search functionality of the app.
+The core functionality of the app is mostly supported by two external systems: the Supabase library, which allows for quick and easy connection to our back end, and the Edamam API.
+The Supabase library allows us easily create a connection to the database, allowing us to handle user logins and database look-ups and updates.
+There is also functionality to subscribe to events on the database, meaning the app will update without needing a manual refresh when an item is added to the Fridge.
+Login also supports the “OAuth” standard, allowing users to connect using a long list of accounts such as their Google or Facebook login, however, this was disabled for the prototype as we only used dummy accounts with passwords.
+The Edamam API provides the nutritional analysis and recipe search functionality of the app.
 The API is very powerful and claims to contain the nutritional data of close to 900,000 foods and to have over 2.3 million recipes \cite{edman}.
 More information about the API is in the section covering the website.
-This along side the natural language processing on their end allows us to send over a list of the user items, as well as attached comments containing further information about the item such as brand or unit, and receive high quality data as a response.
-These response can then be displayed to the user.
+This alongside the natural language processing on their end allows us to send over a list of the user items, as well as attached comments containing further information about the item such as brand or unit, and receive high-quality data as a response.
+These responses can then be displayed to the user.
 
-The Smart Fridge app consists of three primary screen, pictured below in figure \ref{fig:app}.
+The Smart Fridge app consists of three primary screens, pictured below in figure \ref{fig:app}.
 
 \begin{figure}[H]
     \begin{subfigure}{.33\textwidth}
@@ -599,19 +600,21 @@ Left to Right: Login, inventory, Recipes}
     \label{fig:app}
 \end{figure}
 
-The left image shows the Login-In screen, pictured filled with our dummy login details, where the user has to enter their username and password to login and gain access.
-This will only have to be done once, as the login will then stores unless the user clears their App data.
+The left image shows the Login-In screen, pictured filled with our dummy login details, where the user has to enter their username and password to log in and gain access.
+This will only have to be done once, as the login will then store unless the user clears their app data.
 The middle shows the primary inventory screen, this is the main screen where the user can view the inventory, seeing the name and expiry date of each of their items as well as a little picture provided by us to represent the item.
-They can also manage the inventory, if need be, either by tapping an item to modify the expiry date or remove item.
+They can also manage the inventory if need be, by tapping the item to bring up options allowing the user to modify the expiry date or remove the item entirely.
 The button below can be used to add an item by name.
-The right image contains the recipe screen presenting the recipes from the API to the user, this screen can be reached by swiping right on the inventory and refreshed by pulling down.
+The right image contains the recipe screen presenting the recipes from the API to the user, this screen can be reached by swiping right on the inventory and refreshing by pulling down.
 To access a website the user simply clicks anywhere on the entry.
+As can be seen, by the similar structure of the inventory and recipes stage, the reusable nature of react components was taken full advantage of the make the app quickly and keep the look consistent.
 
 Testing the core functionality of the app was done throughout development, as a “Minimum Viable Product” approach was taken.
 Meaning that the app began as a very bare-bone, but fully functional product which only showed the inventory.
 By slowing adding to this base, and constantly testing the core feature, we were able to create a more complicated app whose core features had been thoroughly tested by the end of this initial development.
 The app could have been improved with more solid test cases, simply to ensure every case was tested consistently.
-However even without this method the end result meets all the set out goals and the app serves as a useful way for the user to view the collected data.
+More features could also be added, perhaps using the camera on the phone as a backup barcode scanner or taking advantage of the API more by passing more data such as user preferences to the API.
+However, even without these additions, the results matched all the set-out goals and the app serves as a useful way for the user to view the collected data.
 
 \subsection{Website [HH]}
 
