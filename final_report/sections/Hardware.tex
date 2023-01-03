@@ -127,7 +127,7 @@ Figure 1 shows how the Load Cell, A/D convertor and Esp-32 are connected.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png}
+    \includegraphics[width=.66\textwidth]{Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png}
     \caption{Load Cell Circuit Diagram}
     \label{fig:lccircuit}
 \end{figure} 
@@ -138,7 +138,7 @@ Our load cell is said to support up to 10kg.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 3/Weight Sensor/WeightSensorPicture.png}
+    \includegraphics[width=.5\textwidth]{Chapter 3/Weight Sensor/WeightSensorPicture.png}
     \caption{Load Cell Prototype}
     \label{fig:lcproto}
 \end{figure} 
@@ -175,7 +175,7 @@ Almost all fridge items are above 100g therefore this wasn't an issue.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 3/Weight Sensor/LoadCellTestTerminal.png}
+    \includegraphics[width=.66\textwidth]{Chapter 3/Weight Sensor/LoadCellTestTerminal.png}
     \caption{Load Cell Terminal}
     \label{fig:lcterminal}
 \end{figure} 
@@ -187,7 +187,7 @@ When both items were placed on the senor the combined weight was correctly 0.4kg
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 3/Weight Sensor/WeightSensorWiredImage.png}
+    \includegraphics[width=.66\textwidth]{Chapter 3/Weight Sensor/WeightSensorWiredImage.png}
     \caption{Load Cell Fully Wired}
     \label{fig:lcwired}
 \end{figure} 
@@ -228,12 +228,7 @@ This string can be sent via the serial and decoded back into a jpeg in the raspb
 A base 64 string is around 170 thousand characters and can be captured and sent via serial in around 1 second.
 Considering the weight sensor takes a similar amount of time, threading will be easier as they can both start and finish their tasks simultaneously and be sent together without excess delay.
 
-\begin{figure}[H]        
-    \centering
-    \includegraphics[width=1\textwidth]{Chapter 3/ESP-32 Wrover Dev Board/ESP32Picture.png}
-    \caption{First Picture from ESP Camera}
-    \label{fig:espcamfp}
-\end{figure} 
+
 
 When the code was uploaded to the board, the program would crash due to there being no more room for the buffer.
 At first it was believed that this error was because the size of the buffer was too big.
@@ -245,7 +240,14 @@ The function esp\_camera\_fb\_return(fb) was used after each photo to return the
 
 Once this error had been fixed a 170 thousand character string was printed to the serial whenever a photo was taken.
 The next problem faced was that the photo which was taken was very dark and had a green filtered look.
-This can be seen in figure 10.
+This can be seen in figure \ref{fig:espcamfp}.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=.66\textwidth]{Chapter 3/ESP-32 Wrover Dev Board/ESP32Picture.png}
+    \caption{First Picture from ESP Camera}
+    \label{fig:espcamfp}
+\end{figure} 
 
 At first it was thought that this issue was due to data loss by encoding and decoding an image in base64 however it was found that when using base64 on random jpeg images from the internet, this green distortion wasn't found.
 Typically, this camera module is used to stream 30fps video to a server, therefore it goes against the original function of the module to take isolated photos.
@@ -256,7 +258,7 @@ After integrating this into the code a photo was output which no longer had a gr
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 3/ESP-32 Wrover Dev Board/ESP32BetterPicture.png}
+    \includegraphics[width=.66\textwidth]{Chapter 3/ESP-32 Wrover Dev Board/ESP32BetterPicture.png}
     \caption{Better Picture from ESP CAM}
     \label{fig:espcambetterpic}
 \end{figure} 
@@ -286,7 +288,7 @@ Two connections are required for this buzzer, a pin connection and ground.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 3/Buzzer/BuzzerCircuitDiagram.png}
+    \includegraphics[width=.66\textwidth]{Chapter 3/Buzzer/BuzzerCircuitDiagram.png}
     \caption{Buzzer Circuit Diagram}
     \label{fig:buzzcircuit}
 \end{figure} 
@@ -319,12 +321,20 @@ All fridges use magnets to create a soft close door feature and to hold the door
 The Hall effect switch will turn on in the presence of a south magnetic field on its face or a north magnetic field on the opposite side.
 It will turn off when the magnet is not in range.
 
-\begin{figure}[H]        
-    \centering
-    \includegraphics[width=.33\textwidth]{Chapter 3/Hal Sensor/HalSensorCodeLeft.png}
-    \caption{HAL Code}
+\begin{figure}[H]
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.5\textwidth]{Chapter 3/Hal Sensor/HalSensorCodeLeft.png}
+        \caption{door open = true}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.5\textwidth]{Chapter 3/Hal Sensor/HalSensorCodeRight.png}
+        \caption{door open = false}
+    \end{subfigure}
+    \caption{HAL Test Code}
     \label{fig:halcode}
-\end{figure} 
+\end{figure}
 
 We can monitor the sensor readings as shown above, and if there is a change in the state, we know when the door is open or closed.
 In our feature, the sensor returns True when the doors are open and False when the doors are closed.
@@ -332,7 +342,7 @@ In our feature, the sensor returns True when the doors are open and False when t
 \begin{figure}[H]        
     \centering
     \includegraphics[width=.5\textwidth]{Chapter 3/Hal Sensor/HalSensorBox.png}
-    \caption{HAL Box}
+    \caption{HAL Sensor inside Fridge}
     \label{fig:haldoor}
 \end{figure} 
 

@@ -1297,6 +1297,11 @@ INPUT ./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png
 INPUT ./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png
 INPUT ./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png
 INPUT ./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorCodeRight.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorCodeRight.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorCodeRight.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorCodeRight.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorCodeRight.png
 INPUT ./images//Chapter 3/Hal Sensor/HalSensorBox.png
 INPUT ./images//Chapter 3/Hal Sensor/HalSensorBox.png
 INPUT ./images//Chapter 3/Hal Sensor/HalSensorBox.png
@@ -1325,19 +1330,26 @@ INPUT ./images//Chapter 4/EspToPiCommunication/JSONPACKET.png
 INPUT ./images//Chapter 4/EspToPiCommunication/JSONPACKET.png
 INPUT ./images//Chapter 4/EspToPiCommunication/JSONPACKET.png
 INPUT ./images//Chapter 4/EspToPiCommunication/JSONPACKET.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
+INPUT ./images//Chapter 4/EspToPiCommunication/serial.png
+INPUT ./images//Chapter 4/EspToPiCommunication/serial.png
+INPUT ./images//Chapter 4/EspToPiCommunication/serial.png
+INPUT ./images//Chapter 4/EspToPiCommunication/serial.png
+INPUT ./images//Chapter 4/EspToPiCommunication/serial.png
+INPUT ./images//Chapter 4/EspToPiCommunication/deserial.png
+INPUT ./images//Chapter 4/EspToPiCommunication/deserial.png
+INPUT ./images//Chapter 4/EspToPiCommunication/deserial.png
+INPUT ./images//Chapter 4/EspToPiCommunication/deserial.png
+INPUT ./images//Chapter 4/EspToPiCommunication/deserial.png
 INPUT ./images//Chapter 4/CNN/VGG-16.png
 INPUT ./images//Chapter 4/CNN/VGG-16.png
 INPUT ./images//Chapter 4/CNN/VGG-16.png
 INPUT ./images//Chapter 4/CNN/VGG-16.png
 INPUT ./images//Chapter 4/CNN/VGG-16.png
+INPUT ./images//Ionanna.png
+INPUT ./images//Ionanna.png
+INPUT ./images//Ionanna.png
+INPUT ./images//Ionanna.png
+INPUT ./images//Ionanna.png
 INPUT ./images//Chapter 4/Barcode Detection/Figure1.png
 INPUT ./images//Chapter 4/Barcode Detection/Figure1.png
 INPUT ./images//Chapter 4/Barcode Detection/Figure1.png
@@ -1511,14 +1523,16 @@ INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png
 INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png
 INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png
 INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
+INPUT ./images//Chapter 4/Hamzah Website/DeletingRecords/Fig15.png
+INPUT ./images//Chapter 4/Hamzah Website/DeletingRecords/Fig15.png
+INPUT ./images//Chapter 4/Hamzah Website/DeletingRecords/Fig15.png
+INPUT ./images//Chapter 4/Hamzah Website/DeletingRecords/Fig15.png
+INPUT ./images//Chapter 4/Hamzah Website/DeletingRecords/Fig15.png
+INPUT ./images//Chapter 4/Hamzah Website/DeletingRecords/Fig16.png
+INPUT ./images//Chapter 4/Hamzah Website/DeletingRecords/Fig16.png
+INPUT ./images//Chapter 4/Hamzah Website/DeletingRecords/Fig16.png
+INPUT ./images//Chapter 4/Hamzah Website/DeletingRecords/Fig16.png
+INPUT ./images//Chapter 4/Hamzah Website/DeletingRecords/Fig16.png
 INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png
 INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png
 INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png
@@ -1587,11 +1601,11 @@ INPUT ./images//Chapter 6/Reflection/GroupDiagram.png
 INPUT ./images//Chapter 6/Reflection/GroupDiagram.png
 INPUT ./images//Chapter 6/Reflection/GroupDiagram.png
 INPUT ./images//Chapter 6/Reflection/GroupDiagram.png
-INPUT ./images//Chapter 6/Reflection/GanttChart.png
-INPUT ./images//Chapter 6/Reflection/GanttChart.png
-INPUT ./images//Chapter 6/Reflection/GanttChart.png
-INPUT ./images//Chapter 6/Reflection/GanttChart.png
-INPUT ./images//Chapter 6/Reflection/GanttChart.png
+INPUT ./images//GanttChartTest.PNG
+INPUT ./images//GanttChartTest.PNG
+INPUT ./images//GanttChartTest.PNG
+INPUT ./images//GanttChartTest.PNG
+INPUT ./images//GanttChartTest.PNG
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
@@ -1599,11 +1613,131 @@ INPUT ./sections/Appendix.tex
 INPUT sections/Appendix.tex
 INPUT ./sections/Appendix.tex
 INPUT sections/Appendix.tex
-INPUT ./images//Chapter 3/alexandre/schem.png
-INPUT ./images//Chapter 3/alexandre/schem.png
-INPUT ./images//Chapter 3/alexandre/schem.png
-INPUT ./images//Chapter 3/alexandre/schem.png
-INPUT ./images//Chapter 3/alexandre/schem.png
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
+INPUT Appendix/MeetingNotes.pdf
+INPUT ./Appendix/MeetingNotes.pdf
 INPUT ./Appendix/SAGE.pdf
 INPUT Appendix/SAGE.pdf
 INPUT ./Appendix/SAGE.pdf

@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {2.3}System Overview [IB]}{8}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Dependency Table [IB]}{9}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}MOSCOW Diagram [IB]}{9}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}SWOT Analysis [IB]}{10}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.6}SWOT Analysis [IB]}{9}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}Client Requirements [IB]}{10}{subsection.2.7}%
 \contentsline {subsection}{\numberline {2.8}Phase Diagram [IB]}{11}{subsection.2.8}%
 \contentsline {section}{\numberline {3}Hardware}{11}{section.3}%
@@ -17,56 +17,53 @@
 \contentsline {subsection}{\numberline {3.2}Power Distribution [ASH]}{11}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}PI HAT [ASH]}{13}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Weight Sensor [IB]}{14}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}ESP-32 Wrover Dev-Board Camera [IB]}{18}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Buzzer [IB]}{20}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}HAL Sensor [YJ]}{21}{subsection.3.7}%
-\contentsline {subsubsection}{\numberline {3.7.1}LEDs [HH]}{22}{subsubsection.3.7.1}%
-\contentsline {section}{\numberline {4}Software}{23}{section.4}%
-\contentsline {subsection}{\numberline {4.1}ESP32 Firmware Code[YJ]}{23}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}RTOS [YJ]}{24}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Software Timer [YJ]}{24}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}ESP-Pi Communication [YJ]}{25}{subsubsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.2}Raspberry Pi Overview [AW]}{26}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Pi Object and character recognition [IB]}{26}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Expiration Date - Character Recognition [IP]}{26}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Product detection – Object recognition [IP]}{26}{subsubsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.4}Background theory on design implementation [IP]}{26}{subsubsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.5}Pre-processing of the dataset [IP]}{27}{subsubsection.4.2.5}%
-\contentsline {subsubsection}{\numberline {4.2.6}Model architecture [IP]}{27}{subsubsection.4.2.6}%
-\contentsline {subsubsection}{\numberline {4.2.7}Expiration Date Evaluation [IP]}{27}{subsubsection.4.2.7}%
-\contentsline {subsubsection}{\numberline {4.2.8}Product Detection Evaluation [IP]}{28}{subsubsection.4.2.8}%
-\contentsline {subsubsection}{\numberline {4.2.9}Barcode Detection [JG]}{28}{subsubsection.4.2.9}%
-\contentsline {subsubsection}{\numberline {4.2.10}Pi Camera [AW]}{31}{subsubsection.4.2.10}%
-\contentsline {subsubsection}{\numberline {4.2.11}Pi Serial Input [AW]}{32}{subsubsection.4.2.11}%
-\contentsline {subsubsection}{\numberline {4.2.12}Pi Communications [ASH]}{33}{subsubsection.4.2.12}%
-\contentsline {subsubsection}{\numberline {4.2.13}Pi Integration [AW]}{33}{subsubsection.4.2.13}%
-\contentsline {subsubsection}{\numberline {4.2.14}Code Refactor [ASH, AW]}{34}{subsubsection.4.2.14}%
-\contentsline {subsection}{\numberline {4.3}Back-End [ASH]}{36}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}App [ASH]}{37}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Website [HH]}{38}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}User Login [HH]}{38}{subsubsection.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.2}Home Page [HH]}{39}{subsubsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.3}Fetching Data [HH]}{39}{subsubsection.4.5.3}%
-\contentsline {subsubsection}{\numberline {4.5.4}Inventory table [HH]}{39}{subsubsection.4.5.4}%
-\contentsline {subsubsection}{\numberline {4.5.5}Adding Records [HH]}{41}{subsubsection.4.5.5}%
-\contentsline {subsubsection}{\numberline {4.5.6}Deleting Records [HH]}{42}{subsubsection.4.5.6}%
-\contentsline {subsubsection}{\numberline {4.5.7}Searching for Recipes [HH]}{43}{subsubsection.4.5.7}%
-\contentsline {subsubsection}{\numberline {4.5.8}Developments [HH]}{44}{subsubsection.4.5.8}%
-\contentsline {section}{\numberline {5}Enclosure}{44}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Prototype 1 [JG]}{44}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Prototype 2 [YJ]}{46}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Reflections}{47}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Team Organization}{47}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Isaac Baglin [IB]}{48}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Jamie Gomez [JG]}{48}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Hamzah Hasnain [HH]}{49}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Ioanna Papanikolaou [IP]}{49}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Yohan John [YJ]}{49}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}Alexandre Symeonidis-Herzig [ASH]}{50}{subsection.6.7}%
-\contentsline {subsection}{\numberline {6.8}Alfie Walding [AW]}{50}{subsection.6.8}%
-\contentsline {subsection}{\numberline {6.9}Group Reflection}{50}{subsection.6.9}%
-\contentsline {section}{\numberline {A}Bibliography}{51}{appendix.A}%
-\contentsline {section}{\numberline {B}Meeting Notes}{51}{appendix.B}%
-\contentsline {section}{\numberline {C}Additional Images}{53}{appendix.C}%
-\contentsline {subsection}{\numberline {C.1}Circuit Schematic}{53}{subsection.C.1}%
-\contentsline {section}{\numberline {D}Additional Forms}{53}{appendix.D}%
+\contentsline {subsection}{\numberline {3.5}ESP-32 Wrover Dev-Board Camera [IB]}{17}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Buzzer [IB]}{19}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}HAL Sensor [YJ]}{19}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}LEDs [HH]}{21}{subsubsection.3.7.1}%
+\contentsline {section}{\numberline {4}Software}{21}{section.4}%
+\contentsline {subsection}{\numberline {4.1}ESP32 Firmware Code[YJ]}{21}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}RTOS [YJ]}{22}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Software Timer [YJ]}{22}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}ESP-Pi Communication [YJ]}{23}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}Raspberry Pi Overview [AW]}{24}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Pi Object and character recognition [IB]}{24}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Expiration Date - Character Recognition [IP]}{24}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Product detection – Object recognition [IP]}{24}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Background theory on design implementation [IP]}{25}{subsubsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.5}Pre-processing of the dataset [IP]}{25}{subsubsection.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.2.6}Model architecture [IP]}{25}{subsubsection.4.2.6}%
+\contentsline {subsubsection}{\numberline {4.2.7}Expiration Date Evaluation [IP]}{26}{subsubsection.4.2.7}%
+\contentsline {subsubsection}{\numberline {4.2.8}Product Detection Evaluation [IP]}{26}{subsubsection.4.2.8}%
+\contentsline {subsubsection}{\numberline {4.2.9}Barcode Detection [JG]}{26}{subsubsection.4.2.9}%
+\contentsline {subsubsection}{\numberline {4.2.10}Pi Camera [AW]}{29}{subsubsection.4.2.10}%
+\contentsline {subsubsection}{\numberline {4.2.11}Pi Serial Input [AW]}{31}{subsubsection.4.2.11}%
+\contentsline {subsubsection}{\numberline {4.2.12}Pi Communications [ASH]}{31}{subsubsection.4.2.12}%
+\contentsline {subsubsection}{\numberline {4.2.13}Pi Integration [AW]}{31}{subsubsection.4.2.13}%
+\contentsline {subsubsection}{\numberline {4.2.14}Code Refactor [ASH, AW]}{33}{subsubsection.4.2.14}%
+\contentsline {subsection}{\numberline {4.3}Back-End [ASH]}{35}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}App [ASH]}{36}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Website [HH]}{37}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}User Login [HH]}{37}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}Home Page [HH]}{37}{subsubsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.3}Fetching Data [HH]}{38}{subsubsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.4}Inventory table [HH]}{38}{subsubsection.4.5.4}%
+\contentsline {subsubsection}{\numberline {4.5.5}Adding Records [HH]}{40}{subsubsection.4.5.5}%
+\contentsline {subsubsection}{\numberline {4.5.6}Deleting Records [HH]}{41}{subsubsection.4.5.6}%
+\contentsline {subsubsection}{\numberline {4.5.7}Searching for Recipes [HH]}{41}{subsubsection.4.5.7}%
+\contentsline {subsubsection}{\numberline {4.5.8}Developments [HH]}{42}{subsubsection.4.5.8}%
+\contentsline {section}{\numberline {5}Enclosure}{43}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Prototype 1 [JG]}{43}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Prototype 2 [YJ]}{45}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Reflections}{46}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Team Organization}{46}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Isaac Baglin [IB]}{47}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Jamie Gomez [JG]}{47}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Hamzah Hasnain [HH]}{47}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Ioanna Papanikolaou [IP]}{48}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Yohan John [YJ]}{48}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Alexandre Symeonidis-Herzig [ASH]}{48}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}Alfie Walding [AW]}{48}{subsection.6.8}%
+\contentsline {subsection}{\numberline {6.9}Group Reflection}{49}{subsection.6.9}%
+\contentsline {section}{\numberline {A}Bibliography}{50}{appendix.A}%
+\contentsline {section}{\numberline {B}Additional Forms}{50}{appendix.B}%

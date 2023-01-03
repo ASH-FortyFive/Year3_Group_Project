@@ -101,13 +101,13 @@ I tested this by connecting the pins to an Arduino UNO board running a deseriali
 \begin{figure}[H]
     \begin{subfigure}{.5\textwidth}
       \centering
-      \includegraphics[width=.8\linewidth]{Logo.png}
+      \includegraphics[width=.66\linewidth]{Chapter 4/EspToPiCommunication/serial.png}
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}
       \centering
-      \includegraphics[width=.8\linewidth]{Logo.png}
+      \includegraphics[width=.66\linewidth]{Chapter 4/EspToPiCommunication/deserial.png}
     \end{subfigure}
-    \caption{PLACEHOLDER: Serialisation and Deserialisation Scripts}
+    \caption{Serialisation and Deserialisation Scripts}
 \end{figure}
 
 \subsection{Raspberry Pi Overview [AW]}
@@ -128,7 +128,7 @@ The second task is to take an image of the product and using an already trained 
 
 The implementation of the expiration date recognition requires loading an image and then processing it to be able to use a function that will extract the digits detected.
 The function that identifies and extracts the characters comes from a library called PyTesseract.
-PyTesseract is a python tool used for optical character recognition, that recognizes and extracts characters on an image [pypiPytesseract].
+PyTesseract is a python tool used for optical character recognition, that recognizes and extracts characters on an image \cite{pypiPytesseract}.
 The code written can be found in a repository on github.
 In the code implemented, the image is loaded using the OpenCV library's image read function (imread) and then converted from BGR to RGB channel ordering, again using an OpenCV library function.
 The function named image\_to\_string from PyTesseract tool is then called which takes in the rgb image and stored in a variable.
@@ -141,7 +141,7 @@ The first step is inspecting the nesting of the general outlines as well as the 
 The outlines are assembled into objects which are then organised into text lines.
 The next step includes testing whether the test lines are fixed pitch, and the text lines are divided into words according to the spacing between them.
 Recognition of the text is the next process that takes place, which is done by firstly recognising each word and then passing it into a classifier.
-The process is repeated for the case where the classification didn't successfully recognize words [TesseractOverview].
+The process is repeated for the case where the classification didn't successfully recognize words \cite{TesseractOverview}.
 
 The performance of the expiration date detection was tested using images initially with just numbers and then of more complicated images, meaning the products with expiration date on them.
 In the images with just numbers taken from google, the average performance was satisfactory as the output of the code returned the number that was embedded on the image.
@@ -165,16 +165,16 @@ In this case, a simple architecture of a CNN was designed with the addition of u
 A model consists of layers in which the training of the data takes place.
 The first layers of a model train the data on more generic features such as shapes, edges, and colours, whereas the higher layers learn more complex and specific features.
 A more efficient way to train the data would be to use a model that has been pre-trained in the more generic task features and complete training only for the more complex task features.
-The pre-trained model used is the VGG16 architecture which consists of 16 layers that hold the learnable parameters (weights), 3 convolutional layers, 5 max pooling layers and 3 dense layers, in total 21 layers [VGG16overview].
+The pre-trained model used is the VGG16 architecture which consists of 16 layers that hold the learnable parameters (weights), 3 convolutional layers, 5 max pooling layers and 3 dense layers, in total 21 layers \cite{VGG16overview}.
 The convolutional layers use filters, or kernels with the purpose of performing the convolution operation on the input and give an output of a feature map that comprises the features detected.
 The max pooling layers perform an operation that takes the maximum value of a specified region on the feature map with the aim to reduce its dimension.
 Lastly, the dense layers contain the neurons that are connected to the ones in the previous convolutional layers with the aim to perform the classification.
-The architecture of the VGG16 architecture is shown in figure [update].
+The architecture of the VGG16 architecture is shown in figure \ref{fig:cnn}.
 
 \begin{figure}[H]        
     \centering
     \includegraphics[width=.66\textwidth]{Chapter 4/CNN/VGG-16.png}
-    \caption{VGG16 Architecture}
+    \caption{VGG16 Architecture \cite{VGG16overview}}
     \label{fig:cnn}
 \end{figure} 
 
@@ -211,7 +211,7 @@ The performance of the expiration date detection was tested using images initial
 In the images with just numbers taken from google, the average performance was satisfactory as the output of the code returned the number that was embedded on the image.
 The images that contained the products had a poorer performance as the majority of the images were not as clear regarding the intensity of the image and the shape of the characters.
 Initially, this was a major drawback as other than the images used for testing from the internet, images were captured from the ESP32 camera but failed the tests, as they were very blurry and unfocused.
-This was discussed with the rest of team, and it was decided that the ESP32 camera wouldn't be used, and a web camera would replace it.
+This was discussed with the rest of team, and itH was decided that the ESP32 camera wouldn't be used, and a web camera would replace it.
 Images captured from the webcam were then tested and had a much-improved performance.
 The lighting when the image is captured is highly important as it can zero the possibility of the function's ability to read and extract the characters.
 
@@ -224,9 +224,15 @@ After testing the model with a test set, the model had a poor performance, but t
 This is not something that can be handled within the scope of this project, as it would require adding images and labelling them accordingly to their class.
 Therefore, a better architecture of the model was attempted to be completed for a newly trained model that would take into consideration trying to reduce overfitting.
 Additionally, the framework used was TensorFlow, and the process of using the pre-trained model to predict the class of the image was taking longer than expected, hence another approach was changing to PyTorch framework.
+In the screenshot below, the results of one of images tested is shown , giving the accuracy of each label predicted.
+The image tested was of class apple, so the model did predict correctly in this case.
+Nevertheless, in the majority of the other tests, the performance was poor.
 
-
-For the testing part of the product detection, two functions were created, one to read the image and another to predict the class of the image based on the model.
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=.66\textwidth]{Ionanna.png}
+    \caption{Screenshot of testing an image of label "apple"}
+\end{figure} 
 
 \subsubsection{Barcode Detection [JG]}
 
@@ -249,8 +255,8 @@ The third was of a barcode on a bottle.
 This image was selected to be the most challenging of the three as the surface of the barcode was neither flat nor smooth.
 A chosen algorithm was not required to successfully detect or decode the barcode in this image as its purpose was mainly to test the limits of each algorithm.
 
-The first algorithm [Detecting Barcodes in Images with Python and OpenCV] only detected barcodes and did not decode them.
-However, this was chosen as a starting point as [1] explained the workings of the algorithm clearly and in detail.
+The first algorithm \cite{rosebrock_2021} only detected barcodes and did not decode them.
+However, this was chosen as a starting point as \cite{rockikz_2020} explained the workings of the algorithm clearly and in detail.
 The algorithm begins by converting the image to greyscale using the Sobel function found within the OpenCV library.
 From this the x and y gradients from the Scharr operator are subtracted which gives the regions of the image which have the largest horizontal gradients and the lowest vertical gradients as these are most likely to contain barcodes within them.
 The next step was to blur the image and to threshold the image, so that, pixels in which it was decided that a barcode is unlikely to be, could be set to black and pixels where a barcode was likely to be, could be set to white.
@@ -283,7 +289,7 @@ Therefore, the only disadvantage of this algorithm was the missing functionality
 Due to the quality of the results, this functionality was added and tested.
 Unfortunately, it was not possible for this to be implemented in a way that kept the results of the barcode detection within the time that was allocated for this algorithm.
 
-The second algorithm [Barcode-Reader] added onto the first in that it included functionality for both detecting and decoding barcodes.
+The second algorithm \cite{ryan_zabad_vaughan_2019} added onto the first in that it included functionality for both detecting and decoding barcodes.
 The sections of code dedicated to detecting the barcodes were very similar as the same method was used, with most differences being due to the use of different libraries.
 However, the code for decoding the barcodes was new and therefore, the most interesting section.
 
@@ -316,13 +322,13 @@ The code for this is shown below.
 
 This algorithm's performance on the test images fell below expectations as it failed to either detect or decode the barcode in any of the three images.
 It was suspected that there may have been an error in the code which caused this.
-Therefore, the algorithm was tested using the test image provided by [Barcode-Reader].
+Therefore, the algorithm was tested using the test image provided by \cite{ryan_zabad_vaughan_2019}
 When tested with this image the algorithm functioned properly, detecting the barcode and decoding it correctly.
 In order to test whether one section of the code was working worse than the other, the barcode decoding sections of the code were implemented with the barcode detection of the previous algorithm.
 However, this did not improve its performance.
 Therefore, this algorithm was discarded as an option.
 
-The third algorithm [How to Make a Barcode Reader in Python] also provided functionality for both detecting and decoding barcodes.
+The third algorithm \cite{rockikz_2020} also provided functionality for both detecting and decoding barcodes.
 However, this algorithm achieved this using the pyzbar library, which was designed for detecting and decoding barcodes.
 As a result, the code for this third algorithm is much more condensed and easier to read.
 For example, when using the pyzbar library, detecting and decoding a barcode is done with one line of code.
@@ -404,7 +410,7 @@ By doing this, the reliability of extracting barcodes and expiration dates would
 
 The images are stored in a bitmap image file, known as BMP for short.
 This is done to maintain a high-resolution image as opposed to the JPEG file format.
-Figure [IMAGE OF PI BARCODE] shows an image from the camera on the raspberry pi.
+Figure \ref{fig:webcampic} shows an image from the camera on the raspberry pi.
 
 Since the original design intended for an ESP32 camera to be used, the webcam was a backup idea that had to be utilized with the time left.
 Fortunately, the Pi is perfectly suited to handling the camera since the open cv library is already a requirement and the goal was to transfer the image from the ESP-32 to the Pi regardless.
@@ -417,13 +423,13 @@ Ultimately, it has increased the complexity of the wiring while decreasing the c
     \label{fig:webcampic} 
 \end{figure} 
 
-In figure [FIGURE IMAGE OF RASP PI BOX] a picture taken by the webcam of the Raspberry Pi box barcode can be seen.
+In figure \ref{fig:webcampic} a picture taken by the webcam of the Raspberry Pi box barcode can be seen.
 In the terminal the byte value of b'1373331' is detected which matches the number written on the box.
 
 \subsubsection{Pi Serial Input [AW]}
 
 To communicate between the ESP-32 and Raspberry Pi, the serial RX and TX pins are connected.
-As seen on the pinout [RASPBBERRY \_PI\_DOCUMENTATION\_REFERENCE], the GPIO 14 (TXD) pin is used to transmit data and the GPIO 15 (RXD) pin is used to receive data.
+As seen on the pinout \ref{fig:rpigpio}, the GPIO 14 (TXD) pin is used to transmit data and the GPIO 15 (RXD) pin is used to receive data.
 
 \begin{figure}[H]        
     \centering
@@ -433,9 +439,9 @@ As seen on the pinout [RASPBBERRY \_PI\_DOCUMENTATION\_REFERENCE], the GPIO 14 (
 \end{figure} 
 
 The information received will be a JSON file containing the status of the door, the direction of movement and if the alarm is sounding.
-The JSON format table can be seen in figure [FIGURE NUMBER OF TABLE IN EARLIER SECTION].
+The JSON format table can be seen in table \ref{tab:yohan}
 
-The ESP-32 was connected to the Raspberry Pi by using two jumper wires to test if the serial input was functional and as seen in [FIGURE 2, JSONSERIALINPUT]
+The ESP-32 was connected to the Raspberry Pi by using two jumper wires to test if the serial input was functional and as seen in \ref{fig:rpiserial}
 
 \begin{figure}[H]        
     \centering
@@ -495,12 +501,13 @@ To allow us to iterate and improve the code faster once the different sections, 
 
 The first step in the refactor was simply to remove all the unused code (including imports), debug images, and other files left behind from testing.
 This alone already made large improvements to the readability of the code and allowed us to start making decisions such as what format to use and how to restructure the code.
-Other, more superficial changes,  were also made. These changes included setting up a “.gitignore” file to clean up the repository and a requirements file to help set up the requirements on new machines
+Other, more superficial changes,  were also made.
+These changes included setting up a “.gitignore” file to clean up the repository and a requirements file to help set up the requirements on new machines
 
 After this initial clean-up, we decided to rework the code in a more object-oriented style, similar to how the Supabase communication section was initially written.
 While doing this we also tried to adopt a more consistent naming scheme for both function and member variables.
 This was done to unify the style of each section, making the code much easier to understand and edit.
-We settled for the design seen below in Figure \ref{fig:oocd}, table [x] provides more detail on these member functions and variables.
+We settled for the design seen below in figure \ref{fig:oocd}, table \ref{tab:piview} provides more detail on these member functions and variables.
 
 \begin{figure}[H]        
     \centering
@@ -815,7 +822,7 @@ The selected items are then removed from the database using an SQL delete statem
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/AddingRecords/Fig12.png}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/DeletingRecords/Fig15.png}
     \caption{Demonstration of how items are deleted from the table using checkboxes}
 \end{figure} 
 
@@ -827,7 +834,7 @@ The 'in' method allows a list to be specified.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/AddingRecords/Fig12.png}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/DeletingRecords/Fig16.png}
     \caption{Converting selected items into a suitable format for SQL deletion}
 \end{figure} 
 

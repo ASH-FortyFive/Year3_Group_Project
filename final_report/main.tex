@@ -1,8 +1,8 @@
 %\documentclass[10pt]{article}
-\documentclass{article}
+\documentclass[10pt]{article}
 \usepackage[utf8]{inputenc}
-%\usepackage[a4paper,width=185mm,top=18mm,bottom=18mm]{geometry}
-\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[a4paper,width=180mm,top=20mm,bottom=20mm]{geometry}
+%\usepackage[a4paper,margin=2cm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage{pdfpages}
@@ -30,6 +30,8 @@
     urlcolor=blue 
 }
 
+\numberwithin{figure}{section}
+
 \graphicspath{ {./images/} }
 \pagestyle{fancy}
 
@@ -42,7 +44,6 @@
 \fancyfoot[R]{\thepage}
 
 \begin{document}
-
 
 \input{{sections/Title.tex}}
 \section*{Abstract}
@@ -84,6 +85,7 @@ Lastly, the paper will be concluded with a reflection from each group member as 
 \section{Bibliography}
 \printbibliography[heading=none]
 \input{sections/Appendix.tex}
+\includepdf[pages=-]{Appendix/MeetingNotes.pdf}
 \includepdf[pages=-]{Appendix/SAGE.pdf}
 \includepdf[pages=-]{Appendix/EIA.pdf}
 \includepdf[pages=-]{Appendix/DMP.pdf}

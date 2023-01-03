@@ -43,8 +43,8 @@
       \strng{authorbibnamehash}{2a8306a1468b6a35e602bcf2f4f122ac}
       \strng{authornamehash}{2a8306a1468b6a35e602bcf2f4f122ac}
       \strng{authorfullhash}{2a8306a1468b6a35e602bcf2f4f122ac}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nutrients}
@@ -59,8 +59,8 @@
       \endverb
     \endentry
     \entry{digital_health_2022}{misc}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Digital Health}
       \field{title}{Digital Solutions for the prevention of chronic diseases}
@@ -80,8 +80,8 @@
       \list{publisher}{1}{%
         {FAO}%
       }
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Food Wastage Footprints}
       \field{title}{Sustainability pathways food wastage footprints - food and agriculture ...}
@@ -98,8 +98,8 @@
       \endverb
     \endentry
     \entry{fresh}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Amazon}
       \field{title}{Amazon Fresh Grocery Store}
@@ -115,8 +115,8 @@
       \endverb
     \endentry
     \entry{samsung}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Samsung}
       \field{title}{Family Hub Page}
@@ -145,8 +145,8 @@
       \strng{authorbibnamehash}{2d661e9167bd3a268ea03a3ee152926c}
       \strng{authornamehash}{2d661e9167bd3a268ea03a3ee152926c}
       \strng{authorfullhash}{2d661e9167bd3a268ea03a3ee152926c}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{THE 17 GOALS Sustainable Development}
@@ -165,8 +165,8 @@
       \strng{authorbibnamehash}{56fea0bb8c48bf08b8edd8cfe79b30ae}
       \strng{authornamehash}{56fea0bb8c48bf08b8edd8cfe79b30ae}
       \strng{authorfullhash}{56fea0bb8c48bf08b8edd8cfe79b30ae}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{From Farm to Fork: the 5 stages of wasting food --- postharvest.com}
@@ -192,8 +192,8 @@
       \strng{authorbibnamehash}{f4524185b9fa11312f33e1664fb37dcb}
       \strng{authornamehash}{f4524185b9fa11312f33e1664fb37dcb}
       \strng{authorfullhash}{f4524185b9fa11312f33e1664fb37dcb}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Forbes}
@@ -325,6 +325,84 @@
       \field{note}{[Accessed 02-Dec-2022]}
       \field{title}{{W}hy {R}{T}{O}{S} and {W}hat is {R}{T}{O}{S}? --- freertos.org}
     \endentry
+    \entry{pypiPytesseract}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f8ce7e99badcb9b68360c2db3c488e0d}{%
+           family={Hoffstaetter},
+           familyi={H\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=c6fa4d4b168383d8234d0ae882e3b842}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{fullhash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{bibnamehash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{authorbibnamehash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{authornamehash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{authorfullhash}{f8ce7e99badcb9b68360c2db3c488e0d}
+      \strng{editorbibnamehash}{c6fa4d4b168383d8234d0ae882e3b842}
+      \strng{editornamehash}{c6fa4d4b168383d8234d0ae882e3b842}
+      \strng{editorfullhash}{c6fa4d4b168383d8234d0ae882e3b842}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{{https://pypi.org/project/pytesseract/}}
+      \field{title}{pytesseract --- pypi.org}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{Aug 16, 2022}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{TesseractOverview}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b66d7a9f50f24f3226509c9a584355a2}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Ray},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b66d7a9f50f24f3226509c9a584355a2}
+      \strng{fullhash}{b66d7a9f50f24f3226509c9a584355a2}
+      \strng{bibnamehash}{b66d7a9f50f24f3226509c9a584355a2}
+      \strng{authorbibnamehash}{b66d7a9f50f24f3226509c9a584355a2}
+      \strng{authornamehash}{b66d7a9f50f24f3226509c9a584355a2}
+      \strng{authorfullhash}{b66d7a9f50f24f3226509c9a584355a2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Overview of the Tesseract OCR Engine}
+      \field{year}{Sep 2007}
+    \endentry
+    \entry{VGG16overview}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d022a449b203ccd5a9977816abe18bc3}{%
+           family={G},
+           familyi={G\bibinitperiod},
+           given={Rohini},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d022a449b203ccd5a9977816abe18bc3}
+      \strng{fullhash}{d022a449b203ccd5a9977816abe18bc3}
+      \strng{bibnamehash}{d022a449b203ccd5a9977816abe18bc3}
+      \strng{authorbibnamehash}{d022a449b203ccd5a9977816abe18bc3}
+      \strng{authornamehash}{d022a449b203ccd5a9977816abe18bc3}
+      \strng{authorfullhash}{d022a449b203ccd5a9977816abe18bc3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Everything you need to know about VGG16}
+      \field{year}{23 Sep 2021}
+    \endentry
     \entry{dataset}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=b4b0f08cf9159932435f4aadcedfd2db}{%
@@ -349,17 +427,120 @@
       \strng{authorbibnamehash}{8aa6446c5fbfae8cc939404a41262944}
       \strng{authornamehash}{8aa6446c5fbfae8cc939404a41262944}
       \strng{authorfullhash}{8aa6446c5fbfae8cc939404a41262944}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{IEEE Winter Conference on Applications of Computer Vision (WACV)}
       \field{title}{A Hierarchical Grocery Store Image Dataset with Visual and Semantic Labels}
       \field{year}{2019}
     \endentry
+    \entry{rosebrock_2021}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ad5eaecc2721564034f710ce9a318887}{%
+           family={Rosebrock},
+           familyi={R\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PyImageSearch}%
+      }
+      \strng{namehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{fullhash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{bibnamehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{authorbibnamehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{authornamehash}{ad5eaecc2721564034f710ce9a318887}
+      \strng{authorfullhash}{ad5eaecc2721564034f710ce9a318887}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PyImageSearch}
+      \field{month}{4}
+      \field{title}{Detecting barcodes in images with python and opencv}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://pyimagesearch.com/2014/11/24/detecting-barcodes-images-python-opencv/
+      \endverb
+      \verb{url}
+      \verb https://pyimagesearch.com/2014/11/24/detecting-barcodes-images-python-opencv/
+      \endverb
+    \endentry
+    \entry{rockikz_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=cd016021e5d0aa10ca8566861ae4a4f9}{%
+           family={Rockikz},
+           familyi={R\bibinitperiod},
+           given={Abdou},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PythonCode}%
+      }
+      \strng{namehash}{cd016021e5d0aa10ca8566861ae4a4f9}
+      \strng{fullhash}{cd016021e5d0aa10ca8566861ae4a4f9}
+      \strng{bibnamehash}{cd016021e5d0aa10ca8566861ae4a4f9}
+      \strng{authorbibnamehash}{cd016021e5d0aa10ca8566861ae4a4f9}
+      \strng{authornamehash}{cd016021e5d0aa10ca8566861ae4a4f9}
+      \strng{authorfullhash}{cd016021e5d0aa10ca8566861ae4a4f9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{How to Make a Barcode Reader in Python}
+      \field{month}{9}
+      \field{title}{How to make a Barcode Reader in python}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.thepythoncode.com/article/making-a-barcode-scanner-in-python
+      \endverb
+      \verb{url}
+      \verb https://www.thepythoncode.com/article/making-a-barcode-scanner-in-python
+      \endverb
+    \endentry
+    \entry{ryan_zabad_vaughan_2019}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=f4838f5e2bb95ce3af817d446338d5a3}{%
+           family={Ryan},
+           familyi={R\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6b4a916694056ffe0027a9cb06fa4316}{%
+           family={Zabad},
+           familyi={Z\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=503e8bb96112c7358b6dbcc8bcaee2b3}{%
+           family={Vaughan},
+           familyi={V\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf4019bc5d5e8a9b4f9fdb3087e0c99b}
+      \strng{fullhash}{cf4019bc5d5e8a9b4f9fdb3087e0c99b}
+      \strng{bibnamehash}{cf4019bc5d5e8a9b4f9fdb3087e0c99b}
+      \strng{authorbibnamehash}{cf4019bc5d5e8a9b4f9fdb3087e0c99b}
+      \strng{authornamehash}{cf4019bc5d5e8a9b4f9fdb3087e0c99b}
+      \strng{authorfullhash}{cf4019bc5d5e8a9b4f9fdb3087e0c99b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Barcode-Reader}
+      \field{month}{8}
+      \field{title}{BENJIMR/Barcode-Reader: Opencv program designed to find, extract and read barcodes in images.}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://github.com/benjimr/Barcode-Reader
+      \endverb
+      \verb{url}
+      \verb https://github.com/benjimr/Barcode-Reader
+      \endverb
+    \endentry
     \entry{stat}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{title}{Statista Smartphone Usage}
       \field{urlday}{3}
@@ -369,8 +550,8 @@
       \field{urldateera}{ce}
     \endentry
     \entry{react}{misc}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{title}{React Native Homepage}
       \field{urlday}{1}
@@ -379,8 +560,8 @@
       \field{urldateera}{ce}
     \endentry
     \entry{edman}{misc}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{title}{Edamam Homepage}
       \field{urlday}{1}
@@ -389,8 +570,8 @@
       \field{urldateera}{ce}
     \endentry
     \entry{pd}{misc}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{title}{Pandas Docs}
       \field{urlday}{1}
