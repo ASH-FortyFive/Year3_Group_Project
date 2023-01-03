@@ -1,4 +1,3 @@
-\PassOptionsToPackage{table}{xcolor}
 %\documentclass[10pt]{article}
 \documentclass{article}
 \usepackage[utf8]{inputenc}
@@ -13,6 +12,7 @@
 \usepackage{xltabular}
 \usepackage{blindtext}
 \usepackage{longtable}
+\usepackage{subcaption}
 \usepackage[
     backend=biber,
     style=ieee
@@ -22,24 +22,27 @@
 \graphicspath{ {./images/} }
 \pagestyle{fancy}
 
-\fancyhead[L]{Design Brief}
-\fancyhead[R]{25th of October 2022}
+\fancyhead[L]{Smart Fridge Final Report}
+\fancyhead[R]{3rd of January 2023}
 
 \cfoot{} % get rid of the page number 
 \fancyfoot[L]{Group I}
 \fancyhead[C]{}
 \fancyfoot[R]{\thepage}
 
-
 \begin{document}
 
+
 \input{{sections/Title.tex}}
-\begin{center}
 \section*{Abstract}
-\end{center}
-\blindtext
+The Smart Fridge is a proof-of-concept device to show how the user experience of a fridge can be improved to increase quality of life and overall health.
+Using various sensors and computer vision methods to collect data, the contents of the fridge are identified.
+This information is then presented to the user through a website which will also recommend recipes tailored to the contents of the fridge.
+This report will discuss the background of the project as well as the methods used in development and testing.
+Lastly, the paper will be concluded with a reflection from each group member as well as one larger reflection for the group overall.
 
 \clearpage
+
 
 \tableofcontents
 \listoffigures
@@ -65,18 +68,15 @@
 \section{Reflections}
 \input{sections/PMandR.tex}
 
-
-
 \clearpage
 \appendix
-\section{References}
-\section{Meeting Notes}
-\printbibliography
-%\includepdf[pages=-]{Appendix/SAGE.pdf}
-%\includepdf[pages=-]{Appendix/EIA.pdf}
-%\includepdf[pages=-]{Appendix/DMP.pdf}
+\section{Bibliography}
+\printbibliography[heading=none]
+\input{sections/Appendix.tex}
+\includepdf[pages=-]{Appendix/SAGE.pdf}
+\includepdf[pages=-]{Appendix/EIA.pdf}
+\includepdf[pages=-]{Appendix/DMP.pdf}
 %\section{Meeting Notes}
-%\input{sections/Appendix.tex}
-
+%
 
 \end{document}

@@ -1,0 +1,31 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\small
+\begin{longtable}[c]{|l|l|l|}
+  \caption{Client Requirements }
+  \label{tab:clientreq}\\
+  \hline
+  Client  Requirement &
+    \begin{tabular}[c]{@{}l@{}}Description  Of Product \\ Implementation\end{tabular} &
+    \begin{tabular}[c]{@{}l@{}}Has The Requirement  \\ Been Met?\end{tabular} \\ \hline
+  \endfirsthead
+  %
+  \endhead
+  %
+  \begin{tabular}[c]{@{}l@{}}There must be an aspect of hardware\\  associated with data generation,\\ measurement, and recording.\end{tabular} &
+    \begin{tabular}[c]{@{}l@{}}The HX711 Load cell measures the\\ weight, the HAL Sensor measures\\ the ON/OFF state and the web \\ camera which is connected to a\\ Raspberry PI detects the product \\ entering the fridge using OpenCV.\end{tabular} &
+    Yes \\ \hline
+  \begin{tabular}[c]{@{}l@{}}There  must be an aspect of timed \\ data transmission to a known free\\ secure location.\end{tabular} &
+    \begin{tabular}[c]{@{}l@{}}Supabase and it's API is used to\\ send data to and from the PI, \\ Website and App to a PostgreSQL\\ database.\end{tabular} &
+    Yes \\ \hline
+  \begin{tabular}[c]{@{}l@{}}There must be an aspect of timed\\ data  display and analysis on a\\ portable device.\end{tabular} &
+    \begin{tabular}[c]{@{}l@{}}The Inventory Data is displayed\\ on a  website and an App which\\ can be view on a portable device.\end{tabular} &
+    Yes \\ \hline
+  \begin{tabular}[c]{@{}l@{}}There  must be documentation\\ with evidence of testing and\\ validation.\end{tabular} &
+    \begin{tabular}[c]{@{}l@{}}This  document contains all the\\ evidence of testing and validation\\ throughout this project.\end{tabular} &
+    Yes \\ \hline
+  \begin{tabular}[c]{@{}l@{}}The cost of the project must not\\ exceed  £100.\end{tabular} &
+    \begin{tabular}[c]{@{}l@{}}The cost of the project was kept\\ below  £100.\end{tabular} &
+    Yes \\ \hline
+  \end{longtable}

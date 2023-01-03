@@ -1,0 +1,61 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\small
+% Please add the following required packages to your document preamble:
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\begin{longtable}[c]{|l|l|l|}
+\caption{Overview of Python Libraries}
+\label{tab:libraries}\\
+\hline
+Module/Library &
+  Section &
+  Function \\ \hline
+\endfirsthead
+%
+\endhead
+%
+serial &
+  Serial Communication &
+  \begin{tabular}[c]{@{}l@{}}Enables Serial communication on\\ the GPIO 14 pin for transmitting\\ and GPIO 15 pin for receiving.\end{tabular} \\ \hline
+cv2 &
+  \begin{tabular}[c]{@{}l@{}}Barcode, Optical character\\ recognition\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Cv2 is the Open CV library for python.\\ It lays the foundation for computer\\ vision code in the project as well as\\ the image handling.\end{tabular} \\ \hline
+io &
+  \begin{tabular}[c]{@{}l@{}}Barcode, Serial Communication, \\ Optical character recognition\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}The io module provides pythons\\ main methods for dealing with inputs\\ and outputs.\end{tabular} \\ \hline
+time &
+  CNN, Barcode &
+  \begin{tabular}[c]{@{}l@{}}The time library is used to add delay\\ during the image processing.\end{tabular} \\ \hline
+json &
+  Serial Communication &
+  \begin{tabular}[c]{@{}l@{}}The JSON library is used to convert\\ the JSON received from the ESP\\  into readable values.\end{tabular} \\ \hline
+pyzbar &
+  Barcode &
+  \begin{tabular}[c]{@{}l@{}}Pyzbar is the library that handles\\ decoding and detecting barcodes in \\ images.\end{tabular} \\ \hline
+pytesseract &
+  Optical character recognition &
+  \begin{tabular}[c]{@{}l@{}}Pytesseract is the library that handles\\ decoding and detecting characters in \\ images.\end{tabular} \\ \hline
+pandas &
+  CNN product recognition &
+  \begin{tabular}[c]{@{}l@{}}The pandas library is used for data\\ analysis.\end{tabular} \\ \hline
+numpy &
+  CNN product recognition &
+  \begin{tabular}[c]{@{}l@{}}The NumPy module allows python\\ to use high level mathematical functions \\ and operate with large multi-dimensional\\ arrays and matrices.\end{tabular} \\ \hline
+shutil &
+  CNN product recognition &
+  \begin{tabular}[c]{@{}l@{}}Shutil allows the python program to \\ do high level operations on files.\end{tabular} \\ \hline
+itertools &
+  CNN product recognition &
+  \begin{tabular}[c]{@{}l@{}}The Itertools module implements \\ functions to increase the efficiency \\ of loops in the code.\end{tabular} \\ \hline
+tensorflow &
+  CNN product recognition &
+  \begin{tabular}[c]{@{}l@{}}The TensorFlow module used to prepare\\ and load data for machine learning.\end{tabular} \\ \hline
+keras &
+  CNN product recognition &
+  \begin{tabular}[c]{@{}l@{}}Keras provides an open-source software\\ library that acts as an interface for \\ TensorFlow.\end{tabular} \\ \hline
+sklearn &
+  CNN product recognition &
+  \begin{tabular}[c]{@{}l@{}}Sklearn (or scikit-learn) features\\ classification, regression, and clustering\\ algorithms to be used with machine learning.\end{tabular} \\ \hline
+\end{longtable}

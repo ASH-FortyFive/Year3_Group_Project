@@ -6,6 +6,12 @@ The Hal Switch is aware of when the door is open and closed.
 The tasks mentioned before run on the ESP-32 microcontroller by Espressif.
 
 
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=.5\textwidth]{Chapter 3/Hardware Overview/Hardware Overview.jpg}
+    \caption{Hardware Schematic}
+\end{figure} 
+
 This section will also discuss how each of these works in detail, with a record of their power distribution.
 
 
@@ -14,74 +20,75 @@ This section will also discuss how each of these works in detail, with a record 
 The Smart Fridge consists of microcontrollers, logic boards and various sensors which all need to be powered at the appropriate voltage and possible current draw.
 Below is a table with all power requirements.
 
-
-\input{tables/contrib.tex}
+\input{tables/power.tex}
 
 As can be seen on the table above, the RPI and ESP-32 consume most of the power and the total system power draw will be around 17W.
 However, we will require two separate voltage rails to power the various components, one at 5V and one at 3.3V.
 The initial plan to achieve this was to use the adjustable variants of the LM2596.
-Using these we could output voltages in the range of 1.2V to 37V at up to 3A with a typical efficiency of 73% [TI DATA SHEET].
+Using these we could output voltages in the range of 1.2V to 37V at up to 3A with a typical efficiency of 73\% \cite{tidatasheet}.
 We could then power the Smart Fridge's logic components using a 9V power supply which will feed into the two power regulators.
-The schematic for these power supplies can be seen below in Figure [X].
+The schematic for these power supplies can be seen below in Figure \ref{fig:powershem}.
 Only one power supply is shown in the schematic, as we would use variable resistors to fine-tune the exact voltage in this prototype.
 
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=.5\textwidth]{Chapter 3/alexandre/powerschem.png}
+    \caption{Power Schematic}
+    \label{fig:powerschem}
+\end{figure} 
 
-Our 3.3V power supply would be used to power the ESP-32, which has a maximum power draw of 1.65W meaning we will need to input 2.26W (as 2.26* 73% = 1.65W).
-At our input voltage of 9V, we would need a minimum current of 0.25A.
+Our 3.3V power supply would be used to power the ESP-32, which has a maximum power draw of 1.65W meaning we will need to input 2.26W.
+This is 0.25A at 9V.
 Our 5V power supply would be used to power the remaining components, primarily the Raspberry Pi 3B+.
 This has a maximum power draw of 15.0525W or roughly 15W.
-Meaning we would need to input 22.55W (as 22.55* 73% = 15W) to the power regulator.
-At 9V this means we would need an input current of at least 2.28A.
+Meaning we would need to input 22.55W to the power regulator, or 2.28A at 9V.
 This means for both our power supplies we would need to provide 2.53A at 9V.
-To add a safety margin (and due to power supply availability) we would use a 9V power supply capable of providing up the 3A.
-
-
+To add a safety margin we would use a 9V power supply capable of providing up the 3A.
 
 Unfortunately, this initial design was not able to be realized due to LM2596 being unavailable.
 Availability of this component was not checked before PCB was designed and ordered; this flaw is further discussed in the PCB section.
 Fortunately powering the device via other means was also possible, as both the RPI and ESP32 boards have power regulation built in.
 This means we can power the RPI using its Micro USB port and power supply capable of delivering the desired 2.5A and then use the GPIO pins 5V output to power the ESP32.
 The ESP32 will create a 3.3V output using its built-in power regulator.
-The other components listed in table [] above can then be powered using the logic boards outputs and the webcam will still be powered by the RPI as would have been the case originally.
-
-
+The other components listed in table \ref{tab:power} above can then be powered using the logic boards outputs and the webcam will still be powered by the RPI as would have been the case originally.
 
 This method is simpler than our previously proposed solution, however there are two major drawbacks; lower efficiency and lower overall power.
 Our initial plan used switch-mode power supplies, which adjusts voltage using high-frequencies switching to achieve a high efficiency, however using the onboard voltage regulator of the RPI will give us much lower efficiencies, ranging from 30% to 60%, as they function as variable resistors and turn excess voltage into heat.
 These lower efficiencies pose a few problems, first is that the device will draw more power as all times which goes against sustainability targets and may lower a product's energy efficiency rating.
 Furthermore, the extra heat may damage the esp32 board, though this is unlikely at our power range, and may cause the RPI to throttle its clock-speed to prevent it from overheating, reducing performance which may be critical for computer vision tasks.
 The other drawback is that the total available power to our system, even before inefficiencies, is reduced from 27W to 15W.
-This is still enough power for all our systems, as table [] above lists the maximum desired currents, and the minimum power is much lower.
+This is still enough power for all our systems, as table \ref{tab:power} above lists the maximum desired currents, and the minimum power is much lower.
 Reduced overall power could lead to power becoming intermittent especially to the webcam and ESP which are downstream from the PI.
 However, the RPI documentation states that this should not be an issue as it can pass through around 5W to its GPIO and USB devices, and in practice we found this to hold true however the lack of margin is undesirable.
 
-
 Overall, the power management did not go as planned due to, in part, the ongoing semiconductor shortage as well as poor planning on the component acquisition side.
 However, we were able to pivot to provide a suitable solution and, given more time to order components or redesigning to use a different IC, could make use of the research that went into the original design.
-
 
 \subsection{PI HAT [ASH]}
 
 In order to securely connect and hold together the various components that make up the Smart Fridge, we designed a printed circuit board.
 Using a PCB reduces the chance of connections coming loose, makes the design more compact and increases sturdiness.
 In the case of the Smart Fridge, many of our components already come with their own boards (such as the ESP32 dev board or the RPI board) which is why our PCB is designed is designed more as a “motherboard” to hold and connect all the boards.
-As the RPI is the largest component of the Smart Fridge the board will be designed as a RPI “Hat” (Hardware Attached on Top) which is a header board specification designed by the Raspberry Pi foundation [RPI GITHUB].
-The specifications primairly consist of mechanical specifications, about size, rounding and screw-holes in the PCB, requirements for the 40-pin header used to attach to the RPI, and inclusion of an EEPROM (read only memory) with data about the HAT.
+As the RPI is the largest component of the Smart Fridge the board will be designed as a RPI “Hat” (Hardware Attached on Top) which is a header board specification designed by the Raspberry Pi foundation \cite{}.
+The specifications primarily consist of mechanical specifications, about size, rounding and screw-holes in the PCB, requirements for the 40-pin header used to attach to the RPI, and inclusion of an EEPROM (read only memory) with data about the HAT.
 By following these specifications, we ensure that the PCB will fit atop the Raspberry PI and be recognized as HAT.
 Our goals for this PCB were to create a board that can, compactly, fit together our various board and sensors, provide them with power and meet the RPI HAT specification.
-
-
 
 The PCB was designed in KiCAD which is an open-source and free EDA (Electronic Design Automation) software suite.
 KiCAD was chosen as I had previous experience in the software as well as the desire to ensure that anyone on the team be able to open, read and even edit the files using any computer as the software is readily available.
 Furthermore KiCAD has a template for RPI HATs that ensure we achieve the desired specifications.
 The first step involved placing all of the required components, which consisted mostly of components for the power distribution and connectors for the ESP and other sensors.
 Then the appropriate connections where made, as provided by the Hardware team and the power distribution schematics.
-A full schematics diagram can be seen on in the appendix [list section].
+A full schematics diagram can be seen on in the appendix \ref{sec:schem}.
 After this schematic was created the components all had to be given appropriate footprints and then placed on a board.
-This completed design can be seen below in Figure [X].
+This completed design can be seen below in Figure \ref{fig:pcbs}.
 
-
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=.5\textwidth]{Chapter 3/alexandre/pcb.png}
+    \caption{PCB Schematic}
+    \label{fig:pcbs}
+\end{figure} 
 
 This PCB was then ordered from JLBPCB and assembly began almost immediately of the available components.
 Unfortunately there where some problems, firstly, as mentioned in the Power Distribution section the LM2596 were unavailable in our time frame meaning the full board could not be assembled.
@@ -90,8 +97,6 @@ Initially a “converter” board was considered to allow our new ESP to fit on 
 The PCB was also larger than expected due to an export error when sending the files to the manufacturer.
 These issues all compounded to leave us with a design that was not fit for function and was therefor abandoned for another solution, the progress up until this point can be seen in the picture below in figure [X].
 The created files for the PCB could however easily be updated for a second version had time allowed.
-
-
 
 Instead of the PCB, a perfboard was used.
 This board was designed using the schematics created for the PCB, as all the connection remained relevant however the EEPROM and Power Distribution section where omitted due to time constraints and redesign respectively.
@@ -299,9 +304,9 @@ All fridges use magnets to create a soft close door feature and to hold the door
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Logo.png}
-    \caption{Place Holder: Magnet Pic}
-    \label{fig:placeholder}
+    \includegraphics[width=.25\textwidth]{Chapter 3/Hal Sensor/HalSensorModule.png}
+    \caption{Hall Effect Sensor}
+    \label{fig:hallsens}
 \end{figure} 
 
 The Hall effect switch will turn on in the presence of a south magnetic field on its face or a north magnetic field on the opposite side.
@@ -309,11 +314,41 @@ It will turn off when the magnet is not in range.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Logo.png}
-    \caption{Place Holder: HAL Code}
-    \label{fig:placeholder}
+    \includegraphics[width=.33\textwidth]{Chapter 3/Hal Sensor/HalSensorCodeLeft.png}
+    \caption{HAL Code}
+    \label{fig:halcode}
 \end{figure} 
 
 We can monitor the sensor readings as shown above, and if there is a change in the state, we know when the door is open or closed.
 In our feature, the sensor returns True when the doors are open and False when the doors are closed.
 
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=.5\textwidth]{Chapter 3/Hal Sensor/HalSensorBox.png}
+    \caption{HAL Box}
+    \label{fig:haldoor}
+\end{figure} 
+
+\subsubsection{LEDs [HH]}
+
+The LEDs inside the fridge will provide lighting as well as visual cues to indicate a change in the fridge’s status.
+This is possible by connecting an ESP32 to the data input of the LED strip and coding it to respond in various ways. 
+
+Initially I planned on using the FastLED library to program the LEDs.
+However this library unexpectedly caused the LEDs to malfunction in strange ways.
+After trouble shooting and circuit diagnosis, I decided to use the NeoPixel library. 
+
+This library provided great results.
+The LEDs would shine at a uniform brightness and at the specified colour, as expected.
+I created a function that takes in values from the ESP32 - relating to the HAL sensor, weight sensor and alarm – that controls the colour of the LED.
+If the door is closed then the LEDs are turned off.
+When the door is open the LEDs are white to make it easy to see everything in the fridge.
+While the door is open, the LEDs respond to direction change and the alarm.
+If the alarm is active the LEDs will be red.
+If an item enters the fridge will pulse green, or blue if an item leaves. 
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=.33\textwidth]{Chapter 3/LEDs/LED.png}
+    \caption{Programmed LEDs}
+\end{figure} 

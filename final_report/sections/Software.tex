@@ -17,9 +17,8 @@ The weight values are stored and used as a comparison again for the next reading
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Logo.png}
-    \caption{Place Holder: UML for System Machine}
-    \label{fig:placeholder}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Firmware Code ESP32/ESP32ClassDiagram.png}
+    \caption{UML for System Machine}
 \end{figure} 
 
 \subsubsection{RTOS [YJ]}
@@ -45,13 +44,6 @@ It allows us to freely call the API functions of the FreeRTOS without having to 
 
 For this project, to keep in mind simplicity and rapid prototyping and testing requirements, I have designed the tasks system as follows.
 
-\begin{figure}[H]        
-    \centering
-    \includegraphics[width=1\textwidth]{Logo.png}
-    \caption{Place Holder: Task Create}
-    \label{fig:placeholder}
-\end{figure} 
-
 The threads generated using "xTaskCreate" are getSensorData and sendData.
 The data shared between these two tasks is handled through a message queue buffer.
 It prevents memory corruption where one thread reads while the other writes simultaneously.
@@ -73,13 +65,6 @@ The function executed by the timer is called the timer's callback function.
 As the name suggests, the software timer calculates the time by the operating system and does not rely on the hardware.
 The advantages of the software timer are that they do not add any processing overhead and take up minimal space on the applications binary.
 
-\begin{figure}[H]        
-    \centering
-    \includegraphics[width=1\textwidth]{Logo.png}
-    \caption{Place Holder: ???}
-    \label{fig:placeholder}
-\end{figure} 
-
 In our application, we first declare the software timer and define its duration along with if it is a timer to be repeated automatically by the system or manually triggered by a set condition.
 The Timer callback function changes the state of the "alarmState", which activates the buzzer till the door of the fridge is closed.
 
@@ -89,7 +74,7 @@ The ESP-Firmware must communicate with the Raspberry Pi.
 The messages to the pi are on an agreed-upon pre-defined data table mentioned below.
 The table mentioned below tells the Pi the current state of the fridge regarding the alarm, door and objects entering and leaving the fridge.
 
-\input{tables/contrib.tex}
+\input{tables/yohan.tex}
 
 Three states tell the direction of the object, they are no changes in the path, an item is leaving the fridge, and an item is entering the smart fridge.
 The other values are booleans that tell the Pi if the door is open and if the alarm has been raised for the door being open for too long.
@@ -109,12 +94,21 @@ I tested this by connecting the pins to an Arduino UNO board running a deseriali
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Logo.png}
-    \caption{Place Holder: Board?}
-    \label{fig:placeholder}
+    \includegraphics[width=1\textwidth]{Chapter 4/EspToPiCommunication/JSONPACKET.png}
+    \caption{JSON Packet Sample}
 \end{figure} 
 
-An image of the expiration date and product put in the fridge is captured through a web camera.
+\begin{figure}[H]
+    \begin{subfigure}{.5\textwidth}
+      \centering
+      \includegraphics[width=.8\linewidth]{Logo.png}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+      \centering
+      \includegraphics[width=.8\linewidth]{Logo.png}
+    \end{subfigure}
+    \caption{PLACEHOLDER: Serialisation and Deserialisation Scripts}
+\end{figure}
 
 \subsection{Raspberry Pi Overview [AW]}
 
@@ -179,7 +173,7 @@ The architecture of the VGG16 architecture is shown in figure [update].
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/CNN/VGG-16.png}
+    \includegraphics[width=.66\textwidth]{Chapter 4/CNN/VGG-16.png}
     \caption{VGG16 Architecture}
     \label{fig:cnn}
 \end{figure} 
@@ -194,9 +188,7 @@ Within each of these three categories, there were subcategories which resulted i
 The goal of the classifier is to classify what the product is, so between these 43 classes, and not to which generic group/category they belong to.
 Therefore, the 3 categories were removed, and all 43 classes were put under the same folder, for all three training, testing and validation sets.
 The dataset had already completed the splitting between the sets.
-The dataset was taken from a repository [dataset] and was used for a research paper.
-
-dataset???
+The dataset was taken from a repository \cite{dataset} and was used for a research paper.
 
 \subsubsection{Model architecture [IP]}
 
@@ -213,7 +205,26 @@ After the model's architecture design, the data was fitted in the model and the 
 A batch size and number of epochs was specified.
 After the training, the weights of the model were saved, and an accuracy and loss score were printed.
 
+
+\subsubsection{Expiration Date Evaluation [IP]}
+The performance of the expiration date detection was tested using images initially with just numbers and then of more complicated images, meaning the products with expiration date on them.
+In the images with just numbers taken from google, the average performance was satisfactory as the output of the code returned the number that was embedded on the image.
+The images that contained the products had a poorer performance as the majority of the images were not as clear regarding the intensity of the image and the shape of the characters.
+Initially, this was a major drawback as other than the images used for testing from the internet, images were captured from the ESP32 camera but failed the tests, as they were very blurry and unfocused.
+This was discussed with the rest of team, and it was decided that the ESP32 camera wouldn't be used, and a web camera would replace it.
+Images captured from the webcam were then tested and had a much-improved performance.
+The lighting when the image is captured is highly important as it can zero the possibility of the function's ability to read and extract the characters.
+
 \subsubsection{Product Detection Evaluation [IP]}
+For the testing part of the product detection, two functions were created, one to read the image and another to predict the class of the image based on the model.
+The first function that reads the image, converts it to an array of values and normalises by dividing values by 255 for the computation to be faster.
+The second function loads the trained model and weights and stores them in a variable named reconModel, for reconstructed model.
+After all the possible classes are defined, the image reading function is called and then the image is used to perform the prediction.
+After testing the model with a test set, the model had a poor performance, but this was expected as there was a class imbalance within the training set.
+This is not something that can be handled within the scope of this project, as it would require adding images and labelling them accordingly to their class.
+Therefore, a better architecture of the model was attempted to be completed for a newly trained model that would take into consideration trying to reduce overfitting.
+Additionally, the framework used was TensorFlow, and the process of using the pre-trained model to predict the class of the image was taking longer than expected, hence another approach was changing to PyTorch framework.
+
 
 For the testing part of the product detection, two functions were created, one to read the image and another to predict the class of the image based on the model.
 
@@ -334,21 +345,21 @@ The results for each test are shown below.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Barcode Detection/Figure6.png}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Barcode Detection/Figure6.png}
     \caption{First Result}
     \label{fig:bc6} 
 \end{figure} 
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Barcode Detection/Figure7.png}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Barcode Detection/Figure7.png}
     \caption{Second Result}
     \label{fig:bc7} 
 \end{figure} 
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Barcode Detection/Figure8.png}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Barcode Detection/Figure8.png}
     \caption{Third Result}
     \label{fig:bc8} 
 \end{figure} 
@@ -369,7 +380,7 @@ This can be seen in figure 8, with the code shown below.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Barcode Detection/Figure9.png}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Barcode Detection/Figure9.png}
     \caption{Error Checking Code}
     \label{fig:bc9} 
 \end{figure} 
@@ -386,7 +397,7 @@ By doing this, the reliability of extracting barcodes and expiration dates would
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Pi Camera/ImageOfWebcam.jpg}
+    \includegraphics[width=0.5\textwidth]{Chapter 4/Pi Camera/ImageOfWebcam.jpg}
     \caption{Webcam}
     \label{fig:webcam} 
 \end{figure} 
@@ -401,7 +412,7 @@ Ultimately, it has increased the complexity of the wiring while decreasing the c
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Pi Camera/PiBoxTakenByCamera.png}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Pi Camera/PiBoxTakenByCamera.png}
     \caption{Picture from Webcam}
     \label{fig:webcampic} 
 \end{figure} 
@@ -416,7 +427,7 @@ As seen on the pinout [RASPBBERRY \_PI\_DOCUMENTATION\_REFERENCE], the GPIO 14 (
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Serial Input/PiPinout.png}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Serial Input/PiPinout.png}
     \caption{GPIO of the RPI}
     \label{fig:rpigpio} 
 \end{figure} 
@@ -447,15 +458,8 @@ These key functions allow the PI to: retrieve items, add items to inventory, rem
 This was done by creating a class that expands on the provided “Client” class from the Supabase python API.
 The Client class exposes the same commands as the JS commands and allows the user to perform various actions, however for the RPI side of the communication we are only concerned with interacting with the database.
 The commands exposed by Supabase require syntax similar to the SQL command used to drive the database directly, however as mentioned we wanted to abstract these so the SQL commands and code required to package items as JSON have been wrapped into simple commands to getItemID, addItem, and removeItem.
-Below in Figure [x] is some sample code of the addItem code.
 The class also deals with logging the user in, ensuring we can access the users data and subsequently terminating the upon deletions.
-
-\begin{figure}[H]        
-    \centering
-    \includegraphics[width=1\textwidth]{Logo.png}
-    \caption{Place Holder: SupaBase Client Sample Code}
-    \label{fig:placeholder}
-\end{figure} 
+All these functions were tested with simple unit test that would login, check items, add items, remove items, get a barcode and logout.
 
 As with the rest of the code base, the communication section was created entirely separately to the main code base meaning that the initial structure was rather different and integration was required.
 These changes were later unified in the code refactor.
@@ -465,7 +469,8 @@ After this refactor the database code worked well with the rest of the code base
 
 The main bulk of integration is sitting down with the team members who worked on their individual sections while moving the python code to the Raspberry Pi environment.
 This ensures that the transition is smooth and that issues are solved as quickly as possible.
-\input{tables/contrib.tex}
+
+\input{tables/librarytable.tex}
 
 These modules were installed using “pip install” on the Linux environment on the Pi.
 
@@ -499,7 +504,7 @@ We settled for the design seen below in Figure \ref{fig:oocd}, table [x] provide
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Code Refactor/Class Diagram.png}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Code Refactor/Class Diagram.png}
     \caption{Object Oriented Class Diagram}
     \label{fig:oocd}
 \end{figure} 
@@ -513,10 +518,10 @@ As effort would have been required to integrate the code regardless, doing this 
 Testing for this was rather simple, as the end goal was essentially to maintain the same functionality as before, meaning the same test could be run.
 This refactor was a success as we managed to improve the code slightly with some optimizations all the while making it much more readable and easier to set-up on another device.
 
-\input{tables/contrib.tex}
+\input{tables/codetable.tex}
 
 
-\subsubsection{Back-End [ASH]}
+\subsection{Back-End [ASH]}
 
 To present the user with the content of their Smart Fridge in the app and/or website the data needs to be stored somewhere that is always accessible.
 Whilst this data could be stored and transmitted locally from the Smart Fridge, this would either require that the user to be on their local area network to access the data, which is rather restrictive, or for that the Smart Fridge to be accessible beyond the local area network, which requires more complicated networking and could cause network security risks.
@@ -537,30 +542,29 @@ This table is also part of Supabase's built in “auth” scheme.
 Our third, and primary, table is where we store the actual inventory of the users.
 The table contains instances of the items, where each row has the item's id from the previous table, the associated user ID, expiry data and possible comment.
 We have set up Supabase database rules, using Row Level Security, to ensure users can only request rows (which represent the individual items) from this table when the user ID column matches their users ID, ensuring that people cannot access other people's data.
-Tables one and three create our public scheme and can be seen below in Figure [X].
+Tables one and three create our public scheme and can be seen below in Figure \ref{fig:DB_Diagram}.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Logo.png}
-    \caption{Place Holder: DB Diagram}
-    \label{fig:placeholder}
+    \includegraphics[width=1\textwidth]{Chapter 3/alexandre/db.png}
+    \caption{DB Diagram}
+    \label{fig:DB_Diagram}
 \end{figure} 
 
-
 Using Supabase made our database easy to set up and use, and the API provided both in JavaScript and python made interaction simple for both the Smart Fridge itself as well as the website and app.
-However one disadvantage of Supabase is the lack of hosting for our Front Ends, meaning that we need to host them separately [maybe mention where?].
+However one disadvantage of Supabase is the lack of hosting for our Front Ends, meaning that we need to host them separately.
 This aside, the back end worked exactly as intended and provided a secure location to transmit data to.
 
-\subsubsection{App [ASH]}
+\subsection{App [ASH]}
 
-Apps have become the way people interact with many facets of modern life and with nearly XX\% [statitca] of the population using .
-This why we decided to also allow the user to access the Smart Fridge via an app, along side the website, both of these services provide the user with the inventory of their Fridge ([check if true] and feed into APIs to provide insights).
+Smartphones are owned by over 80\% \cite{stat} of all UK adults and with that apps have become the way people interact with many facets of modern life.
+This why we decided to also allow the user to access the Smart Fridge via an app, along side the website, both of these services provide the user with the inventory of their Fridge and feed into APIs to provide insights.
 While much of the core functionality overlaps with a website, the app needs to be designed very differently to work on a smartphone however the medium also provides opportunities such as sending notification the user as well as having a camera connected directly to the device.
 With this in mind we planned to create an app that had all the core functionality of the website of viewing the inventory, making updates to the inventory, seeing insights about the inventory such as recipe recommendations and nutritional data and as well as dealing with user authentication.
 The app will also expand on this by providing notifications based on expires, informing the user when the fridge is left open, and allowing the user to use their phone camera to scan in them when the Smart Fridge misses them.
 
 React Native, Meta's mobile app development platform using the extremely popular React JavaScript user interface framework, was our natural choice for an app.
-This is because React Native is used to create mobile apps for countless companies, ranging from Fortune 500s and start-ups [cite React Native], meaning it powerful and versatile enough to create anything we require.
+This is because React Native is used to create mobile apps for countless companies, ranging from Fortune 500s and start-ups \cite{react}, meaning it powerful and versatile enough to create anything we require.
 Having prior experience in React also reduced the learning curve required to make this app.
 Furthermore, as React Native is based on React, often used to create websites, code between the app and website could have been shared.
 Eventually however, the decision was made to have the website written in python, regardless React Native can still render as a website meaning we also have an alternative website.
@@ -570,195 +574,342 @@ The Supabase library allows us easily create a connection to the database, allow
 There is also functionality to subscribe to events on the database, meaning the app will update without needing a manual refresh when and item is added to the Fridge.
 Login also supports the “oauth” standard, allowing users to connect using a long list of accounts such as their Google or Facebook login, however this was disabled for the prototype as we only used dummy accounts with passwords.
 The Edaman API provides the nutritional analysis and recipe search functionality of the app.
-The API is very powerful and claims to contain the nutritional data of close to 900,000 foods and to have over 2.3 million recipes [cite Edaman website].
+The API is very powerful and claims to contain the nutritional data of close to 900,000 foods and to have over 2.3 million recipes \cite{edman}.
+More information about the API is in the section covering the website.
 This along side the natural language processing on their end allows us to send over a list of the user items, as well as attached comments containing further information about the item such as brand or unit, and receive high quality data as a response.
 These response can then be displayed to the user.
 
-The Smart Fridge app consists of three primary screen, pictured below in Figure [screenshow of screen].
+The Smart Fridge app consists of three primary screen, pictured below in figure \ref{fig:app}.
 
-\begin{figure}[H]        
-    \centering
-    \includegraphics[width=1\textwidth]{Logo.png}
-    \caption{Place Holder: App Screenshots}
-    \label{fig:placeholder}
-\end{figure} 
+\begin{figure}[H]
+    \begin{subfigure}{.33\textwidth}
+      \centering
+      \includegraphics[width=.8\linewidth]{Chapter 4/app_pic/Login.png}
+    \end{subfigure}%
+    \begin{subfigure}{.33\textwidth}
+      \centering
+      \includegraphics[width=.8\linewidth]{Chapter 4/app_pic/Inv.png}
+    \end{subfigure}
+    \begin{subfigure}{.33\textwidth}
+        \centering
+        \includegraphics[width=.8\linewidth]{Chapter 4/app_pic/Rec.png}
+    \end{subfigure}
+    \caption{Screenshots of App.
+Left to Right: Login, inventory, Recipes}
+    \label{fig:app}
+\end{figure}
 
-Sub-figure [I think you can figure it out] shows the Login-In screen, pictured filled with our dummy login details.
-Sub-figure [] shows the primary inventory screen, this is the main screen the user will interact with and also allows for navigation to the other screens.
-The final sub-figure ([]) contains the analysis screen presenting the insights from the API to the user.
-This screen contain the core required functionality for the app, however in a more market ready product features such as user sign up and user settings management would also be required on the app.
-Placeholder navigation to these screens is available however they are currently blank.
-
-On the login in screen the user has to enter their username and password to login and gain access.
+The left image shows the Login-In screen, pictured filled with our dummy login details, where the user has to enter their username and password to login and gain access.
 This will only have to be done once, as the login will then stores unless the user clears their App data.
-
-On the inventory screen the user can view the inventory, seeing the name and expiry date of each of their items as well as a little picture provided by us to represent the item.
-They can also manage the inventory, if need be, either by tapping an item to modify the expiry date or remove item or by using the add item button to add an item either by name (or by using the camera for barcodes).
-
-On the analysis screen the user is simply present with the useful insights based on their Smart Fridge's content, this is split into nutritional data as well as recipes.
-Being able to provide these insights without the user having to manually manage an inventory is one of the core value proposition of the Smart Fridge.
-
-Besides the screen available on the app, we also communicate to the user using notification.
-These notification will occur when items approach expiry as well as when the Fridge has been left open for an extended period of time.
+The middle shows the primary inventory screen, this is the main screen where the user can view the inventory, seeing the name and expiry date of each of their items as well as a little picture provided by us to represent the item.
+They can also manage the inventory, if need be, either by tapping an item to modify the expiry date or remove item.
+The button below can be used to add an item by name.
+The right image contains the recipe screen presenting the recipes from the API to the user, this screen can be reached by swiping right on the inventory and refreshed by pulling down.
+To access a website the user simply clicks anywhere on the entry.
 
 Testing the core functionality of the app was done throughout development, as a “Minimum Viable Product” approach was taken.
 Meaning that the app began as a very bare-bone, but fully functional product which only showed the inventory.
-By slowing adding to this base, and constantly testing the core feature, we were able to create a more complicated App whose core features had been thoroughly tested by the end of this initial development.
-This could have been improved with more solid test cases, simply to ensure every case was tested consistently.
+By slowing adding to this base, and constantly testing the core feature, we were able to create a more complicated app whose core features had been thoroughly tested by the end of this initial development.
+The app could have been improved with more solid test cases, simply to ensure every case was tested consistently.
 However even without this method the end result meets all the set out goals and the app serves as a useful way for the user to view the collected data.
 
 \subsection{Website [HH]}
 
-A key component of the smart fridge is a companion website that allows the user to view their inventory and add items that cannot currently be processed by the scanning systems.
+The website  for the smart fridge was created to serve as a resource for managing the fridge inventory and searching for recipes.
+It was built in Python using the Streamlit framework.
+The Edamam API was utilised for its extensive database of quality recipes with a thorough nutritional breakdown.
 
-We utilised a Postgres database known as Supabase which is instrumental for storing and accessing key data from any network.
+The inventory data is hosted on Supabase, a cloud database service that provides an interface to access and manage data from external applications.
+Supabase offers client libraries for several languages, including Python the language of the Smart Fridge website.
 
 \subsubsection{User Login [HH]}
 
-On the first visit to the website, the user is prompted to log in.
+Upon visiting the website, users are prompted to log in or create a new account.
+When the correct details are entered, the user can access the main page - the Smart Fridge.
+Users remain logged in even after leaving the website thanks to a persistent web cookie.
+Passwords are hashed before being stored to protect against unauthorized access.
+Users can log out at any time by clicking the "Logout" button in the sidebar.
+New accounts can be created by opening an expander.
+Session states are used to temporarily store sensitive data that is required while the website is running.
+
+
+\begin{figure}[H]
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/UserLogin/Fig1.png}
+        \caption{Demonstration of Login page showing error response}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/UserLogin/Fig2.png}
+        \caption{Registration demonstration}
+    \end{subfigure}
+    \caption{Login Screens}
+\end{figure}
+
+\subsubsection{Home Page [HH]}
+
+The main page displays the user's inventory with useful options below.
+The sidebar can be opened by clicking the arrow in the top left corner, where users can log out and access settings.
+
+\begin{figure}[H]
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/HomePage/Fig3.png}
+        \caption{The main page showcasing the inventory}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/HomePage/Fig4.png}
+        \caption{The sidebar options}
+    \end{subfigure}
+    \caption{Home Page}
+\end{figure}
+
+\subsubsection{Fetching Data [HH]}
+
+The website connects to the database using the Supabase client library and authenticates the connection with a URL and key.
+SQL statements are used to retrieve and modify data stored in the database.
+To retrieve the inventory data, an SQL select statement is used to specify the columns to show to the user, with a condition to only access data that belongs to the current user.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/User Login/LoggedIn.png}
-    \caption{Login Prompt}
-    \label{fig:login}
+    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/FetchingData/Fig5.png}
+    \caption{SQL statement to retrieve the fridge inventory from Supabase}
 \end{figure} 
 
-If the login attempt fails, the user is prompted to try again.
+\subsubsection{Inventory table [HH]}
+
+To display the inventory, we chose to use a table.
+Tables are readable and suited for displaying large data sets.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/User Login/LoginFailed.png}
-    \caption{Failed Login}
-    \label{fig:loginfail}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/InventoryTable/Fig6.png}
+    \caption{Inventory sorted by quantity}
 \end{figure} 
 
-After successfully logging in, the website proceeds to the main page.
-If the user revisits the website at a later date, they will remain logged in until they decide to sign out.
-This can be done by opening the sidebar in the top left
+The table includes columns for the item name, expiration date, quantity, and status of each item in the inventory.
+These columns were chosen because they convey the most relevant and useful information to the user.
+Each row is highlighted in a colour corresponding to their expiration status.
+Green is for food that is good for a while, orange if only a few days remain until expiration, and red for expired food items that should be handled with caution.
 
-At any time, the user can log out by opening the sidebar in the top left corner and clicking the Logout button.
+The table can be sorted by clicking on any column, which allows users to easily find specific items or view their inventory in different ways.
+For example, they could sort by expiration date to see which items need to be used up first.
+
+In addition to sorting, the table allows users to rearrange columns by dragging them to a new position or hide columns by dragging them outside of the table.
+Users can also filter values in a column by clicking on the hamburger icon that appears when hovering over a column.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/User Login/LoginImage.png}
-    \caption{Logout}
-    \label{fig:logout}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/InventoryTable/Fig7.png}
+    \caption{Filtering option inside the hamburger menu}
 \end{figure} 
-Passwords are hashed before being stored.
-Hashing is vital for security as it converts plain text into a long string of characters that cannot be reversed back into plain text.
 
-A connection to the database is only established after a successful login attempt.
-
-
-\subsubsection{Displaying Data [HH]}
-
-Once the user is logged in, they will see their inventory presented in a colourful table.
-
-Data is displayed in a dataframe, in a colour related to its expiration status.
-This is done by executing an SQL statement selecting only the relevant columns belonging to the user that is currently logged in.
+An option to paginate the table exists in the sidebar.
+Pagination separates rows into different pages to make it easier to navigate.
+This is especially useful when the inventory contains a large number of items.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/Displaying Data/ReturnStatement.png}
-    \caption{SQL Query}
-    \label{fig:sqlquery}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/InventoryTable/Fig8.png}
+    \caption{Pagination option}
 \end{figure} 
 
-\subsubsection{Adding records [HH]}
+The data from Supabase was stored using the Pandas DataFrame and presented using an AgGrid.
+The DataFrame is a flexible and mutable two-dimensional table, while the grid was designed to be used in web applications.
+The AgGrid JavaScript-based grid type that has useful applications such as allowing us to execute useful commands (such as JavaScript code), but is not as flexible within Python.
+Using Pandas alongside the AgGrid grants access to the useful qualities of both.
 
-Adding new items to the fridge is as simple as entering the name, expiration date and quantity.
-
-The below images show this process in action.
-The user 'Iceman' starts with an empty fridge, hence there is nothing to display in the table.
-We can populate the table with a few items.
+Since the expiration status is not stored in the database, the website must be able to determine it based on known information.
+I created a function which returns the difference in days between an input date and the current day.
+The parser function can extract a date from a string containing a date in a many different formats, (such as the different regional date formats like, or different delimiters such as '/' and '-').This is also done for the today date to prevent a ValueError exception that would occur if the expiration date was in a different format to the standard 'datetime' format'.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/AddingRecords/EmptyRows.png}
-    \caption{Empty Table}
-    \label{fig:empty}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/HowItWasCoded/fig9.png}
+    \caption{Function that calculates the difference in days, regardless of format}
 \end{figure} 
 
-The first step is to expand the 'Add Record' tab and enter the details and press 'Add' – this also allows you to enter multiple items into the table.
+For each date in the table, the difference in days was calculated and stored in a list.
+If the difference in days is negative, then it indicates that the food is already expired.
+Otherwise, the food is still safe to eat.
+Based on the comparisons shown in \ref{fig:awefulcode}, the specified string of text is stored in a new column of the table, reflecting the status of each item.
+
+
+\begin{figure}[H]
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/HowItWasCoded/fig10.png}
+        \caption{Code that evaluates expiration status and inserts it to the table.}
+        \label{fig:awefulcode}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/HowItWasCoded/fig11.png}
+        \caption{JavaScript code that changes appearance of a grid based on expiration evaluation, and code that creates and configures the grid.}
+        \label{fig:badcode}
+    \end{subfigure}
+    \caption{Code Snippets}
+\end{figure}
+
+The grid configurations are set before it is displayed.
+
+In Fig \ref{fig:badcode} Line 203 to 224 shows the JavaScript code (JsCode) used to modify the colour of the grid.
+The status column on the grid will contain one of the three conditional values, and so will be red, orange or green depending on its expiration status.
+
+To execute the JsCode, we must use an AgGrid.
+As we transfer the data from the DataFrame to the grid, we also configure the grid to use checkboxes (facilitating record deletion) and allow JsCode.
+
+Line 228 allows the grid to be edited by clicking a cell and typing on a keyboard.
+This showcases a potential method to directly edit the values to the database.
+
+\subsubsection{Adding Records [HH]}
+
+To add new items to the inventory, users can enter the name, expiration date, and quantity in the "Add Record" tab.
+The expiration date can be chosen from a calendar input widget or entered manually.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/AddingRecords/AddingTurkey.png}
-    \caption{Adding Turkey}
-    \label{fig:addturk}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/AddingRecords/Fig12.png}
+    \caption{Interface to add new items to the database}
 \end{figure} 
 
-When the 'Send to SupaBase' button is clicked,  the data in the table above is converted into a list suitable for a SQL insert statement.
-When this statement is executed, the table will automatically update, and the Add Record table will be cleared in case you want to add more items.
+Calendar widget used for date entry.
 
-Below is an image of the table displaying our newly added items.
+When the "Send to SupaBase" button is clicked, the data in the table is converted into a list of dictionaries.
+This format allows multiple items to be inserted correctly using an SQL insert statement.
+The inventory table is then automatically updated, and the "Add Record" table is reset for adding more items.
+
+Three columns for data input are created, based on the Pandas DataFrame existing in the session state.
+An array stores the inputs until the records are submitted.
+
+When new records are sent to the Supabase, they must be assigned a username key, otherwise it will not be recognised to be part of the current user's inventory.
+Since the DataFrame already needs to be converted into a list of dictionaries , adding a new key and value is simple.
+Now the data can be inserted into the database with the SQL insert statement on line 567.
+
+\begin{figure}[H]
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/AddingRecords/Fig13.png}
+        \caption{Code for creating and accepting data inputs}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/AddingRecords/Fig14.png}
+        \caption{Code designated the ownership of new items to the user that added them}
+    \end{subfigure}
+    \caption{Code Snippets 2}
+\end{figure}
+
+
+\subsubsection{Deleting Records [HH]}
+
+To delete items from the inventory, users can select multiple items using the checkboxes and confirm deletion with a prompt.
+The selected items are then removed from the database using an SQL delete statement.
+
+
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=.33\textwidth]{Chapter 4/Hamzah Website/AddingRecords/FilledTable.png}
-    \caption{Filled Table}
-    \label{fig:websitetable}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/AddingRecords/Fig12.png}
+    \caption{Demonstration of how items are deleted from the table using checkboxes}
 \end{figure} 
 
-Looking at the SupaBase shows the same results.
-It is important to note that the barcode\_id and item\_id entries are empty.
-If the user was required to enter these values, the process of adding entries would be hindered significantly.
-Likewise this information is not presented on the website.
+When the grid was configured, I created a response that returns the values selected by the user.
+I programmed the 'Delete' button to appear only if items are selected.
+When clicked, the grid is converted into a list, and processed into an SQL statement which deletes item with the matching details.
+
+The 'in' method allows a list to be specified.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/AddingRecords/FilledTable2nd.png}
-    \caption{SupaBase Table}
-    \label{fig:subapasetable}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/AddingRecords/Fig12.png}
+    \caption{Converting selected items into a suitable format for SQL deletion}
 \end{figure} 
 
-\subsubsection{Gallery [HH]}
+\subsubsection{Searching for Recipes [HH]}
 
-Initially, I had planned for the website to display an image of the fridge taken by the internal camera.
-If the user clicked the gallery expander, the website would fetch the image from a database.
-Unfortunately, the hardware was not capable of transmitting this amount of data.
+Recipes can be found based on items in the fridge.
+Recipes can also be filtered based on dietary requirements such as Kosher, low-sugar and vegan, or by the calories per serving.
+Drop down menus are used to select the ingredients and dietary requirements.
+The nutritional options (calories, carbohydrates and sugar) can be specified by keyboard input or the positive and negative buttons on the box.
+The  value can be left at 0 if the user does not wish to specify a requirement.
 
-For now, an image of penguins is fetched from the internet to showcase how this potential feature could be implemented.
+\begin{figure}[H]
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png}
+        \caption{Fig demonstrating the recipe interface with generated recipes showing nutritional information}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/SearchingForRecipes/Fig18.png}
+        \caption{Recipes with the ingredients listed}
+    \end{subfigure}
+    \caption{Recipe Display}
+\end{figure}
+
+After the search button has been clicked, the Edamam API returns the available recipes.
+If there are no available recipes, then the website will prompt the user to reconsider the search parameters.
+
+For each recipe, a link to the original website is displayed, along with additional data such as nutritional information based on servings, preparation time, and the ingredients needed for the recipe.
+For a more compact view, the recipe list can be disabled from the sidebar.
+
+A URL is used to interact with the Edamam API.
+It is composed of an application ID and key (received when signing up), ingredients, and optional parameters such as dietary requirements.
 
 \begin{figure}[H]        
     \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/Gallery/Penguins.png}
-    \caption{Gallery}
-    \label{fig:gallery}
+    \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/SearchingForRecipes/Fig19.png}
+    \caption{the URL format accepted by Edamam API}
 \end{figure} 
 
-\subsubsection{Recipes [HH]}
+When the user selects their choice of ingredients and dietary requirements, they are stored in a list.
 
-WIP
+Ingredients and dietary requirements are formatted slightly differently in the Edamam URL.
+In both cases, the 'join' function concatenates each element of the list with the string specified in inverted commas.
 
-Using Edamam API
+The API returns recipe data in the JSON format which is convenient to parse.
+At this point, the recipes are evaluated against the nutritional conditions set by the user.
+The recipes that meet the criteria, they are displayed with the aforementioned information.
 
-
+\begin{figure}[H]
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/SearchingForRecipes/Fig20.png}
+        \caption{Code showing how the user choices are formatted into an Edamam query.}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=.66\textwidth]{Chapter 4/Hamzah Website/SearchingForRecipes/Fig21.png}
+        \caption{Code showing how the JSON data received by Edamam API is processed and displayed to the user.}
+    \end{subfigure}
+    \caption{Code Snippets 3}
+\end{figure}
 
 \subsubsection{Developments [HH]}
 
 My first prototype started with reading a CSV file and displaying them on the screen.
 The aim of this was to demonstrate how data could be displayed.
-The CSV file was read and parsed into a dataframe, then converted to an AgGrid.
+The CSV file was read and parsed into a DataFrame.
+It was imperative to use a cloud-hosted database solution, so the website soon transitioned over.
 
-With the data in an AgGrid, I was now able to modify the appearance through JsCode – in this case changing the colours of cells.
+When I first used the Supabase library to insert the items, the result were less than ideal: the items were added as a 'dictionary' and were all contained in one cell.
 
-Here we can see each row is highlighted in red, orange and green, representing the status of the food (expired, soon to be expired, and not close to being expired).
-This feature alerts the user to the status of their fridge contents.
-If food is red, then it is past its expiration date and this food shouldn't be consumed.
-Fortunately, food that should be consumed soon are highlighted to minimise food wastage.
+I then switched to another SQL module in python, known as Psycopg2.
+I was able to insert items correctly.
+I extracted the values from the Dataframe, concatenated them into a single string and then inserted them into the database.
+Psycopg2 uses a 'server cursor' which is an “object that enables traversal over the rows of a result set”.
 
-Initially, the food status was an additional column to be stored in the database, but this is not an ideal solution.
-Ideally, the status should be determined by the expiration date alone and somehow be displayed.
+While it was an effective solution, there was a caveat.
+An additional database password would have to be created and stored somewhere; without a password Psycopg2 is unable to connect.
+This is not inherently a big issue, but since we executed other SQL statements with the Supabase client library, it made sense to use it where possible.
 
-I created a function that returns the difference in days between an input date (expiration date of the food item) and today's date.
-
-Now that each item has a countdown in days, we can add a new column to the table and fill it with the appropriate status – and hence the appropriate colour.
-
-\begin{figure}[H]        
-    \centering
-    \includegraphics[width=1\textwidth]{Chapter 4/Hamzah Website/Developments/ColourfulTable.png}
-    \caption{Another Filled Table}
-    \label{fig:devtable}
-\end{figure} 
+By examining the Pandas documentation \cite{pd}, I discovered some useful data manipulation functions.
+The DataFrame could be converted into a dictionary using the function 'pandas.DataFrame.to\_dict('records)'.
+If multiple items exist in the DataFrame it is converted into a list of dictionaries.
+ In the list, each dictionary represents a single record.
+The keys in the dictionaries corresponds to the column names in the database, and the values represent the data to be inserted for each column.
+This method worked perfectly with the Supabase library.
+Inserting the items this way ensured that each item and their respective details were contained in the correct place.

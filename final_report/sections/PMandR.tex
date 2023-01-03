@@ -1,3 +1,28 @@
+\subsection{Team Organization}
+
+At the beginning of the project, it was decided that the group would split into 3 different teams to allow people to work on the sections they were interested in.
+These 3 teams were based around, the ESP-32, the Raspberry Pi and the website as seen in figure \ref{fig:grouporg}.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=.66\textwidth]{Chapter 6/Reflection/GroupDiagram.png}
+    \caption{Group Organization Diagram}
+    \label{fig:grouporg}
+\end{figure} 
+
+Unfortunately, due to issues that are explained in chapters 3, 4 and 5,
+we were not able to fully adhered to the plan meaning that group members had to start working outside of these predefined groups.
+This led to rapid changes in the project without researching the substitute methods.
+
+To add, the following Gantt Chart in figure \ref{fig:gantt} was produced.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=1\textwidth]{Chapter 6/Reflection/GanttChart.png}
+    \caption{Gantt Planning Chart}
+    \label{fig:gantt}
+\end{figure} 
+
 \subsection{Isaac Baglin [IB]}
 My goal for this project was to develop skills in systems engineering.
 To do this, I put myself on the microprocessor team so that I could plan, design, and integrate subsystems.
@@ -41,8 +66,25 @@ However, looking back on this project, I believe it would have been beneficial t
 
 
 \subsection{Hamzah Hasnain [HH]}
+My role in this project was to work on software, primarily a website that can suggest recipes based on the fridge inventory.
+Building the Smart Fridge website helped me to achieve a personal aim of developing my programming abilities.
+Our Python website uses SQL, data manipulation, APIs, and a secure login system to provide its functionality.
+ As a result, I was compelled to investigate these topics.
+I found it to be incredibly interesting and these are areas that I will certainly explore in the future.
+I would like to develop the website further, such as adding a feature to update the database by directly editing typing into the table or creating an algorithm that can suggest certain recipes at certain times based on the user’s past actions.
+And while the website works quite well on mobile devices, it would be interesting to see what it would look like if it was optimised purely for a mobile experience.
+In making the website, I did encounter some hindrances such as the issue with the SQL client discussed in the development section, but I was able to overcome them eventually.
+Overall, I am pleased with the website as I was able to implement the planned features.
 
-Blank
+On the other hand, working on the LEDs could have gone better.
+My main issue was not being able to diagnose the issue fast enough.
+This is because the initial method using the FastLED library should have worked fine on all accounts, but it didn't.
+Eventually I did solve the issue, but if I had done so quicker, I would have been able spend time elsewhere, such as assisting my teammates with their tasks.
+I would have also been able to explore other interesting areas in greater depth such as the computer vision.
+
+To conclude, I am pleased with my contribution, as well as my team's, towards this project.
+My personal aims were achieved; I improved my skills in developing software and hardware, I learnt to incorporate sustainable practices when designing a product.
+I gained valuable experience working in a team and learned a lot about the importance of effective communication and collaboration.
 
 
 \subsection{Ioanna Papanikolaou [IP]}
@@ -76,32 +118,31 @@ Having finished product development, I can fully acknowledge that I have gained 
 
 
 \subsection{Alexandre Symeonidis-Herzig [ASH]}
-Overall I am disappointment both with my personal work and our group's outcome.
+Overall I am somewhat disappointed both with my personal work and our group's outcome.
 My personal contributions were split between hardware and software, where the hardware was to do with PCB and power distribution and the software with an app and back-end.
-In the hardware regard I did not deliver what I had hoped.
+In regards the hardware I did not deliver what I had hoped.
 The power distribution began strong, with planning and thought going into the concept and the design.
-However, the failure to account for the ongoing semiconductor shortage, something I experienced firsthand during PTY, meant that I competently failed to deliver.
+However, the failure to account for the ongoing semiconductor shortage, something I experienced firsthand during PTY, meant that I failed to deliver.
 This could have been prevent by checking component availability before hand, however even this may not have been enough as I began working on this vital system too late.
 While the exact power requirements was not known until later in development a prototype could have been designed and, vitally, tested long before.
 This would have caused me to discover potential roadblocks, such as components not being available, much sooner allowing me time to deal with them.
-The PCB is a somewhat similar story, though it was partly a victim of the power distribution's failure, as the initial design was made too late meaning we only had the opportunity to make one iterations before we ran out of time.
+The PCB is a somewhat similar story, though it was partly a victim of the power distribution's failure,
+as the initial design was made too late meaning we only had the opportunity to make one iterations before we ran out of time.
 This first iteration however had multiple small flaws, which a revision could have easily fixed given more time.
-Regardless of this I was still able to adapt and work with the initial short-comings, in part because the theory behind them was sound.
+Regardless of this I was still able to adapt and create work around to both these shortcomings, in part because the theory behind them was sound.
 
 The software is a more positive story, as I am pleased with my final app and database set-up.
-I believe part of the reason these came out better was due to the way I worked on them.
+The reason for this outcome is most likely the design philosophy.
 For both I began with a Minimum Viable Product, meaning I was able to test and iterate on the design very early on.
 This meant any failures occurred quickly and I was able to deal with them.
 This is of course aided by the fact software is much quicker to iterate then hardware (and cheaper to fail with), however I believe if I had applied the same principle to the hardware it would have been more successful.
 Working on this part of the software was also very much a goal of mine, and I am pleased to have achieved it.
 
-My other goal was to avoid leadership, which I managed to do.
-However this may have turned out to be a mistake.
-Not because I would have been particularly well suited to lead the team, but because we seemed to lack any true leadership meaning communication and testing between the teams was limited.
-I believe this was our teams biggest flaw, that we all worked on making individual component and sections of the product without spending adequate time on integration and testing.
-This once again could have been solved by adoption of a minimum-viable product approach, allowing us to test the various MVPs together at a much easier stage allowing for easier integration later on as components grow more complicated.
-Nevertheless these are valuable lessons learned, and I [finish this dumbass]
-
+This sentiment is further expanded on the group reflection, but I feel as our main failure was in integration and testing.
+Perhaps this could have been avoided by having better communication and a team leader to organize the team.
+While I did lead many of our meetings, I did not hound people to ensure task were being completing on time and in general our deadlines were often missed.
+Regardless of these short comings we did manage to deliver a prototype of an ambitious product
+and my contributions both in my individual sections and in assisting others played a key role in that success.
 
 \subsection{Alfie Walding [AW]}
 The python code for the Raspberry Pi was written by 4 (myself included) different group members and successfully combined into one organized repository.
@@ -116,3 +157,21 @@ This would have given us enough time to thoroughly test all the sections togethe
 
 Overall, I would say that the project went well for my individual development, but it is disappointing that the product produced was subpar.
 If more time was spent on the project, the final integration steps could have been taken and a better product produced.
+
+\subsection{Group Reflection}
+
+While our group was able to deliver, both the overall development and final product have room for improvement.
+The primary flaw with our project overall was a rushed integration.
+Each section of the project functioned well individually but not enough time was left at the end of term to bring it all together.
+To improve this, we should have set a stricter integration deadline instead of having many self-imposed deadlines that ultimately went unenforced.
+This would have allowed for a much smoother integration process along with more time to perform testing.
+Having a designated leader of the group could have assisted with organizing these deliverables and their associated timings.
+As well a design philosophy could have been employed to ensure our ability to deliver,
+in particular using a Minimum Viable Product strategy could have alleviated some of our issues as giving is a foundation to work up from would have allowed us to test and integrate much earlier
+
+Furthermore, several aspects of the project have had to be reworked and were done in duplicate.
+If there was clearer communication from the beginning, this could have been avoided.
+To add, the group could have spent more time researching their individual sections before starting development to ensure that the solution is suitable
+and that unnecessary work is not being done.
+
+However, our product concept was very ambitious and even given the shortcomings the final product meets the design brief and our requirements.

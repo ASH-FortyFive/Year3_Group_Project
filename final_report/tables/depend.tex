@@ -1,0 +1,38 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\begin{longtable}[c]{lll}
+    \caption{}
+    \label{tab:my-table}\\
+    Sub-System Name &
+      Sub-System Aims &
+      Dependency \\
+    \endfirsthead
+    %
+    \endhead
+    %
+    HX711 Load Cell Weight Sensor &
+      The Weight Sensor measures the weight of all items placed on top of it. The value is sent to the ESP32. &
+      Needs between 3.3V and 5V to operate. \\
+    HAL Sensor &
+      Sends an ON/OFF state to the ESP32 when the fridge door is open. &
+      Needs between 2.8V and 6V to operate. \\
+    Piezo Buzzer &
+      When the doors been open after a limit, the buzzer will sound. &
+      The ESP32 sends a square PWN signal to the buzzer. The frequency is set by the ESP32 code. \\
+    LED’s &
+      Lights the fridge when it opens. &
+      Needs between 5V to operate. \\
+    ESP32 Microprocessor &
+      Controls the operation of the sensors for the fridge. Packets the sensor data in a JSON packet which is sent to the Raspberry PI. Needs to calculate the direction of the item using the change in weight value. &
+      Needs 5V power from the step-down circuit built on the PCB. Requires weight value from the weight sensor and the ON/OFF state from the HAL sensor. \\
+    Raspberry PI &
+      Uses web camera image and OpenCV to detect the items entering the fridge. Sends the inventory data to the cloud database using GraphQL communication. &
+      Needs 5V power from the step-down circuit built on the PCB. Requires web camera image of inside the fridge. Requires JSON packet containing item direction, ON/OFF state from the HAL sensor and alarm state. This is sent via UART using Serial communication. \\
+    Web Camera &
+      Captures images of the product as it enters and exits the fridge. &
+      5V power connected via USB from the Raspberry PI. \\
+    PostgreSQL &
+      Stores the inventory data sent from the Raspberry PI. &
+      Receives the inventory data from the Raspberry PI via GraphQL communication.
+    \end{longtable}

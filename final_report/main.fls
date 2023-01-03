@@ -3,8 +3,6 @@ INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /home/ash/.texlive/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT /home/ash/Documents/Year3_Group_Project/final_report/main.tex
 OUTPUT main.log
-INPUT /usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
@@ -190,29 +188,6 @@ INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT /usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-INPUT /usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-INPUT /usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-INPUT /usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-INPUT /usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-INPUT /usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-INPUT /usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-INPUT /usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-INPUT /usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-INPUT /usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-INPUT /usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
@@ -564,6 +539,16 @@ INPUT /usr/share/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/share/texmf-dist/tex/latex/ltablex/ltablex.sty
 INPUT /usr/share/texmf-dist/tex/latex/ltablex/ltablex.sty
 INPUT /usr/share/texmf-dist/tex/latex/ltablex/ltablex.sty
@@ -610,6 +595,51 @@ INPUT /usr/share/texmf-dist/tex/latex/tools/xspace.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/xspace.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/xspace.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
 INPUT /usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
@@ -895,34 +925,43 @@ INPUT ./tables/contrib.tex
 INPUT tables/contrib.tex
 INPUT ./tables/contrib.tex
 INPUT tables/contrib.tex
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT ./sections/Background.tex
 INPUT sections/Background.tex
 INPUT ./sections/Background.tex
 INPUT sections/Background.tex
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm
 INPUT ./images//Chapter 2/SystemOverview.png
 INPUT ./images//Chapter 2/SystemOverview.png
 INPUT ./images//Chapter 2/SystemOverview.png
 INPUT ./images//Chapter 2/SystemOverview.png
 INPUT ./images//Chapter 2/SystemOverview.png
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
+INPUT ./tables/depend.tex
+INPUT tables/depend.tex
+INPUT ./tables/depend.tex
+INPUT tables/depend.tex
+INPUT ./tables/moscow.tex
+INPUT tables/moscow.tex
+INPUT ./tables/moscow.tex
+INPUT tables/moscow.tex
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT ./tables/swot.tex
+INPUT tables/swot.tex
+INPUT ./tables/swot.tex
+INPUT tables/swot.tex
+INPUT ./tables/clientbrief.tex
+INPUT tables/clientbrief.tex
+INPUT ./tables/clientbrief.tex
+INPUT tables/clientbrief.tex
 INPUT ./images//Chapter 2/PhaseDiagram.png
 INPUT ./images//Chapter 2/PhaseDiagram.png
 INPUT ./images//Chapter 2/PhaseDiagram.png
@@ -932,10 +971,25 @@ INPUT ./sections/Hardware.tex
 INPUT sections/Hardware.tex
 INPUT ./sections/Hardware.tex
 INPUT sections/Hardware.tex
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
+INPUT ./images//Chapter 3/Hardware Overview/Hardware Overview.jpg
+INPUT ./images//Chapter 3/Hardware Overview/Hardware Overview.jpg
+INPUT ./images//Chapter 3/Hardware Overview/Hardware Overview.jpg
+INPUT ./images//Chapter 3/Hardware Overview/Hardware Overview.jpg
+INPUT ./images//Chapter 3/Hardware Overview/Hardware Overview.jpg
+INPUT ./tables/power.tex
+INPUT tables/power.tex
+INPUT ./tables/power.tex
+INPUT tables/power.tex
+INPUT ./images//Chapter 3/alexandre/powerschem.png
+INPUT ./images//Chapter 3/alexandre/powerschem.png
+INPUT ./images//Chapter 3/alexandre/powerschem.png
+INPUT ./images//Chapter 3/alexandre/powerschem.png
+INPUT ./images//Chapter 3/alexandre/powerschem.png
+INPUT ./images//Chapter 3/alexandre/pcb.png
+INPUT ./images//Chapter 3/alexandre/pcb.png
+INPUT ./images//Chapter 3/alexandre/pcb.png
+INPUT ./images//Chapter 3/alexandre/pcb.png
+INPUT ./images//Chapter 3/alexandre/pcb.png
 INPUT ./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png
 INPUT ./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png
 INPUT ./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png
@@ -981,34 +1035,48 @@ INPUT ./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png
 INPUT ./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png
 INPUT ./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png
 INPUT ./images//Chapter 3/Buzzer/BuzzerCircuitDiagram.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorModule.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorModule.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorModule.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorModule.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorModule.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorCodeLeft.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorBox.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorBox.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorBox.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorBox.png
+INPUT ./images//Chapter 3/Hal Sensor/HalSensorBox.png
+INPUT ./images//Chapter 3/LEDs/LED.png
+INPUT ./images//Chapter 3/LEDs/LED.png
+INPUT ./images//Chapter 3/LEDs/LED.png
+INPUT ./images//Chapter 3/LEDs/LED.png
+INPUT ./images//Chapter 3/LEDs/LED.png
 INPUT ./sections/Software.tex
 INPUT sections/Software.tex
 INPUT ./sections/Software.tex
 INPUT sections/Software.tex
+INPUT ./images//Chapter 4/Firmware Code ESP32/ESP32ClassDiagram.png
+INPUT ./images//Chapter 4/Firmware Code ESP32/ESP32ClassDiagram.png
+INPUT ./images//Chapter 4/Firmware Code ESP32/ESP32ClassDiagram.png
+INPUT ./images//Chapter 4/Firmware Code ESP32/ESP32ClassDiagram.png
+INPUT ./images//Chapter 4/Firmware Code ESP32/ESP32ClassDiagram.png
+INPUT ./tables/yohan.tex
+INPUT tables/yohan.tex
+INPUT ./tables/yohan.tex
+INPUT tables/yohan.tex
+INPUT ./images//Chapter 4/EspToPiCommunication/JSONPACKET.png
+INPUT ./images//Chapter 4/EspToPiCommunication/JSONPACKET.png
+INPUT ./images//Chapter 4/EspToPiCommunication/JSONPACKET.png
+INPUT ./images//Chapter 4/EspToPiCommunication/JSONPACKET.png
+INPUT ./images//Chapter 4/EspToPiCommunication/JSONPACKET.png
 INPUT ./images//Logo.png
 INPUT ./images//Logo.png
 INPUT ./images//Logo.png
 INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
 INPUT ./images//Logo.png
 INPUT ./images//Logo.png
 INPUT ./images//Logo.png
@@ -1083,14 +1151,10 @@ INPUT ./images//Chapter 4/Serial Input/SerialRead.png
 INPUT ./images//Chapter 4/Serial Input/SerialRead.png
 INPUT ./images//Chapter 4/Serial Input/SerialRead.png
 INPUT ./images//Chapter 4/Serial Input/SerialRead.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
+INPUT ./tables/librarytable.tex
+INPUT tables/librarytable.tex
+INPUT ./tables/librarytable.tex
+INPUT tables/librarytable.tex
 INPUT ./images//Chapter 4/Pi Integration/PiTestLoop.png
 INPUT ./images//Chapter 4/Pi Integration/PiTestLoop.png
 INPUT ./images//Chapter 4/Pi Integration/PiTestLoop.png
@@ -1101,114 +1165,536 @@ INPUT ./images//Chapter 4/Code Refactor/Class Diagram.png
 INPUT ./images//Chapter 4/Code Refactor/Class Diagram.png
 INPUT ./images//Chapter 4/Code Refactor/Class Diagram.png
 INPUT ./images//Chapter 4/Code Refactor/Class Diagram.png
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
-INPUT ./tables/contrib.tex
-INPUT tables/contrib.tex
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Logo.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoggedIn.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoggedIn.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoggedIn.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoggedIn.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoggedIn.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoginFailed.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoginFailed.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoginFailed.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoginFailed.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoginFailed.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoginImage.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoginImage.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoginImage.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoginImage.png
-INPUT ./images//Chapter 4/Hamzah Website/User Login/LoginImage.png
-INPUT ./images//Chapter 4/Hamzah Website/Displaying Data/ReturnStatement.png
-INPUT ./images//Chapter 4/Hamzah Website/Displaying Data/ReturnStatement.png
-INPUT ./images//Chapter 4/Hamzah Website/Displaying Data/ReturnStatement.png
-INPUT ./images//Chapter 4/Hamzah Website/Displaying Data/ReturnStatement.png
-INPUT ./images//Chapter 4/Hamzah Website/Displaying Data/ReturnStatement.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/EmptyRows.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/EmptyRows.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/EmptyRows.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/EmptyRows.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/EmptyRows.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/AddingTurkey.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/AddingTurkey.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/AddingTurkey.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/AddingTurkey.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/AddingTurkey.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable2nd.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable2nd.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable2nd.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable2nd.png
-INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/FilledTable2nd.png
-INPUT ./images//Chapter 4/Hamzah Website/Gallery/Penguins.png
-INPUT ./images//Chapter 4/Hamzah Website/Gallery/Penguins.png
-INPUT ./images//Chapter 4/Hamzah Website/Gallery/Penguins.png
-INPUT ./images//Chapter 4/Hamzah Website/Gallery/Penguins.png
-INPUT ./images//Chapter 4/Hamzah Website/Gallery/Penguins.png
-INPUT ./images//Chapter 4/Hamzah Website/Developments/ColourfulTable.png
-INPUT ./images//Chapter 4/Hamzah Website/Developments/ColourfulTable.png
-INPUT ./images//Chapter 4/Hamzah Website/Developments/ColourfulTable.png
-INPUT ./images//Chapter 4/Hamzah Website/Developments/ColourfulTable.png
-INPUT ./images//Chapter 4/Hamzah Website/Developments/ColourfulTable.png
+INPUT ./tables/codetable.tex
+INPUT tables/codetable.tex
+INPUT ./tables/codetable.tex
+INPUT tables/codetable.tex
+INPUT ./images//Chapter 3/alexandre/db.png
+INPUT ./images//Chapter 3/alexandre/db.png
+INPUT ./images//Chapter 3/alexandre/db.png
+INPUT ./images//Chapter 3/alexandre/db.png
+INPUT ./images//Chapter 3/alexandre/db.png
+INPUT ./images//Chapter 4/app_pic/Login.png
+INPUT ./images//Chapter 4/app_pic/Login.png
+INPUT ./images//Chapter 4/app_pic/Login.png
+INPUT ./images//Chapter 4/app_pic/Login.png
+INPUT ./images//Chapter 4/app_pic/Login.png
+INPUT ./images//Chapter 4/app_pic/Inv.png
+INPUT ./images//Chapter 4/app_pic/Inv.png
+INPUT ./images//Chapter 4/app_pic/Inv.png
+INPUT ./images//Chapter 4/app_pic/Inv.png
+INPUT ./images//Chapter 4/app_pic/Inv.png
+INPUT ./images//Chapter 4/app_pic/Rec.png
+INPUT ./images//Chapter 4/app_pic/Rec.png
+INPUT ./images//Chapter 4/app_pic/Rec.png
+INPUT ./images//Chapter 4/app_pic/Rec.png
+INPUT ./images//Chapter 4/app_pic/Rec.png
+INPUT ./images//Chapter 4/Hamzah Website/UserLogin/Fig1.png
+INPUT ./images//Chapter 4/Hamzah Website/UserLogin/Fig1.png
+INPUT ./images//Chapter 4/Hamzah Website/UserLogin/Fig1.png
+INPUT ./images//Chapter 4/Hamzah Website/UserLogin/Fig1.png
+INPUT ./images//Chapter 4/Hamzah Website/UserLogin/Fig1.png
+INPUT ./images//Chapter 4/Hamzah Website/UserLogin/Fig2.png
+INPUT ./images//Chapter 4/Hamzah Website/UserLogin/Fig2.png
+INPUT ./images//Chapter 4/Hamzah Website/UserLogin/Fig2.png
+INPUT ./images//Chapter 4/Hamzah Website/UserLogin/Fig2.png
+INPUT ./images//Chapter 4/Hamzah Website/UserLogin/Fig2.png
+INPUT ./images//Chapter 4/Hamzah Website/HomePage/Fig3.png
+INPUT ./images//Chapter 4/Hamzah Website/HomePage/Fig3.png
+INPUT ./images//Chapter 4/Hamzah Website/HomePage/Fig3.png
+INPUT ./images//Chapter 4/Hamzah Website/HomePage/Fig3.png
+INPUT ./images//Chapter 4/Hamzah Website/HomePage/Fig3.png
+INPUT ./images//Chapter 4/Hamzah Website/HomePage/Fig4.png
+INPUT ./images//Chapter 4/Hamzah Website/HomePage/Fig4.png
+INPUT ./images//Chapter 4/Hamzah Website/HomePage/Fig4.png
+INPUT ./images//Chapter 4/Hamzah Website/HomePage/Fig4.png
+INPUT ./images//Chapter 4/Hamzah Website/HomePage/Fig4.png
+INPUT ./images//Chapter 4/Hamzah Website/FetchingData/Fig5.png
+INPUT ./images//Chapter 4/Hamzah Website/FetchingData/Fig5.png
+INPUT ./images//Chapter 4/Hamzah Website/FetchingData/Fig5.png
+INPUT ./images//Chapter 4/Hamzah Website/FetchingData/Fig5.png
+INPUT ./images//Chapter 4/Hamzah Website/FetchingData/Fig5.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig6.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig6.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig6.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig6.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig6.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig7.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig7.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig7.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig7.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig7.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig8.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig8.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig8.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig8.png
+INPUT ./images//Chapter 4/Hamzah Website/InventoryTable/Fig8.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/Fig9.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/Fig9.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/Fig9.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/Fig9.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/Fig9.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig10.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig10.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig10.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig10.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/fig10.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/Fig11.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/Fig11.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/Fig11.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/Fig11.png
+INPUT ./images//Chapter 4/Hamzah Website/HowItWasCoded/Fig11.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig13.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig13.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig13.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig13.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig13.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig14.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
+INPUT ./images//Chapter 4/Hamzah Website/AddingRecords/Fig12.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig17.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig18.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig18.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig18.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig18.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig18.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig19.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig19.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig19.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig19.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig19.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig20.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig20.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig20.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig20.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig20.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig21.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig21.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig21.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig21.png
+INPUT ./images//Chapter 4/Hamzah Website/SearchingForRecipes/Fig21.png
 INPUT ./sections/Enclosure.tex
 INPUT sections/Enclosure.tex
 INPUT ./sections/Enclosure.tex
 INPUT sections/Enclosure.tex
-INPUT ./images//Chapter 5/Box/BoxSchematic1.png
-INPUT ./images//Chapter 5/Box/BoxSchematic1.png
-INPUT ./images//Chapter 5/Box/BoxSchematic1.png
-INPUT ./images//Chapter 5/Box/BoxSchematic1.png
-INPUT ./images//Chapter 5/Box/BoxSchematic1.png
-INPUT ./images//Chapter 5/Box/BoxSchematic2.png
-INPUT ./images//Chapter 5/Box/BoxSchematic2.png
-INPUT ./images//Chapter 5/Box/BoxSchematic2.png
-INPUT ./images//Chapter 5/Box/BoxSchematic2.png
-INPUT ./images//Chapter 5/Box/BoxSchematic2.png
-INPUT ./images//Chapter 5/Box/Schematic2DoorOpen.png
-INPUT ./images//Chapter 5/Box/Schematic2DoorOpen.png
-INPUT ./images//Chapter 5/Box/Schematic2DoorOpen.png
-INPUT ./images//Chapter 5/Box/Schematic2DoorOpen.png
-INPUT ./images//Chapter 5/Box/Schematic2DoorOpen.png
-INPUT ./images//Chapter 5/Box/PictureOfBox1.png
-INPUT ./images//Chapter 5/Box/PictureOfBox1.png
-INPUT ./images//Chapter 5/Box/PictureOfBox1.png
-INPUT ./images//Chapter 5/Box/PictureOfBox1.png
-INPUT ./images//Chapter 5/Box/PictureOfBox1.png
-INPUT ./images//Chapter 5/Box/BoxDesign3.png
-INPUT ./images//Chapter 5/Box/BoxDesign3.png
-INPUT ./images//Chapter 5/Box/BoxDesign3.png
-INPUT ./images//Chapter 5/Box/BoxDesign3.png
-INPUT ./images//Chapter 5/Box/BoxDesign3.png
+INPUT ./images//Chapter 5/Box/Prototype1/BoxSchematic1.png
+INPUT ./images//Chapter 5/Box/Prototype1/BoxSchematic1.png
+INPUT ./images//Chapter 5/Box/Prototype1/BoxSchematic1.png
+INPUT ./images//Chapter 5/Box/Prototype1/BoxSchematic1.png
+INPUT ./images//Chapter 5/Box/Prototype1/BoxSchematic1.png
+INPUT ./images//Chapter 5/Box/Prototype1/Schematic2DoorOpen.png
+INPUT ./images//Chapter 5/Box/Prototype1/Schematic2DoorOpen.png
+INPUT ./images//Chapter 5/Box/Prototype1/Schematic2DoorOpen.png
+INPUT ./images//Chapter 5/Box/Prototype1/Schematic2DoorOpen.png
+INPUT ./images//Chapter 5/Box/Prototype1/Schematic2DoorOpen.png
+INPUT ./images//Chapter 5/Box/Prototype1/PictureOfBox1.png
+INPUT ./images//Chapter 5/Box/Prototype1/PictureOfBox1.png
+INPUT ./images//Chapter 5/Box/Prototype1/PictureOfBox1.png
+INPUT ./images//Chapter 5/Box/Prototype1/PictureOfBox1.png
+INPUT ./images//Chapter 5/Box/Prototype1/PictureOfBox1.png
+INPUT ./images//Chapter 5/Box/Prototype1/BoxDesign3.png
+INPUT ./images//Chapter 5/Box/Prototype1/BoxDesign3.png
+INPUT ./images//Chapter 5/Box/Prototype1/BoxDesign3.png
+INPUT ./images//Chapter 5/Box/Prototype1/BoxDesign3.png
+INPUT ./images//Chapter 5/Box/Prototype1/BoxDesign3.png
+INPUT ./images//Chapter 5/Box/Prototype2/RedBox.png
+INPUT ./images//Chapter 5/Box/Prototype2/RedBox.png
+INPUT ./images//Chapter 5/Box/Prototype2/RedBox.png
+INPUT ./images//Chapter 5/Box/Prototype2/RedBox.png
+INPUT ./images//Chapter 5/Box/Prototype2/RedBox.png
+INPUT ./images//Chapter 5/Box/Prototype2/RedBoxOpen.png
+INPUT ./images//Chapter 5/Box/Prototype2/RedBoxOpen.png
+INPUT ./images//Chapter 5/Box/Prototype2/RedBoxOpen.png
+INPUT ./images//Chapter 5/Box/Prototype2/RedBoxOpen.png
+INPUT ./images//Chapter 5/Box/Prototype2/RedBoxOpen.png
 INPUT ./sections/PMandR.tex
 INPUT sections/PMandR.tex
 INPUT ./sections/PMandR.tex
 INPUT sections/PMandR.tex
+INPUT ./images//Chapter 6/Reflection/GroupDiagram.png
+INPUT ./images//Chapter 6/Reflection/GroupDiagram.png
+INPUT ./images//Chapter 6/Reflection/GroupDiagram.png
+INPUT ./images//Chapter 6/Reflection/GroupDiagram.png
+INPUT ./images//Chapter 6/Reflection/GroupDiagram.png
+INPUT ./images//Chapter 6/Reflection/GanttChart.png
+INPUT ./images//Chapter 6/Reflection/GanttChart.png
+INPUT ./images//Chapter 6/Reflection/GanttChart.png
+INPUT ./images//Chapter 6/Reflection/GanttChart.png
+INPUT ./images//Chapter 6/Reflection/GanttChart.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT ./sections/Appendix.tex
+INPUT sections/Appendix.tex
+INPUT ./sections/Appendix.tex
+INPUT sections/Appendix.tex
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT Appendix/SAGE.pdf
+INPUT ./Appendix/SAGE.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT Appendix/EIA.pdf
+INPUT ./Appendix/EIA.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
+INPUT Appendix/DMP.pdf
+INPUT ./Appendix/DMP.pdf
 INPUT main.aux
 INPUT main.run.xml
 OUTPUT main.run.xml
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb

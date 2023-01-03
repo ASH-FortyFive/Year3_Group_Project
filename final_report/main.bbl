@@ -19,6 +19,266 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{di_renzo}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bdf762c979f12c10f131bd16937daaeb}{%
+           family={Di\bibnamedelima Renzo},
+           familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f61d48a467485b07f9898bafbd720aca}{%
+           family={Gualtieri},
+           familyi={G\bibinitperiod},
+           given={Paola},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4ba36863707f35dfc0fee0eed8b7d09e}{%
+           family={De\bibnamedelima Lorenzo},
+           familyi={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Antonino},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a8306a1468b6a35e602bcf2f4f122ac}
+      \strng{fullhash}{2a8306a1468b6a35e602bcf2f4f122ac}
+      \strng{bibnamehash}{2a8306a1468b6a35e602bcf2f4f122ac}
+      \strng{authorbibnamehash}{2a8306a1468b6a35e602bcf2f4f122ac}
+      \strng{authornamehash}{2a8306a1468b6a35e602bcf2f4f122ac}
+      \strng{authorfullhash}{2a8306a1468b6a35e602bcf2f4f122ac}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nutrients}
+      \field{number}{4}
+      \field{title}{Diet, nutrition and chronic degenerative diseases}
+      \field{volume}{13}
+      \field{year}{2021}
+      \field{pages}{1372}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/nu13041372
+      \endverb
+    \endentry
+    \entry{digital_health_2022}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Digital Health}
+      \field{title}{Digital Solutions for the prevention of chronic diseases}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.digitalhealth.net/2022/04/digital-solutions-for-the-prevention-of-chronic-diseases/
+      \endverb
+      \verb{url}
+      \verb https://www.digitalhealth.net/2022/04/digital-solutions-for-the-prevention-of-chronic-diseases/
+      \endverb
+    \endentry
+    \entry{food_wastage_footprints_2013}{misc}{}
+      \list{publisher}{1}{%
+        {FAO}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Food Wastage Footprints}
+      \field{title}{Sustainability pathways food wastage footprints - food and agriculture ...}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.fao.org/fileadmin/templates/nr/sustainability_pathways/docs/Factsheet_FOOD-WASTAGE.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.fao.org/fileadmin/templates/nr/sustainability_pathways/docs/Factsheet_FOOD-WASTAGE.pdf
+      \endverb
+    \endentry
+    \entry{fresh}{misc}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Amazon}
+      \field{title}{Amazon Fresh Grocery Store}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.aboutamazon.com/news/retail/amazon-fresh-grocery-store-meet-just-walk-out-shopping
+      \endverb
+      \verb{url}
+      \verb https://www.aboutamazon.com/news/retail/amazon-fresh-grocery-store-meet-just-walk-out-shopping
+      \endverb
+    \endentry
+    \entry{samsung}{misc}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Samsung}
+      \field{title}{Family Hub Page}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.samsung.com/us/support/owners/app/family-hub
+      \endverb
+      \verb{url}
+      \verb https://www.samsung.com/us/support/owners/app/family-hub
+      \endverb
+    \endentry
+    \entry{UNGoals}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2d661e9167bd3a268ea03a3ee152926c}{%
+           family={Nations},
+           familyi={N\bibinitperiod},
+           given={United},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d661e9167bd3a268ea03a3ee152926c}
+      \strng{fullhash}{2d661e9167bd3a268ea03a3ee152926c}
+      \strng{bibnamehash}{2d661e9167bd3a268ea03a3ee152926c}
+      \strng{authorbibnamehash}{2d661e9167bd3a268ea03a3ee152926c}
+      \strng{authornamehash}{2d661e9167bd3a268ea03a3ee152926c}
+      \strng{authorfullhash}{2d661e9167bd3a268ea03a3ee152926c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{THE 17 GOALS Sustainable Development}
+    \endentry
+    \entry{FoodWasteStages}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=56fea0bb8c48bf08b8edd8cfe79b30ae}{%
+           family={Swanson},
+           familyi={S\bibinitperiod},
+           given={Mitch},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{56fea0bb8c48bf08b8edd8cfe79b30ae}
+      \strng{fullhash}{56fea0bb8c48bf08b8edd8cfe79b30ae}
+      \strng{bibnamehash}{56fea0bb8c48bf08b8edd8cfe79b30ae}
+      \strng{authorbibnamehash}{56fea0bb8c48bf08b8edd8cfe79b30ae}
+      \strng{authornamehash}{56fea0bb8c48bf08b8edd8cfe79b30ae}
+      \strng{authorfullhash}{56fea0bb8c48bf08b8edd8cfe79b30ae}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{From Farm to Fork: the 5 stages of wasting food --- postharvest.com}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{bandoim_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f4524185b9fa11312f33e1664fb37dcb}{%
+           family={Bandoim},
+           familyi={B\bibinitperiod},
+           given={Lana},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Forbes Magazine}%
+      }
+      \strng{namehash}{f4524185b9fa11312f33e1664fb37dcb}
+      \strng{fullhash}{f4524185b9fa11312f33e1664fb37dcb}
+      \strng{bibnamehash}{f4524185b9fa11312f33e1664fb37dcb}
+      \strng{authorbibnamehash}{f4524185b9fa11312f33e1664fb37dcb}
+      \strng{authornamehash}{f4524185b9fa11312f33e1664fb37dcb}
+      \strng{authorfullhash}{f4524185b9fa11312f33e1664fb37dcb}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Forbes}
+      \field{title}{The shocking amount of food U.S. households waste every year}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.forbes.com/sites/lanabandoim/2020/01/26/the-shocking-amount-of-food-us-households-waste-every-year
+      \endverb
+      \verb{url}
+      \verb https://www.forbes.com/sites/lanabandoim/2020/01/26/the-shocking-amount-of-food-us-households-waste-every-year
+      \endverb
+    \endentry
+    \entry{foodwaste}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=af0d1b900ba7d41f95e58cbf5db34d97}{%
+           family={Seberini},
+           familyi={S\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {EDP Sciences}%
+      }
+      \strng{namehash}{af0d1b900ba7d41f95e58cbf5db34d97}
+      \strng{fullhash}{af0d1b900ba7d41f95e58cbf5db34d97}
+      \strng{bibnamehash}{af0d1b900ba7d41f95e58cbf5db34d97}
+      \strng{authorbibnamehash}{af0d1b900ba7d41f95e58cbf5db34d97}
+      \strng{authornamehash}{af0d1b900ba7d41f95e58cbf5db34d97}
+      \strng{authorfullhash}{af0d1b900ba7d41f95e58cbf5db34d97}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{SHS Web of Conferences}
+      \field{title}{Economic, social and environmental world impacts of food waste on society and zero waste as a global approach to their elimination}
+      \field{volume}{74}
+      \field{year}{2020}
+      \field{pages}{03010}
+      \range{pages}{1}
+    \endentry
+    \entry{circ}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Cicular Ecnoomy in Detail}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{energy}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=19dc608b7bab0c31f8becf49a692c7de}{%
+           family={Sau},
+           familyi={S\bibinitperiod},
+           given={Thu},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{19dc608b7bab0c31f8becf49a692c7de}
+      \strng{fullhash}{19dc608b7bab0c31f8becf49a692c7de}
+      \strng{bibnamehash}{19dc608b7bab0c31f8becf49a692c7de}
+      \strng{authorbibnamehash}{19dc608b7bab0c31f8becf49a692c7de}
+      \strng{authornamehash}{19dc608b7bab0c31f8becf49a692c7de}
+      \strng{authorfullhash}{19dc608b7bab0c31f8becf49a692c7de}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Shut the Refrigerator Door, Save 7}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{tidatasheet}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{LM2596 Datasheet}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+    \endentry
     \entry{RTOS:1}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=f1b26796744ff7f5b3245fe8a6a7bfdd}{%
@@ -49,7 +309,6 @@
       \field{labeltitlesource}{title}
       \field{abstract}{The paper discusses the literature survey of RTOS (Real Time Operating Systems) and its contributions to the embedded world. RTOS is defined as a system in which the correctness of the system does not depend only on the logical results of computation but also on the time at which the results are produced. It has to perform critical tasks on priority basis keeping the context switching time minimum. It is often associated with few misconceptions & we have tried to throw some light on it. Since last 20 years, RTOS is undergoing continuous evolution and has resulted into development of many commercial RTOS products. We have selected few commercial RTOS of different categories of real-time applications and have discussed its real-time features. A comparison of the commercial RTOSs' is presented. We conclude by discussing the results of the survey and comparing the RTOS based on performance parameters.}
       \field{booktitle}{2014 International Conference on Electronic Systems, Signal Processing and Computing Technologies}
-      \field{month}{1}
       \field{title}{The Survey of Real Time Operating System: RTOS}
       \field{year}{2014}
       \field{pages}{34\bibrangedash 39}
@@ -59,12 +318,86 @@
       \endverb
     \endentry
     \entry{RTOS:2}{misc}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{howpublished}{{https://www.freertos.org/about-RTOS.html}}
       \field{note}{[Accessed 02-Dec-2022]}
       \field{title}{{W}hy {R}{T}{O}{S} and {W}hat is {R}{T}{O}{S}? --- freertos.org}
+    \endentry
+    \entry{dataset}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=b4b0f08cf9159932435f4aadcedfd2db}{%
+           family={Klasson},
+           familyi={K\bibinitperiod},
+           given={Marcus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=57f7f0240f141850db99567185d1a24c}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Cheng},
+           giveni={C\bibinitperiod}}}%
+        {{hash=71c06bff3401a4e6c4acf55ff2fc58c3}{%
+           family={Kjellström},
+           familyi={K\bibinitperiod},
+           given={Hedvig},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{8aa6446c5fbfae8cc939404a41262944}
+      \strng{fullhash}{8aa6446c5fbfae8cc939404a41262944}
+      \strng{bibnamehash}{8aa6446c5fbfae8cc939404a41262944}
+      \strng{authorbibnamehash}{8aa6446c5fbfae8cc939404a41262944}
+      \strng{authornamehash}{8aa6446c5fbfae8cc939404a41262944}
+      \strng{authorfullhash}{8aa6446c5fbfae8cc939404a41262944}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE Winter Conference on Applications of Computer Vision (WACV)}
+      \field{title}{A Hierarchical Grocery Store Image Dataset with Visual and Semantic Labels}
+      \field{year}{2019}
+    \endentry
+    \entry{stat}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Statista Smartphone Usage}
+      \field{urlday}{3}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{react}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{React Native Homepage}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{edman}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Edamam Homepage}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{pd}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Pandas Docs}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2013}
+      \field{urldateera}{ce}
     \endentry
   \enddatalist
 \endrefsection

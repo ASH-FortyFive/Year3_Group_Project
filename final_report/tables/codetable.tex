@@ -1,0 +1,72 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\begin{longtable}[c]{|l|l|}
+    \caption{Python Class and Method Overview}
+    \label{tab:piview}\\
+    \hline
+    \textbf{Method/Class} &
+      \textbf{Explanation} \\ \hline
+    \endfirsthead
+    %
+    \endhead
+    %
+    \textbf{ProductDetector Class} &
+      \textbf{\begin{tabular}[c]{@{}l@{}}Class that handles the neural network \\ algorithm.\end{tabular}} \\ \hline
+    init(self) &
+      \begin{tabular}[c]{@{}l@{}}Initializes the neural network by loading\\  in the weights, and  layers of the model.\end{tabular} \\ \hline
+    productGuess(self,frame) &
+      \begin{tabular}[c]{@{}l@{}}Runs the neural network on the image (frame) \\ passed into the method and returns the name \\ of the product guessed.\end{tabular} \\ \hline
+    productGuesses(self, frames) &
+      \begin{tabular}[c]{@{}l@{}}Runs productGuess on all the images (frames) \\ passed into the  method.\end{tabular} \\ \hline
+    FridgeCam Class &
+      Class that handles taking pictures on the webcam. \\ \hline
+    init(self) &
+      \begin{tabular}[c]{@{}l@{}}Initializes the camera so it can be accessed by\\ open cv.\end{tabular} \\ \hline
+    takePicture(self) &
+      Takes a picture and returns it. \\ \hline
+    takePictureBurst(self, amount : int) &
+      \begin{tabular}[c]{@{}l@{}}Takes several pictures equal to the value of\\ amount.\end{tabular} \\ \hline
+    \textbf{SupabaseDB Class} &
+      \textbf{\begin{tabular}[c]{@{}l@{}}Connects to the supabase database and sends\\ data to it.\end{tabular}} \\ \hline
+    init(self, URL, KEY) &
+      Initializes the user key and user ID. \\ \hline
+    del(self) &
+      Signs out the user. \\ \hline
+    signIn(self, email, passwd) &
+      Log into existing user. \\ \hline
+    signUp(self, email, passwd) &
+      Create a new user. \\ \hline
+    getItemID(self, barcode) &
+      \begin{tabular}[c]{@{}l@{}}Takes in a barcode as an argument and\\ returns the item ID that  represents that item.\end{tabular} \\ \hline
+    getItems(self) &
+      Gets all the user’s items in the fridge. \\ \hline
+    sendItem(self, itemID, expiry, comment) &
+      \begin{tabular}[c]{@{}l@{}}Sends an item to be stored in the database\\ by using the item ID,   the expiry date, and an\\ additional comment.\end{tabular} \\ \hline
+    removeItem(self, itemID, expiry) &
+      \begin{tabular}[c]{@{}l@{}}Removes an item from the database, taking\\ itemID and expiry data  as parameters.\end{tabular} \\ \hline
+    getBarcode(self,item) &
+      \begin{tabular}[c]{@{}l@{}}Returns the barcode value based on the item\\ parameter (itemID).\end{tabular} \\ \hline
+    getUserID(self) &
+      Returns UserID of the current fridge user \\ \hline
+    \textbf{SmartFridge Class} &
+      \textbf{\begin{tabular}[c]{@{}l@{}}Contains the main loop for the fridge and\\ connects all the other  sections/modules.\end{tabular}} \\ \hline
+    init(self) &
+      \begin{tabular}[c]{@{}l@{}}Initialize instance of ProductDetector,\\ FridgeCam and SupabaseDB, declare the\\ baud rate to match the ESP32 and set the\\ options for the optical character recognition.\end{tabular} \\ \hline
+    del(self) &
+      Closes the serial port. \\ \hline
+    extractBarcodesInFrame(self, frame) &
+      \begin{tabular}[c]{@{}l@{}}Takes in a frame (image) as a parameter\\ and identifies and reads  any barcodes in\\ the image. Returns the barcodes at the\\ end of the method.\end{tabular} \\ \hline
+    extractBarcodes(self,frames) &
+      \begin{tabular}[c]{@{}l@{}}Takes in frames (multiple images) as a\\ parameter and calls extractBarcodesInFrame\\  on each of them. It then returns a list of\\ found barcodes.\end{tabular} \\ \hline
+    readSerial(self) &
+      \begin{tabular}[c]{@{}l@{}}Reads data sent from the ESP-32 on the\\ serial pins and converts it from JSON into\\ an object with several string attributes.\end{tabular} \\ \hline
+    readDateInFrame(self,frame) &
+      \begin{tabular}[c]{@{}l@{}}Searches the passed in frame(image) for\\ readable text (optical character recognition)\\ and then returns a list of found strings.\end{tabular} \\ \hline
+    readDatesInFrame(self,frames) &
+      \begin{tabular}[c]{@{}l@{}}Runs readDateInFrame on each individual\\ frame (image) passed into  the method. \\ Returns a list of strings.\end{tabular} \\ \hline
+    collectData(self,barcode,data,guess) &
+      \begin{tabular}[c]{@{}l@{}}Constructs a list made up of the passed \\ in barcode value, date,  and guess. \\ Returns the new list.\end{tabular} \\ \hline
+    run(self) &
+      Contains the main loop of the SmartFridge \\ \hline
+    \end{longtable}
