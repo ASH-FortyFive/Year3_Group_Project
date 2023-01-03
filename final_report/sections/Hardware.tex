@@ -27,7 +27,7 @@ However, we will require two separate voltage rails to power the various compone
 The initial plan to achieve this was to use the adjustable variants of the LM2596.
 Using these we could output voltages in the range of 1.2V to 37V at up to 3A with a typical efficiency of 73\% \cite{tidatasheet}.
 We could then power the Smart Fridge's logic components using a 9V power supply which will feed into the two power regulators.
-The schematic for these power supplies can be seen below in Figure \ref{fig:powershem}.
+The schematic for these power supplies can be seen below in Figure \ref{fig:powerschem}.
 Only one power supply is shown in the schematic, as we would use variable resistors to fine-tune the exact voltage in this prototype.
 
 \begin{figure}[H]        
@@ -95,8 +95,15 @@ Unfortunately there where some problems, firstly, as mentioned in the Power Dist
 Another problem came with the ESP32, as the exact model we ended up using was not the one communicated during the design of PCB and features different pin spacing than most ESP32s, meaning it was too wide to fit on the board.
 Initially a “converter” board was considered to allow our new ESP to fit on the PCB, however due to the other problem a different solution was used.
 The PCB was also larger than expected due to an export error when sending the files to the manufacturer.
-These issues all compounded to leave us with a design that was not fit for function and was therefor abandoned for another solution, the progress up until this point can be seen in the picture below in figure [X].
+These issues all compounded to leave us with a design that was not fit for function and was therefor abandoned for another solution, the progress up until this point can be seen in the picture below in figure \ref{fig:realpcb}.
 The created files for the PCB could however easily be updated for a second version had time allowed.
+
+\begin{figure}[H]        
+    \centering
+    \includegraphics[width=.5\textwidth]{Chapter 3/alexandre/pcbreal.jpg}
+    \caption{PCB}
+    \label{fig:realpcb}
+\end{figure} 
 
 Instead of the PCB, a perfboard was used.
 This board was designed using the schematics created for the PCB, as all the connection remained relevant however the EEPROM and Power Distribution section where omitted due to time constraints and redesign respectively.
@@ -331,12 +338,12 @@ In our feature, the sensor returns True when the doors are open and False when t
 
 \subsubsection{LEDs [HH]}
 
-The LEDs inside the fridge will provide lighting as well as visual cues to indicate a change in the fridge’s status.
-This is possible by connecting an ESP32 to the data input of the LED strip and coding it to respond in various ways. 
+The LEDs inside the fridge will provide lighting as well as visual cues to indicate a change in the fridge's status.
+This is possible by connecting an ESP32 to the data input of the LED strip and coding it to respond in various ways.
 
 Initially I planned on using the FastLED library to program the LEDs.
 However this library unexpectedly caused the LEDs to malfunction in strange ways.
-After trouble shooting and circuit diagnosis, I decided to use the NeoPixel library. 
+After trouble shooting and circuit diagnosis, I decided to use the NeoPixel library.
 
 This library provided great results.
 The LEDs would shine at a uniform brightness and at the specified colour, as expected.
@@ -345,7 +352,7 @@ If the door is closed then the LEDs are turned off.
 When the door is open the LEDs are white to make it easy to see everything in the fridge.
 While the door is open, the LEDs respond to direction change and the alarm.
 If the alarm is active the LEDs will be red.
-If an item enters the fridge will pulse green, or blue if an item leaves. 
+If an item enters the fridge will pulse green, or blue if an item leaves.
 
 \begin{figure}[H]        
     \centering

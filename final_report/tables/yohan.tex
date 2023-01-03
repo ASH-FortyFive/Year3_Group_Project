@@ -1,4 +1,44 @@
-
-
-\textbf{MISSING}
-
+% Please add the following required packages to your document preamble:
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\begin{longtable}[c]{|l|l|l|l|}
+    \caption{ESP to PI Comms}
+    \label{tab:yohan}\\
+    \hline
+    Number &
+      Message &
+      Value &
+      Purpose \\ \hline
+    \endfirsthead
+    %
+    \endhead
+    %
+    1 &
+      DIRECTION\_NO\_CHANGE &
+      0 &
+      \begin{tabular}[c]{@{}l@{}}Object weight leaving and\\ entering the fridge is the same\end{tabular} \\ \hline
+    2 &
+      DIRECTION\_LEAVE\_FRIDGE &
+      1 &
+      \begin{tabular}[c]{@{}l@{}}Object left the fridge as weight\\ drops to 0\end{tabular} \\ \hline
+    3 &
+      \begin{tabular}[c]{@{}l@{}}DIRECTION\\ \_ENTER\_FRIDGE\end{tabular} &
+      2 &
+      \begin{tabular}[c]{@{}l@{}}New Object enters the fridge\\ as weight is different to\\ previous object\end{tabular} \\ \hline
+    4 &
+      DOOR\_OPEN &
+      1 &
+      \begin{tabular}[c]{@{}l@{}}HAL sensor returns HIGH state\\ hence door is open\end{tabular} \\ \hline
+    5 &
+      DOOR\_CLOSE &
+      0 &
+      \begin{tabular}[c]{@{}l@{}}HAL sensor returns LOW as\\ magnet is in contact with the\\ sensor hence door is closed\end{tabular} \\ \hline
+    6 &
+      ALARM\_ACTIVE &
+      1 &
+      \begin{tabular}[c]{@{}l@{}}Door kept open longer than\\ predefined safe limit hence\\ ALARM is activated\end{tabular} \\ \hline
+    7 &
+      ALARM\_INACTIVE &
+      0 &
+      \begin{tabular}[c]{@{}l@{}}Door kept open longer than\\ predefined safe limit hence ALARM\\ is activated\end{tabular} \\ \hline
+    \end{longtable}

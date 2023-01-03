@@ -1,61 +1,63 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces System Overview Block Diagram\relax }}{8}{}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Phase Diagram\relax }}{10}{}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Phase Diagram\relax }}{11}{}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Hardware Schematic\relax }}{11}{}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Power Schematic\relax }}{11}{}%
-\contentsline {figure}{\numberline {5}{\ignorespaces PCB Schematic\relax }}{12}{}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Load Cell Circuit Diagram\relax }}{13}{}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Load Cell Prototype\relax }}{14}{}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Load Cell Calibration Code\relax }}{15}{}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Load Cell Terminal\relax }}{16}{}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Load Cell Fully Wired\relax }}{16}{}%
-\contentsline {figure}{\numberline {11}{\ignorespaces ESP Camera Code\relax }}{17}{}%
-\contentsline {figure}{\numberline {12}{\ignorespaces First Picture from ESP Camera\relax }}{18}{}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Better Picture from ESP CAM\relax }}{19}{}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Buzzer Circuit Diagram\relax }}{20}{}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Hall Effect Sensor\relax }}{20}{}%
-\contentsline {figure}{\numberline {16}{\ignorespaces HAL Code\relax }}{21}{}%
-\contentsline {figure}{\numberline {17}{\ignorespaces HAL Box\relax }}{21}{}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Programmed LEDs\relax }}{22}{}%
-\contentsline {figure}{\numberline {19}{\ignorespaces UML for System Machine\relax }}{23}{}%
-\contentsline {figure}{\numberline {20}{\ignorespaces JSON Packet Sample\relax }}{24}{}%
-\contentsline {figure}{\numberline {21}{\ignorespaces PLACEHOLDER: Serialisation and Deserialisation Scripts\relax }}{24}{}%
-\contentsline {figure}{\numberline {22}{\ignorespaces VGG16 Architecture\relax }}{26}{}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Greyscaling and Blurring Code\relax }}{27}{}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Gap Closing and Contour Finding Code\relax }}{28}{}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Greyscaling, Thresholding and Cleaning Code\relax }}{28}{}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Binary Extracting Code\relax }}{28}{}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Barcode Detection and Decoding Code (highlighted)\relax }}{29}{}%
-\contentsline {figure}{\numberline {28}{\ignorespaces First Result\relax }}{29}{}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Second Result\relax }}{29}{}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Third Result\relax }}{29}{}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Error Checking Code\relax }}{30}{}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Webcam\relax }}{30}{}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Picture from Webcam\relax }}{31}{}%
-\contentsline {figure}{\numberline {34}{\ignorespaces GPIO of the RPI\relax }}{31}{}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Serial Data from ESP\relax }}{31}{}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Test Loop Code\relax }}{33}{}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Object Oriented Class Diagram\relax }}{34}{}%
-\contentsline {figure}{\numberline {38}{\ignorespaces DB Diagram\relax }}{36}{}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Screenshots of App. Left to Right: Login, inventory, Recipes\relax }}{37}{}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Login Screens\relax }}{38}{}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Home Page\relax }}{38}{}%
-\contentsline {figure}{\numberline {42}{\ignorespaces SQL statement to retrieve the fridge inventory from Supabase\relax }}{38}{}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Inventory sorted by quantity\relax }}{39}{}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Filtering option inside the hamburger menu\relax }}{39}{}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Pagination option\relax }}{39}{}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Function that calculates the difference in days, regardless of format\relax }}{40}{}%
-\contentsline {figure}{\numberline {47}{\ignorespaces Code Snippets\relax }}{40}{}%
-\contentsline {figure}{\numberline {48}{\ignorespaces Interface to add new items to the database\relax }}{40}{}%
-\contentsline {figure}{\numberline {49}{\ignorespaces Code Snippets 2\relax }}{41}{}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Demonstration of how items are deleted from the table using checkboxes\relax }}{41}{}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Converting selected items into a suitable format for SQL deletion\relax }}{42}{}%
-\contentsline {figure}{\numberline {52}{\ignorespaces Recipe Display\relax }}{42}{}%
-\contentsline {figure}{\numberline {53}{\ignorespaces the URL format accepted by Edamam API\relax }}{42}{}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Code Snippets 3\relax }}{43}{}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Initial design of Smart Fridge\relax }}{44}{}%
-\contentsline {figure}{\numberline {56}{\ignorespaces Fridge design using 2 acrylic sheets\relax }}{44}{}%
-\contentsline {figure}{\numberline {57}{\ignorespaces First built box\relax }}{45}{}%
-\contentsline {figure}{\numberline {58}{\ignorespaces Fridge design with no hinges\relax }}{45}{}%
-\contentsline {figure}{\numberline {59}{\ignorespaces Final Box Design, from Front and Side\relax }}{46}{}%
-\contentsline {figure}{\numberline {60}{\ignorespaces Group Organization Diagram\relax }}{46}{}%
-\contentsline {figure}{\numberline {61}{\ignorespaces Gantt Planning Chart\relax }}{47}{}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Power Schematic\relax }}{12}{}%
+\contentsline {figure}{\numberline {5}{\ignorespaces PCB Schematic\relax }}{13}{}%
+\contentsline {figure}{\numberline {6}{\ignorespaces PCB\relax }}{14}{}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Load Cell Circuit Diagram\relax }}{14}{}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Load Cell Prototype\relax }}{15}{}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Load Cell Calibration Code\relax }}{16}{}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Load Cell Terminal\relax }}{17}{}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Load Cell Fully Wired\relax }}{17}{}%
+\contentsline {figure}{\numberline {12}{\ignorespaces ESP Camera Code\relax }}{18}{}%
+\contentsline {figure}{\numberline {13}{\ignorespaces First Picture from ESP Camera\relax }}{19}{}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Better Picture from ESP CAM\relax }}{20}{}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Buzzer Circuit Diagram\relax }}{21}{}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Hall Effect Sensor\relax }}{21}{}%
+\contentsline {figure}{\numberline {17}{\ignorespaces HAL Code\relax }}{22}{}%
+\contentsline {figure}{\numberline {18}{\ignorespaces HAL Box\relax }}{22}{}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Programmed LEDs\relax }}{23}{}%
+\contentsline {figure}{\numberline {20}{\ignorespaces UML for System Machine\relax }}{24}{}%
+\contentsline {figure}{\numberline {21}{\ignorespaces JSON Packet Sample\relax }}{25}{}%
+\contentsline {figure}{\numberline {22}{\ignorespaces PLACEHOLDER: Serialisation and Deserialisation Scripts\relax }}{25}{}%
+\contentsline {figure}{\numberline {23}{\ignorespaces VGG16 Architecture\relax }}{27}{}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Greyscaling and Blurring Code\relax }}{28}{}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Gap Closing and Contour Finding Code\relax }}{29}{}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Greyscaling, Thresholding and Cleaning Code\relax }}{29}{}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Binary Extracting Code\relax }}{29}{}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Barcode Detection and Decoding Code (highlighted)\relax }}{30}{}%
+\contentsline {figure}{\numberline {29}{\ignorespaces First Result\relax }}{30}{}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Second Result\relax }}{30}{}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Third Result\relax }}{30}{}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Error Checking Code\relax }}{31}{}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Webcam\relax }}{31}{}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Picture from Webcam\relax }}{32}{}%
+\contentsline {figure}{\numberline {35}{\ignorespaces GPIO of the RPI\relax }}{32}{}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Serial Data from ESP\relax }}{32}{}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Test Loop Code\relax }}{34}{}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Object Oriented Class Diagram\relax }}{35}{}%
+\contentsline {figure}{\numberline {39}{\ignorespaces DB Diagram\relax }}{37}{}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Screenshots of App. Left to Right: Login, inventory, Recipes\relax }}{38}{}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Login Screens\relax }}{39}{}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Home Page\relax }}{39}{}%
+\contentsline {figure}{\numberline {43}{\ignorespaces SQL statement to retrieve the fridge inventory from Supabase\relax }}{39}{}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Inventory sorted by quantity\relax }}{40}{}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Filtering option inside the hamburger menu\relax }}{40}{}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Pagination option\relax }}{40}{}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Function that calculates the difference in days, regardless of format\relax }}{41}{}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Code Snippets\relax }}{41}{}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Interface to add new items to the database\relax }}{41}{}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Code Snippets 2\relax }}{42}{}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Demonstration of how items are deleted from the table using checkboxes\relax }}{42}{}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Converting selected items into a suitable format for SQL deletion\relax }}{43}{}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Recipe Display\relax }}{43}{}%
+\contentsline {figure}{\numberline {54}{\ignorespaces the URL format accepted by Edamam API\relax }}{43}{}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Code Snippets 3\relax }}{44}{}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Initial design of Smart Fridge\relax }}{45}{}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Fridge design using 2 acrylic sheets\relax }}{45}{}%
+\contentsline {figure}{\numberline {58}{\ignorespaces First built box\relax }}{46}{}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Fridge design with no hinges\relax }}{46}{}%
+\contentsline {figure}{\numberline {60}{\ignorespaces Final Box Design, from Front and Side\relax }}{47}{}%
+\contentsline {figure}{\numberline {61}{\ignorespaces Group Organization Diagram\relax }}{47}{}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Gantt Planning Chart\relax }}{48}{}%
+\contentsline {figure}{\numberline {63}{\ignorespaces Schematic for PCB\relax }}{53}{}%

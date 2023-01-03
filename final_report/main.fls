@@ -949,11 +949,11 @@ INPUT ./tables/depend.tex
 INPUT tables/depend.tex
 INPUT ./tables/depend.tex
 INPUT tables/depend.tex
-INPUT ./tables/moscow.tex
-INPUT tables/moscow.tex
-INPUT ./tables/moscow.tex
-INPUT tables/moscow.tex
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT ./tables/moscow.tex
+INPUT tables/moscow.tex
+INPUT ./tables/moscow.tex
+INPUT tables/moscow.tex
 INPUT ./tables/swot.tex
 INPUT tables/swot.tex
 INPUT ./tables/swot.tex
@@ -990,6 +990,11 @@ INPUT ./images//Chapter 3/alexandre/pcb.png
 INPUT ./images//Chapter 3/alexandre/pcb.png
 INPUT ./images//Chapter 3/alexandre/pcb.png
 INPUT ./images//Chapter 3/alexandre/pcb.png
+INPUT ./images//Chapter 3/alexandre/pcbreal.jpg
+INPUT ./images//Chapter 3/alexandre/pcbreal.jpg
+INPUT ./images//Chapter 3/alexandre/pcbreal.jpg
+INPUT ./images//Chapter 3/alexandre/pcbreal.jpg
+INPUT ./images//Chapter 3/alexandre/pcbreal.jpg
 INPUT ./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png
 INPUT ./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png
 INPUT ./images//Chapter 3/Weight Sensor/LoadCellCircuitDiagram.png
@@ -1347,6 +1352,11 @@ INPUT ./sections/Appendix.tex
 INPUT sections/Appendix.tex
 INPUT ./sections/Appendix.tex
 INPUT sections/Appendix.tex
+INPUT ./images//Chapter 3/alexandre/schem.png
+INPUT ./images//Chapter 3/alexandre/schem.png
+INPUT ./images//Chapter 3/alexandre/schem.png
+INPUT ./images//Chapter 3/alexandre/schem.png
+INPUT ./images//Chapter 3/alexandre/schem.png
 INPUT ./Appendix/SAGE.pdf
 INPUT Appendix/SAGE.pdf
 INPUT ./Appendix/SAGE.pdf

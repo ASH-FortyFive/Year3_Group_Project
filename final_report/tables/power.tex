@@ -1,1 +1,20 @@
 \textbf{MISSING}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\begin{longtable}[c]{|l|l|l|l|}
+    \caption{Power Requirement Overview}
+    \label{tab:power}\\
+    \hline
+    Board & Voltage & \begin{tabular}[c]{@{}l@{}}Maximum  \\ Current\end{tabular} & \begin{tabular}[c]{@{}l@{}}Maximum \\ Power\end{tabular} \\ \hline
+    \endfirsthead
+    %
+    \endhead
+    %
+    \begin{tabular}[c]{@{}l@{}}Raspberry Pi 3\\ Model B+\end{tabular} & 5V      & 3A    & 15W                                                 \\ \hline
+    ESP-32                                                            & 3.3V    & 0.5A  & 1.65W                                               \\ \hline
+    Load cell                                                         & 5V      & NA    & \begin{tabular}[c]{@{}l@{}}Not\\ Given\end{tabular} \\ \hline
+    HX711 Amplifier                                                   & 2.7V-5V & 1.5mA & 0. 0075W                                            \\ \hline
+    Hall Effect Sensor                                                & 5V      & 9mA   & 0.045W                                              \\ \hline
+    \end{longtable}

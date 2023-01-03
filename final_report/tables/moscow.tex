@@ -1,1 +1,23 @@
-\textbf{MISSING}
+% Please add the following required packages to your document preamble:
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\small
+\begin{longtable}[c]{|l|l|l|}
+    \caption{Moscow}
+    \label{tab:moscow }\\
+    \hline
+    \textbf{Must Have}                         & \textbf{Should Have}                                                                            & \textbf{Could Have}        \\ \hline
+    \endfirsthead
+    %
+    \endhead
+    %
+    \begin{tabular}[c]{@{}l@{}}A Camera to film products \\ entering the fridge.\end{tabular} &
+      \begin{tabular}[c]{@{}l@{}}Weight sensor to detect if an item \\ is entering or leaving the box.\end{tabular} &
+      \begin{tabular}[c]{@{}l@{}}LEDs to light up the \\ inside of the fridge.\end{tabular} \\ \hline
+    \begin{tabular}[c]{@{}l@{}}Transmission from the \\ hardware to the server.\end{tabular} &
+      \begin{tabular}[c]{@{}l@{}}Hal sensor to trigger turning \\ the camera on.\end{tabular} &
+      An alarm to signal that the \\ fridge has been open too long. \\ \hline
+    Inventory data displayed on a website/app. & \begin{tabular}[c]{@{}l@{}}A prototype fridge to enclose \\ the hardware.\end{tabular}          & Expiration date detection. \\ \hline
+    Barcode detection program.                 & Object detection.                                                                               &                            \\ \hline
+                                               & \begin{tabular}[c]{@{}l@{}}Display recipes on the website \\ using inventory data.\end{tabular} &                            \\ \hline
+    \end{longtable}
